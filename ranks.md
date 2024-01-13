@@ -22,7 +22,7 @@ The immediate problem is that there are an infinite number of ranks, only limite
 
 Science is about discovery and the proposal of new ideas. Stifling innovation leads to stagnation, which leads to an inability to use new discoveries.
 
-However, non-standardised systems make it very hard to compare from one version to another. The solution is to standardise *some* of the ranks at a fundamental level.
+However, non-standardised systems make it very hard to compare from one version to another. The solution is to standardise *some* of the ranks at a fundamental level *and* provide a safe way for these ranks to be built upon in an open fashion. In software-parlance, we'd call this an *extendable* system. Any person can, without contacting, notifying, or bothering the 'original owner', build a new section off of the backbone. Of course, this requires that they follow the system design rules for doing so, but that's not a hard thing to do.
 
 ## Taxonomic backbone
 The goal here is to pick a set of ranks that are universally applied. This should be as small a set as possible, whilst being as specific as possible, whilst being **entirely** globally applicable.
@@ -241,7 +241,6 @@ One of the key facets is that it is possible for groups to come together to defi
 
 The core idea here is to establish the backbone as the taxonomic lowest common denominator. It is practically impossible to create a single system which will cater to every need of every single person studying every living thing. Instead it is far better to create an expandable framework, with guidance on how to apply the standardisation, so that people may communicate as freely as possible without being constrained. Science is about discovering new things after all, which frequently involves the need to create new systems as new information arises.
 
-
 ### Below the backbone
 It is not possible to transfer information about ranks below the lowest non-individual rank on the backbone. This is an unavoidable logical fact. For example:
 
@@ -251,4 +250,21 @@ Custom Ranking 1 (CR1) goes below `species` to `subspecies`
 
 Custom Ranking 2 (CR2) goes below `species` and `subspecies` to `infraspecies`
 
-All three systems are limited to talking at the level of `species` through the backbone. However, should the owners of the custom ranking systems desire, they can easily implement their own translation system to communicate at `subspecies` level. This would require CR2 to build off of CR1, so that their `subspecies` layers were identical.
+All three systems are limited to talking at the level of `species` through the backbone. However, should the owners of the custom ranking systems desire, they can easily implement their own translation system to communicate at `subspecies` level. This would require CR2 to build off of CR1, so that their `subspecies` layers were identical. This is achieved through the principle of *extensibility* that got mentioned under [this chapter](#wibbly-wobbly-rank-things).
+
+### Extendable design
+*This section goes into some design-technical aspects. If you are looking to create your own custom ranking, you can't skip this and will need to understand (or find someone else to understand) this section.*
+
+The key take away from this section is that this system of managin ranks is inherently *extensible*. The process is replicate - there's an exposed rank object by the parent tree, which can have subranks attached to it by the child tree. This child tree can then act as a parent tree itself.
+
+```
+Parent
+|
+|- Child
+    |
+    | - Subchild
+```
+
+This is just another relational structure extension. As long as the child rank correctly references the parent's primary key, the subsystem will integrate perfectly while allowing freedom of development by multiple sources.
+
+Also, very importantly, creating a custom ranking system that buds off of the backbone does not require the attention nor permission of any administrators in the parent system.
