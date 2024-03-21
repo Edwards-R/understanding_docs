@@ -1,5 +1,7 @@
 # Defining Ranks
-This is still going to be a hierarchical system. It will still be possible for people to create an infinite number of poorly defined subranks that only work for their specific taxa of interest. However, the *responsibility* for different things is going to shift around.
+The new system is still going to be hierarchical. It will still be possible for people to, for instance, create an infinite number of defined subranks (accurately or not) that only work for their specific taxa of interest. However, the *responsibility* for different things is going to shift around so that doing actions such as this does not affect others unless they desire it to.
+
+Don't worry about this section too much unless you want to understand the inner details of how the whole system is planned out. A general user of the system does not need to know how Understandings ranks differ from 'traditional' ranks, as there is no appreciable difference to the end user.
 
 ## A brief explanation of ranks for engineers
 `Ranks` are a hierarchical structure. A common set of ranks is as follows:
@@ -23,6 +25,9 @@ The immediate problem is that there are an infinite number of ranks, only limite
 Science is about discovery and the proposal of new ideas. Stifling innovation leads to stagnation, which leads to an inability to use new discoveries.
 
 However, non-standardised systems make it very hard to compare from one version to another. The solution is to standardise *some* of the ranks at a fundamental level *and* provide a safe way for these ranks to be built upon in an open fashion. In software-parlance, we'd call this an *extendable* system. Any person can, without contacting, notifying, or bothering the 'original owner', build a new section off of the backbone. Of course, this requires that they follow the system design rules for doing so, but that's not a hard thing to do.
+
+### So why do we have a backbone to start with?
+Well, strictly speaking, we don't design one here. Strictly speaking, we're just making a bunch of optional ranks from the start and going with 'whatever works for the most people' and calling it a backbone. Practically speaking, a backbone is useful because it provides a point for people to communicate from. Systems used by one person aren't very good for sharing information. The establishment of a backbone makes it so that multiple *can* use this system, as well as providing *something* for them to split up as they see fit, without going to the *N*th degree. The backbone is the 'lowest common denominator' of ranks. 
 
 ## Taxonomic backbone
 The goal here is to pick a set of ranks that are universally applied. This should be as small a set as possible, whilst being as specific as possible, whilst being **entirely** globally applicable.

@@ -31,10 +31,12 @@ Consequently, the objective of [being able to identify the type with exact confi
 In this scenario, the *only* specimen which is not subject to this confusion is the type specimen itself.
 
 ## Confusions with Phylogenetic systems
-If you try and sort the same information in two different ways in one system, it won't work. For a practical demonstration, try sorting any set of objects by two parameters, *without* putting one parameter before the other. It won't work. This is why there have been so many problems with trying to label phylogenetic trees with Linnaean heirarchical nomenclature.
+If you try and sort the same information in two different ways in one system, it won't work. For a practical demonstration, try sorting any set of objects by two parameters, *without* putting one parameter before the other. It won't work. This is a large part of why there have been so many problems with trying to label phylogenetic trees with Linnaean heirarchical nomenclature.
+
+The other part is simply the fact that the current 'Linnaean-style' hierarchy doesn't have consistent units to base a correlating system on, so any attempts fail.
 
 ## Regional locks
-Linnaean heirarchical taxonomy is, despite some very hard-fought battles to stop it being so, strictly regional in nature. This can easily be demonstrated with a Venn diagram between taxon A and taxon B. In this scenario, B has been split from A. The populations have an area of overlap, but for the most part have a strict divide:
+Linnaean heirarchical taxonomy is, despite some very hard-fought battles to stop it being so, strictly regional in *application*. Note that this does *not* refer to the **type** itself. This can easily be demonstrated with a Venn diagram between taxon A and taxon B. In this scenario, B has been split from A. The populations have an area of overlap, but for the most part have a strict divide:
 
 ![Venn diagram of overlap](./diagram/regional_locks.drawio.svg)
 
@@ -49,3 +51,6 @@ What is the one action that can be taken that will not result in *any* statement
 *All records of A are now either A or B*
 
 This is a terrible answer is it loses data. All of the records from the north *and* south get smooshed together into the same as the middle, despite it being entirely possible to distinguish between the two based on the records themselves.
+
+Any attempt to solve the question any other way results in one part of the populace being disregarded. This leads to disenfranchisement, splitting, arguments, civil wars etc.
+
