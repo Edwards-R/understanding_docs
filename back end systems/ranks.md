@@ -1,5 +1,5 @@
 # Defining Ranks
-The new system is still going to be based on hierarchical ranks. It will still be possible for people to, for instance, create an infinite number of defined subranks (accurately or not) that only work for their specific taxa of interest. However, the *responsibility* for different things is going to shift around so that doing actions such as this does not affect others unless they desire it to.
+The new Understandings-based system is still going to be based on hierarchical ranks. It will still be possible for people to, for instance, create an infinite number of defined subranks (accurately or not) that only work for their specific taxa of interest. However, the *responsibility* for different things is going to shift around so that doing actions such as this does not affect others unless they desire it to.
 
 Don't worry about this section too much unless you want to understand the inner details of how the whole system is planned out. A general user of the system does not need to know how Understandings ranks differ from 'traditional' ranks, as there is no appreciable difference to the end user.
 
