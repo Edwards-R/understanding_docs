@@ -57,3 +57,10 @@ This is a terrible answer is it loses data. All of the records from the north *a
 Any attempt to solve the question any other way results in one part of the populace being disregarded. This leads to disenfranchisement, splitting, arguments, civil wars etc.
 
 For example, the answer could be 'All A are now B'. This is great for the people who reside in B, but useless for people in the overlap and actively harmful and wrong for people in A.
+
+## Why are these points so important?
+Being unable to precisely resolve information back to the type using modern information, or even being unable to tell whether it is possible to do so, it a major problem for biological recording.
+
+When reading a paper for research, how does the student know the subject taxon is being used pre or post split?
+
+When creating automated record validation/verification rulesets, it is imperative that the correct taxon be referred to. Understandings make this absolute. Attempting automated management of biological data without Understandings, or something that achieves the same function, is setting a project up for failure.
