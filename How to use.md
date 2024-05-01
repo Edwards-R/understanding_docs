@@ -81,12 +81,17 @@ Understandings are based on taxonomic and nomenclatural works, but not all works
 Not all works will fit each point. It is up to the organisers of each individual Understanding scheme to rule on a case-by-case basis.
 
 ## What to do when you don't know the source
-It is frequently, especially for older interpretations, the case that are no works which will meet the above criteria. In such a case, the best resource to use are commonly used identification keys.
+It is frequently the case, especially for older interpretations, that are no works which will meet the above criteria. In such a case, the best resource to use are commonly used identification keys.
 
-In the absolute worse case, and for synonyms only, use the name of the scheme managing the Understandings. For the year, as close a date as possible to where experts suspect the truth to be, or in extreme cases the year of founding of the scheme. For example, the BWARS Understanding scheme has a number of Understandings attributed to 'BWARS, 2017'.
+In the absolute worse case, and for synonyms only, use the name of the scheme managing the Understandings. For the year, as close a date as possible to where experts suspect the truth to be, or in extreme cases the year of founding of the scheme. For example, the BWARS Understanding scheme has a number of Understandings attributed to 'BWARS, 2017', which happen where we cannot identify the source of the synonym in question.
 
 ## 'iso' format Understandings
-The 'iso' - 'In the Sense Of' - is a method for writing Understandings so that they are both human and computer readable. This format consists of the base components of the understanding, a separator, and a format identifier. The 'separator' is used to aid computer interpretation of pure text, akin to the 'comma separated value' format. The 'format identifier' is used to denote that the Understanding is being written following a particular format.
+The 'iso' - 'In the Sense Of' - is a method for writing Understandings so that they are both human and computer readable. This format consists of the base components of
+- the understanding
+- the separator
+- the format identifier
+
+The 'separator' is used to aid computer interpretation of pure text, akin to the 'comma separated value' format frequently found in data handling. The 'format identifier' is used to denote that the Understanding is being written following a particular format.
 
 For the 'default' iso format, the separator is the `:` character and the format identifier is `iso.`.
 
@@ -99,6 +104,9 @@ The format in entirity takes for the form:
 - Pemphredon morio: iso. Dollfuss: 1995
 - Bombus lucorum agg: iso. Murray et al: 2008
 
+### Speaking an iso format Understanding
+People tend to speak iso format understandings in both the acronym and expanded version. Given the Understanding *Bombus lucorum agg: iso. Murray et al: 2008*, this is typically spoken as either 'Bombus locurum *eye-so* Murray et al, 2008' or 'Bombus lucorum *in the sense of* Murray et al, 2008'. For general purpose where people might not be aware of how Understandings work, using *in the sense of* is better as it draws the listener back to the taxonomic root of how Understandings function. Any taxonomist listening should be able to immediately comprehend the Understanding in question and what types it relates to.
+
 ## Aggregates
 Aggregates are used when the Understanding contains multiple types. This situation arises only in the case of a split (including when using a split as a compound operation). The use of an aggregate denotes that the Understanding is thought to represent *multiple* types.
 
@@ -106,7 +114,7 @@ Aggregates are used when the Understanding contains multiple types. This situati
 This section lists the operations that may take place on an Understanding. All operation inputs must be non-aggregates.
 
 ## Split
-A split occurs when an Understanding that was thought to contain one type has been demonstrated to contain multiple types. The output of a split includes an aggregate Understanding, to which all of the previous data should be automatically redirected to by default. There are as many additional outputs as required by the split.
+A split occurs when an Understanding that was thought to contain one type has been demonstrated to contain multiple types. The output of a split includes an aggregate Understanding, to which all of the previous data should be automatically redirected to by default. There are as many additional outputs as required by the split. Only currently valid (i.e. non-synonym) non-aggregate Understandings may be split.
 
 |Input|Output|
 |---|---|
@@ -122,14 +130,14 @@ There are situations where there needs to be a decision made between a `split` a
 
 The answer to this question is best answered by a question itself:
     
->Does the presence of this new taxon, in the data of the extant taxon, represent **significant, widespread confusion**?
+>Does the presence of this new taxon, in the context of the data of the extant taxon, represent **significant, widespread confusion**?
 
-It is *strongly* recommended to consult with taxon experts to resolve this question. Remember that splitting an Understanding invalidates *all* associated data, therefore all other options should be explored prior to splitting. For example, it might be possible to ask recorders to double-check material from the place where the new species arrived, quarantine/suspend potentially suspect data etc. If this *is* the case, then the new taxon can be added as a `create` rather than a `split`.
+It is ***strongly*** recommended to consult with taxon experts to resolve this question of confusion. Remember that splitting an Understanding invalidates *all* associated data, therefore all other options should be explored prior to splitting. For example, it might be possible to ask recorders to double-check material from the place where the new species arrived, quarantine/suspend potentially suspect data etc. If this *is* the case, then the new taxon can be added as a `create` rather than a `split`. However, do not sacrifice *quality* of data for *volume* of data. If the answer is truly 'we can't tell', then accept the action as a split.
 
-It is always possible to modify the Understanding once again at a later date should new information come to light. Don't try to pre-optimise for a hypothetical situation. Understandings are designed to change and manage the effects of change in ways that current taxonomy cannot. Splits that *can* be avoided usually should be avoided, though never at the expensive of accuracy.
+It is always possible to modify the Understanding once again at a later date should new information come to light. *Do not try to pre-optimise for a hypothetical situation*. Understandings are designed to change and manage the effects of change in ways that current taxonomy cannot. Splits that *can* be avoided usually should be avoided, though never at the expensive of accuracy.
 
 ## Merge
-A merge occurs when what were thought to be multiple types are subsequently considered to be one type. No aggregate is neccessary for this operation. There can be as many input as required, but all inputs *must* be **non-aggregates**. Aggregates cannot participate in a `merge`.
+A merge occurs when what were thought to be multiple types are subsequently considered to be one type. No aggregate is neccessary for this operation. There can be as many input as required, but all inputs *must* be **non-aggregates** and **currently valid** i.e. non-synonym. Aggregates and synonyms cannot participate in a `merge`.
 
 |Input|Output|
 |---|---|
@@ -145,9 +153,12 @@ Creates are the rares operation performed, once the system has been populated. B
 `Maintenance` covers all of the odd corrections, errata etc which *can* be performed without causing error. **Perform maintenance operations very *VERY* carefully**. Performing a `maintenance` operation is fraught with risk and the potential to break things, so tread carefully. The best way to use `maintenance` operations is to use them to fix mistakes that were made with other operations, if said operations can't be fixed with a different operation.
 
 ## Compound operations
-A compound operation is a way to refer to 'operations' that the user sees as one 'action', but to the Understand system are composed of multiple steps. Such operations are in frequent enough use to require documentation. When faced with an operation that seems as though it does not fit any of the steps outlined above, the first assumption is that the operation requires rephrasing to fit. Should that fail to produce a result, the second assumption is that the operation being examined is in fact a compound operation, composed of multiple operations that need to be conducted in a specific order.
+A compound operation is a way to refer to 'operations' that the user sees as one 'action', but to the Understanding system are composed of multiple steps. Such operations are in frequent enough use to require documentation. When faced with an operation that seems as though it does not fit any of the steps outlined above, the first assumption is that the operation requires 'rephrasing' to fit. Should that fail to produce a result, the second assumption is that the operation being examined is in fact a compound operation, composed of multiple operations that need to be conducted in a specific order.
 
 When arranging the order of operations, the priority is always to reduce the complexity of the final output. For example, when given a compound operation that requires the merging of species and the splitting of their genus, the merge should be performed first. Doing so ensures that the new genus has only the 'correct' nomenclature associated with it.
+
+### Example
+Annoyingly, I never documented any examples of taxonomists doing this and now the system is clean and running so well that compound operations don't happen. Watch this space.
 
 ## Effect on child ranks
 When an operation is performed on a rank with a child rank (e.g. `genus` has the child rank `species`), the currently valid members of **all** child Understandings are re-created under the resultant Understanding, utilising the same author and year as the parent operation. Aggregate Understandings are not permitted be transferred and are treated in the same way as synonyms.
@@ -211,4 +222,4 @@ The simplest way to understand the reasoning why this is done is to imagine tran
 
 Not only are the two Understandings with the same name, author, and year - which breaks the rules of Understandings - but the Understandings are incredibly unlikely to ever be mentioned in the Seppo: 2032 paper. As a rule, taxonomists do not concern themselves with already resolved nomenclature & taxonomy.
 
-Futhermore, *Bombus scotticus: iso. Pittioni: 1942* is a synonym of *pascuorum: iso. Cameron et al: 2007*. There is, according to all current best practices, no reason to ever make anything called '*Nuevobombus scotticus*'.
+Futhermore, *Bombus scotticus: iso. Pittioni: 1942* is a synonym of *Bombus pascuorum: iso. Cameron et al: 2007*. There is, according to all current best practices, no reason to ever make anything called '*Nuevobombus scotticus*'.
