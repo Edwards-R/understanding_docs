@@ -61,11 +61,14 @@ As a rule of thumb, the best size is 'as *large* as it can be before running int
 Different taxa within a geographic range will often times work best with differently spatially sized Understanding libraries. For example, 'birds' might operate at a European level whilst 'aculeate hymnoptera' at a country level. This is entirely expected. The simplest solution is to not attempt to try to combine significantly different taxa into 'one solution' as, quite bluntly, there is very little gained and a whole lot lost by doing so.
 
 ## Relating an Understandings back to Types
-It is possible to relate an Understanding back to a type, but there are certain steps to follow to ensure that this is done correctly. The first and most important is 'resolving'. 'Resolving' is the term used to identify what the current interpretation of a given Understanding is. The process is entirely analogous to resolving synonymy in traditional nomenclature, only applied to Understandings.
+It is possible to relate an Understanding back to a type, but there are certain steps to follow to ensure that this is done correctly. The first and most important is 'resolving'. 'Resolving' is the term used to identify what the current interpretation of a given Understanding is. The process is entirely analogous to resolving synonymy in traditional nomenclature, only applied to Understandings. Understandings are different because they can differentiate between otherwise identical synonyms.
 
 Once an Understanding is resolved, the `name` of the Understanding should match that of the current interpretation of the type.
 
 Take note that relating an Understanding back to a type 'freezes' the information, and the name will no longer update to reflect changes in nomenclature. For this purpose it is recommended to consider such names as 'snapshots' that are frozen in time and will only be correct at the time of freezing. Don't store data in a frozen state unless you are willing to forgoe the benefits of Understandings!
+
+### Why is there not the type author and year in an Understanding?
+A frequent question/request is along the lines of '*I want to know which type an Understanding refers to, so that I know I'm talking about the same thing as other people*'. Attempting to place the author and year of the type into an Understanding is however prohibited by the Understanding system, as that would count as a *resolved* Understanding. The entire purpose of Understandings is that they provide the required flexibility for changes to happen in nomenclature while preserving the ability, through resolving, to accurately relate to type/types as per the current knowledge.
 
 ## Scoring a source for use in Understandings
 Understandings are based on taxonomic and nomenclatural works, but not all works are considered equal for use. There are four metrics which should be considered when debating whether or not a piece of work may be considered for usage as the basis for an Understanding. These are:
