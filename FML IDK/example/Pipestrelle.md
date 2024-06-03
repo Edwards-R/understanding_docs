@@ -33,5 +33,7 @@ The year of publication of this paper is 1997. Following the standard for splits
 - *Pipistrellus pygmaeus: iso. Barrat et al: 1997*
 - *Pipistrellus pipistrellus agg: iso. Barrat et al: 1997*
 
+All prior records of *Pipistrellus pipistrellus: iso. Kaup: 1829* are therefore considered to be of *Pipistrellus pipistrellus agg: iso. Barrat et al: 1997*, unless the specimen can be redetermined.
+
 ## Notes on the subject paper
 The paper used in this understanding is far from perfect. At no point does it make note of the species that the split resulted in, which had to be sourced from other places. However, the paper is the defining of 'a separate group' and therefore counts as the source of an Understanding - even if incomplete. An taxon expert may well be able to point to an earlier paper which simply has passed me by when attempting to conduct investigation. Indeed, the entire search to find the story of the name has been a delve into fairly 'lost' information. Not in the least due to the paywall that this paper sits behind.
