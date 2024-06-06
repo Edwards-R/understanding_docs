@@ -14,14 +14,14 @@ The last action, as of the time of writing, was the 2011 discovery by Andreas & 
 ### Initial: Saunders, 1896
 The first interpretation of *Bombus lucorum* in relevance here is the interpretation of *Bombus terrestris* by Saunders in 1896:
 
-|Understanding|Current interpretation|
+|Understanding|Resolved interpretation|
 |---|---|
 |Bombus terrestris: iso. Saunders: 1896|Bombus terrestris: iso. Saunders: 1896|
 
 ### Change 1: Sladen, 1912
 *Bombus terrestris: iso. Saunders: 1896* was split by Sladen in 1912, giving us *B. lucorum* and *B. terrestris*. Material identified using Saunders's interpretation is therefore considered to be of the aggregate of these two taxa, unless the specimen is otherwise redetermined.
 
-|Understanding|Current interpretation|
+|Understanding|Resolved interpretation|
 |---|---|
 |Bombus terrestris: iso. Saunders: 1896|Bombus terrestris agg: iso. Sladen: 1912|
 |Bombus terrestris: iso. Sladen: 1912|Bombus terrestris: iso. Sladen: 1912|
@@ -31,7 +31,7 @@ The first interpretation of *Bombus lucorum* in relevance here is the interpreta
 ### Change 2: Murray et al, 2008
 Murray et al's paper splits *B. lucorum: iso. Sladen: 1912* up, separating the cryptic complex within.
 
-|Understanding|Current interpretation|
+|Understanding|Resolved interpretation|
 |---|---|
 |Bombus terrestris: iso. Saunders: 1896|Bombus terrestris agg: iso. Sladen: 1912|
 |Bombus terrestris: iso. Sladen: 1912|Bombus terrestris: iso. Sladen: 1912|
@@ -43,7 +43,37 @@ Murray et al's paper splits *B. lucorum: iso. Sladen: 1912* up, separating the c
 |Bombus lucorum agg: iso. Murray et al: 2008|Bombus lucorum agg: iso. Murray et al: 2008|
 
 ### Non-change 3: Andreas & Horst, 2011
-Critically, this work *does not* affect the BWARS Understandings. This is because the work does not address the geographic area which BWARS covers. Accordingly, the interpretations within the area which BWARS covers are not changed at all, as the current interpretations are all considered to resolve back to their respective type.
+Critically, this work *does not* affect the BWARS Understandings. This is because the work does not address the geographic area which BWARS covers. Accordingly, the interpretations within the area which BWARS covers are not changed at all, as the resolved interpretations are all considered to resolve back to their respective type.
 
-## Current status and types
-This section details which types are contained within each current Understanding.
+## Resolved Understandings and types
+Examining the types which each Understanding relates to paints another picture. Remember that an aggregate is resolved by resolving its components, which is why *Bombus terrestris agg: iso. Sladen: 1912* changes multiple times.
+
+>NB: This section only handles resolved Understandings, as all Understandings **must** be resolved before being related to a type
+
+### Initial: Saunders, 1896
+|Understanding|Type(s)|
+|---|---|
+|Bombus terrestris: iso. Saunders: 1896|Bombus terrestris Linnaeus 1758|
+
+### Change 1: Sladen, 1912
+|Understanding|Type(s)|
+|---|---|
+|Bombus terrestris: iso. Sladen: 1912|Bombus terrestris Linnaeus 1758|
+|Bombus lucorum: iso. Sladen: 1912|Bombus lucorum Linnaeus 1761|
+|Bombus terrestris agg: iso. Sladen: 1912|Bombus terrestris Linnaeus 1758|
+||Bombus lucorum Linnaeus 1761|
+
+### Change 2: Murray et al, 2008
+|Understanding|Type(s)|
+|---|---|
+|Bombus terrestris: iso. Sladen: 1912|Bombus terrestris Linnaeus 1758|
+|Bombus terrestris agg: iso. Sladen: 1912|Bombus terrestris Linnaeus 1758|
+||Bombus lucorum Linnaeus 1761|
+||Bombus cryptarum Fabricius 1775|
+||Bombus magnus Vogt 1911|
+|Bombus lucorum: iso. Murray et al: 2008|Bombus lucorum Linnaeus 1761|
+|Bombus cryptarum: iso. Murray et al: 2008|Bombus cryptarum Fabricius 1775|
+|Bombus magnus: iso. Murray et al: 2008|Bombus magnus Vogt 1911|
+|Bombus lucorum agg: iso. Murray et al: 2008|Bombus lucorum Linnaeus 1761|
+||Bombus cryptarum Fabricius 1775|
+||Bombus magnus Vogt 1911|

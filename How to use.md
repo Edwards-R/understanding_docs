@@ -65,6 +65,8 @@ It is possible to relate an Understanding back to a type, but there are certain 
 
 Once an Understanding is resolved, the `name` of the Understanding should match that of the current interpretation of the type.
 
+Changes to genera may cause problems with binomial nomenclature due to the name on the type specimen no longer matching the current interpretation. For example, *Bombus lucorum* is not a type, the type is *Apis lucorum*. Understandings may not, by specific design, ever impose themselves or make adjustments upon types.
+
 Take note that relating an Understanding back to a type 'freezes' the information, and the name will no longer update to reflect changes in nomenclature. For this purpose it is recommended to consider such names as 'snapshots' that are frozen in time and will only be correct at the time of freezing. Don't store data in a frozen state unless you are willing to forgoe the benefits of Understandings!
 
 ### Why is there not the type author and year in an Understanding?
