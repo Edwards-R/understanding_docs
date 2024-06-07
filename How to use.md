@@ -2,7 +2,7 @@
 This document will guide you through the how, why, and when of managing an Understanding system. It does not cover the root 'why' of why Understandings are neccessary.
 
 ## What they are
-Understandings are a way to, in a standardised, non-taxon-specific manner, differentiate between multiple interpretations of the same taxonomic name. This is achieved by attaching further information to a traditional name e.g. Genus, binomial etc.
+Understandings are a way to, in a standardised, non-taxon-specific manner, differentiate between multiple interpretations of the same taxonomic name. The most common cause of multiple interpretations is the result of a split, where there exists data on both the pre- and post- split name. Separation is achieved by attaching further information to traditional nomenclature e.g. Genus, binomial etc.
 
 ## What makes up an Understanding
 Understandings consist of four parts:
@@ -22,11 +22,21 @@ The author of the Understanding
 The year of the Understanding
 
 ### Count
-An anti-worst-case measure to manage the incredibly unlikely possibility that two Understandings are created in the same year by people with the same last name and in the same team. For example 'Lorelum / Johnson / 2024' and 'Lorelum / Johnson / 2024'. In such a case, one would be given a `count` of 1, the other 2, entirely at the scheme organiser's/taxon expert's discretion.
 
-The count is ommitted where possible to avoid excessive confusion. Any Understandings with no count attached are considered to have a count of `1` by default.
+Whilst every possible measure has been undertaken to avoid the need to use numerical counters in Understandings, there still exists the *possibility* that two identical Understandings are created. The respective international codes of nomenclature *strongly* discourage such a situation for occuring, however the potential still exists. As a system's strength is measured by how well said system handles exceptions rather than rules, `count` provides a clear path to resolve this exception.
+
+In the event that two identical Understandings are created and the respective codes ignored, a sequential number will be applied to each Understanding in turn. Authors are encouraged to use any means they deem relevant to decide on which Understanding goes first, as there is no meaning assigned to the value by the system.
 
 If the name's parent taxa is different e.g. *Lasius niger* & *Sphecodes niger*, there is no need to ever use counts. Counts are *only* when the parent taxa is *also* identical.
+
+#### Example
+|Name|Author|Year|Count|
+|---|---|---:|---:|
+|Lorelum|Johnson|2024|1|
+|Lorelum|Johnson|2024|2|
+
+#### Writing Counts
+The count is ommitted where possible to avoid excessive confusion. Any Understandings with no count attached are considered to have a count of `1` by default.
 
 ### What are the author and years referring to
 These are the author(s) of the work which created the need for a new Understanding, and the year in which it was accepted. The author and year of the *name* in the traditional taxonomic sense does not matter here.
