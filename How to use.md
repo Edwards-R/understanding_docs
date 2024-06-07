@@ -70,24 +70,26 @@ Changes to genera may cause problems with binomial nomenclature due to the name 
 Take note that relating an Understanding back to a type 'freezes' the information, and the name will no longer update to reflect changes in nomenclature. For this purpose it is recommended to consider such names as 'snapshots' that are frozen in time and will only be correct at the time of freezing. Don't store data in a frozen state unless you are willing to forgoe the benefits of Understandings!
 
 ### Resolving an aggregate
-In order to understand the potential type(s) contained within an aggregate Understanding, there is an additional step to follow. Each aggregate is composed of multiple Understandings. For example, *Bombus terrestris agg: iso. Sladen: 1912* is composed of
+In order to understand the potential type(s) contained within an aggregate Understanding there is an additional process to follow. Each aggregate Understanding is composed of multiple Understandings. For example, *Bombus terrestris agg: iso. Sladen: 1912* is composed of
 
  - *Bombus terrestris: iso. Sladen: 1912*
  - *Bombus lucorum: iso. Sladen: 1912*
 
-The first step is to identify these components, with the critical resource being the work which the Understanding references - in this case 'Sladen, 1912'. Once the components have been identified, they should be resolved to their current Understandings.
+The first step in resolving the aggregate is to identify these components, with the critical resource being the work which the Understanding references. In this case, the critical resource referenced is 'Sladen, 1912'. Once the components of the aggregate have been identified, they in turn should be resolved to their current Understandings.
 
  - *Bombus terrestris: iso. Sladen: 1912*
  - *Bombus lucorum agg: iso. Murray et al: 2008*
 
-Should this resolution result in an aggregate, repeat the process until it does not, adding all potential non-aggregate Understandings to the list of contained Understandings. The full list of non-synonym Understandings contained within *Bombus terrestris agg: iso. Sladen: 1912* is therefore:
+Should this resolution result in an aggregate, repeat the process until it does not. Add all resulting non-aggregate Understandings to the list of contained Understandings.
+
+The full list of non-synonym Understandings contained within *Bombus terrestris agg: iso. Sladen: 1912* is therefore:
 
  - *Bombus terrestris: iso. Sladen: 1912*
  - *Bombus lucorum: iso. Murray et al: 2008*
  - *Bombus cryotarum: iso. Murray et al: 2008*
  - *Bombus magnus: iso. Murray et al: 2008*
 
-As of time of writing, this resolves to:
+As of time of writing, these relate to:
 
 - *Bombus terrestris* Linnaeus 1758
 - *Bombus lucorum* Linnaeus 1761
