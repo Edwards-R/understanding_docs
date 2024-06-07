@@ -69,8 +69,33 @@ Changes to genera may cause problems with binomial nomenclature due to the name 
 
 Take note that relating an Understanding back to a type 'freezes' the information, and the name will no longer update to reflect changes in nomenclature. For this purpose it is recommended to consider such names as 'snapshots' that are frozen in time and will only be correct at the time of freezing. Don't store data in a frozen state unless you are willing to forgoe the benefits of Understandings!
 
+### Resolving an aggregate
+In order to understand the potential type(s) contained within an aggregate Understanding, there is an additional step to follow. Each aggregate is composed of multiple Understandings. For example, *Bombus terrestris agg: iso. Sladen: 1912* is composed of
+
+ - *Bombus terrestris: iso. Sladen: 1912*
+ - *Bombus lucorum: iso. Sladen: 1912*
+
+The first step is to identify these components, with the critical resource being the work which the Understanding references - in this case 'Sladen, 1912'. Once the components have been identified, they should be resolved to their current Understandings.
+
+ - *Bombus terrestris: iso. Sladen: 1912*
+ - *Bombus lucorum agg: iso. Murray et al: 2008*
+
+Should this resolution result in an aggregate, repeat the process until it does not, adding all potential non-aggregate Understandings to the list of contained Understandings. The full list of non-synonym Understandings contained within *Bombus terrestris agg: iso. Sladen: 1912* is therefore:
+
+ - *Bombus terrestris: iso. Sladen: 1912*
+ - *Bombus lucorum: iso. Murray et al: 2008*
+ - *Bombus cryotarum: iso. Murray et al: 2008*
+ - *Bombus magnus: iso. Murray et al: 2008*
+
+As of time of writing, this resolves to:
+
+- *Bombus terrestris* Linnaeus 1758
+- *Bombus lucorum* Linnaeus 1761
+- *Bombus cryptarum* Fabricius 1775
+- *Bombus magnus* Vogt 1911
+
 ### Why is there not the type author and year in an Understanding?
-A frequent question/request is along the lines of '*I want to know which type an Understanding refers to, so that I know I'm talking about the same thing as other people*'. Attempting to place the author and year of the type into an Understanding is however prohibited by the Understanding system, as that would count as a *resolved* Understanding. The entire purpose of Understandings is that they provide the required flexibility for changes to happen in nomenclature while preserving the ability, through resolving, to accurately relate to type/types as per the current knowledge.
+A frequent question/request is along the lines of '*I want to know which type an Understanding refers to, so that I know I'm talking about the same thing as other people*'. Attempting to place the author and year of the type into an Understanding is prohibited by the Understanding system, as that would count as a *resolved* Understanding. The entire purpose of Understandings is that they provide the required flexibility for changes to happen in nomenclature while preserving the ability, through resolving, to accurately relate to type/types as per the current knowledge.
 
 ## Scoring a source for use in Understandings
 Understandings are based on taxonomic and nomenclatural works, but not all works are considered equal for use. There are four metrics which should be considered when debating whether or not a piece of work may be considered for usage as the basis for an Understanding. These are:

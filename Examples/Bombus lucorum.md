@@ -66,14 +66,14 @@ Examining the types which each Understanding relates to paints another picture. 
 ### Change 2: Murray et al, 2008
 |Understanding|Type(s)|
 |---|---|
-|Bombus terrestris: iso. Sladen: 1912|Bombus terrestris Linnaeus 1758|
-|Bombus terrestris agg: iso. Sladen: 1912|Bombus terrestris Linnaeus 1758|
-||Bombus lucorum Linnaeus 1761|
-||Bombus cryptarum Fabricius 1775|
-||Bombus magnus Vogt 1911|
-|Bombus lucorum: iso. Murray et al: 2008|Bombus lucorum Linnaeus 1761|
-|Bombus cryptarum: iso. Murray et al: 2008|Bombus cryptarum Fabricius 1775|
-|Bombus magnus: iso. Murray et al: 2008|Bombus magnus Vogt 1911|
-|Bombus lucorum agg: iso. Murray et al: 2008|Bombus lucorum Linnaeus 1761|
-||Bombus cryptarum Fabricius 1775|
-||Bombus magnus Vogt 1911|
+|Bombus terrestris: iso. Sladen: 1912|*Bombus terrestris* Linnaeus 1758|
+|Bombus terrestris agg: iso. Sladen: 1912|*Bombus terrestris* Linnaeus 1758|
+||*Bombus lucorum* Linnaeus 1761|
+||*Bombus cryptarum* Fabricius 1775|
+||*Bombus magnus* Vogt 1911|
+|Bombus lucorum: iso. Murray et al: 2008|*Bombus lucorum* Linnaeus 1761|
+|Bombus cryptarum: iso. Murray et al: 2008|*Bombus cryptarum* Fabricius 1775|
+|Bombus magnus: iso. Murray et al: 2008|*Bombus magnus* Vogt 1911|
+|Bombus lucorum agg: iso. Murray et al: 2008|*Bombus lucorum* Linnaeus 1761|
+||*Bombus cryptarum* Fabricius 1775|
+||*Bombus magnus* Vogt 1911|
