@@ -39,27 +39,27 @@ If the name's parent taxa is different e.g. *Lasius niger* & *Sphecodes niger*, 
 The count is ommitted where possible to avoid excessive confusion. Any Understandings with no count attached are considered to have a count of `1` by default.
 
 ### What are the author and years referring to
-These are the author(s) of the work which created the need for a new Understanding, and the year in which it was accepted. The author and year of the *name* in the traditional taxonomic sense does not matter here.
+The author and year of the Understanding refer to the author(s) of the work which created the need for a new Understanding, and the year in which it was accepted. The author and year of the *name* in the traditional taxonomic sense does not feature here, as that aspect is handled by a different part of the system.
 
 ## Directionality of time
-It is never acceptable to 're-use' a previous work to attempt to 'restore' a taxon. 
+It is never acceptable to 're-use' a previous work to attempt to 'restore' a taxon's Understanding to a previous state. 
 
-For example, taxon `A` is split into `B`,`C`,`D` and `E`. It is subsequently agreed that this split was in error, and that `A` represents the current interpretation of the taxon. In this scenario, the author and year of `A` **must not be reused**. This is because the work of `A` *does not reflect the split that happened between then and now*.
+For example, taxon `A` is split into `B`,`C`,`D` and `E`. It is subsequently agreed that this splitting was in error, and that `A` represents the correct interpretation of the taxon. In this scenario, the author and year of `A` **must not be reused**. This is because the work of `A` *does not reflect the split that happened between the declaration of `A` and now*.
 
-The correct solution is to publish a new work that outlines the relevant history, states the work that was done to rebuke the split, sets out the new interpretation, name etc, and provides a method to identify the new interpretation. The resulting piece of work then becomes the basis for the Understanding.
+The correct solution is to publish a new work, `F`, that outlines the relevant history, states the work that was done to rebuke the split, sets out the new interpretation, name etc, and provides a method to identify the new interpretation. The resulting piece of work then becomes the basis for the Understanding.
 
-It *is*, however, permitted to reference the work that led to `A` in the new work. At the very simplest level, the following text could be considered the basis of a new Understanding:
+It *is*, however, permitted to reference the work that led to `A` in the work for the revertion of the split. At the very simplest level, the following text could be considered the basis of a new Understanding:
 
 >The split of `A` was wrong. We looked at the type specimens and a range of specimens collected from the same region and could not reproduce the results. The interpretation of `A` according to *author* is therefore reinstated.
 
 ## Geographic restrictions and why they are used
-Understanding systems are strictly limited in geographic scope. For example, the BWARS Understanding system only applies to Great Britain, the Channel Isles, and Ireland. The restriction is due to the fact that the *confusions* that Understandings attempt to solve are regional.
+Understandings are strictly limited in geographic scope. For example, the BWARS Understanding system only applies to Great Britain, the Channel Isles, and Ireland. The restriction is due to the fact that the *confusions* that Understandings attempt to solve are regional.
 
 ### What is the best sized region?
 The size of the regions that Understandings apply to are not fixed. Many factors influence the size of these areas, including
 
 - The geographic spread of the taxa in question
-- The distance that the taxa regularly travel in their lifetime
+- The distance that individuals of the taxa regularly travel in their lifetime
 - The presence of other taxa with potential for confusion
 - Funding
 - Expert knowledge
@@ -68,7 +68,7 @@ The size of the regions that Understandings apply to are not fixed. Many factors
 As a rule of thumb, the best size is 'as *large* as it can be before running into significant problems'. In order to know whether a problem is significant, ask a relevant expert. Larger systems require less administration but reduce flexibility.
 
 ### Different sizes for different taxa
-Different taxa within a geographic range will often times work best with differently spatially sized Understanding libraries. For example, 'birds' might operate at a European level whilst 'aculeate hymnoptera' at a country level. This is entirely expected. The simplest solution is to not attempt to try to combine significantly different taxa into 'one solution' as, quite bluntly, there is very little gained and a whole lot lost by doing so.
+Different taxa within a geographic range will often times work best with differently spatially sized Understanding libraries. For example, 'birds' might operate at a European level whilst 'aculeate hymnoptera' at a country level. This is entirely expected. The simplest solution is to not attempt to try to combine significantly different taxa into 'one solution' as, quite bluntly, there is very little gained and a whole lot lost by doing so. Understandings are designed to be modular in their construction, enabling the formation of however many different sub-systems as required.
 
 ## Relating an Understandings back to Types
 It is possible to relate an Understanding back to a type, but there are certain steps to follow to ensure that this is done correctly. The first and most important is 'resolving'. 'Resolving' is the term used to identify what the current interpretation of a given Understanding is. The process is entirely analogous to resolving synonymy in traditional nomenclature, only applied to Understandings. Understandings are different because they can differentiate between otherwise identical synonyms.
