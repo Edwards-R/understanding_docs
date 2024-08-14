@@ -33,11 +33,38 @@ According to the 'sensu' nomenclature system, then the name for this is *Andrena
 ### Numerical sequences
 An alternative to the utilisation of epithets is to utilise numerical identifiers. Each 'individual' name is given a numerical identifier, which is then promoted for use instead of the name. Such a system is considered highly inferior because
 
-- it replaces the name that taxonomists and biologists are used to
-- humans are terrible at remembering random sequences of numbers
-- it doesn't fix anything, just hides the problem under another layer of obfuscation
+- It replaces the name that taxonomists and biologists are used to
+- Humans are terrible at remembering random sequences of numbers
+- It doesn't fix anything, just hides the problem under another layer of obfuscation
 
-Multiple such numerical systems exist. The UK has the Biological Record Centre system (now defunct, as it was expected to be) and the UK Species Inventory (which makes several critical missteps). 
+Multiple such numerical systems exist. The UK has the Biological Record Centre system and the UK Species Inventory. None of these see significant numerical use by users.
 
 ## Introducing Understandings
-Understandings are a means to sidestep the usage of 'sensu' epithets 
+Understandings are a means to sidestep the usage of 'sensu' epithets, as well as the need to use numerical representations of a name. An Understanding represents a particular interpretation of a name. For example, the three interpretations of *Andrena scotica* given above are Understandings. These are reprinted below:
+
+- *Andrena scotica* in the sense of Perkins, 1916
+- *Andrena scotica* in the sense of Else & Edwards, 2018
+- *Andrena scotica* in the sense of Wood et al, 2022
+
+### Abbreviating Understandings
+Understandings are very long to write out in full. Accordingly, an Understanding may be written in short form. The 'default' method of doing so is called the 'iso' - pronounced 'eye-so' - method:
+
+- *Andrena scotica*: iso. Perkins: 1916
+- *Andrena scotica*: iso. Else & Edwards: 2018
+- *Andrena scotica*: iso. Wood et al: 2022
+
+The iso format satisfies every fulfillable requirement encountered so far. Specifically:
+
+- Be easily distinguished from a reference to a type
+- Not overlap any extant system formatting
+- Be easily readable by a human
+- Be easily comprehensible by a human
+- Be easily parsed by a computer
+- Be *very* close to unique
+- Be self-contained as much as possible
+
+## What makes an Understanding
+An Understanding represents an interpretation of a type. In no way, shape, or form can an Understanding replace a type. Accordingly, an Understanding is created when an interpretation of a type changes. By far the best way to explain the basics of where and when Understandings are created is [with an example](./Examples/Bombus%20lucorum.md).
+
+## Relating an Understanding back to types
+In order to know what type, or types, are contained within an Understanding, an Understanding must be *resolved*. Resolving an Understanding removes the ability of Understandings to adjust across time, and as such should be performed at point of use rather than point of storage. Resolving an Understanding can be done 
