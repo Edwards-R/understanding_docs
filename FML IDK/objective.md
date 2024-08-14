@@ -13,4 +13,4 @@ The system must adapt to regional changes in understanding
 ## What counts as anyone
 Taxonomy is not a unified field. There exists competing ideas of how taxa should be grouped, organised, and stored. The system's objective is to enable a system by which these competing systems can communicate with the minimum loss of information possible.
 
-This *includes* moving between heirarchical Linnaean and phylogenetic nomenclatural systems.
+This *includes* moving between hierarchical Linnaean and phylogenetic nomenclatural systems.
