@@ -63,8 +63,41 @@ The iso format satisfies every fulfillable requirement encountered so far. Speci
 - Be *very* close to unique
 - Be self-contained as much as possible
 
-## What makes an Understanding
+### What makes an Understanding
 An Understanding represents an interpretation of a type. In no way, shape, or form can an Understanding replace a type. Accordingly, an Understanding is created when an interpretation of a type changes. By far the best way to explain the basics of where and when Understandings are created is [with an example](./Examples/Bombus%20lucorum.md).
 
-## Relating an Understanding back to types
-In order to know what type, or types, are contained within an Understanding, an Understanding must be *resolved*. Resolving an Understanding removes the ability of Understandings to adjust across time, and as such should be performed at point of use rather than point of storage. Resolving an Understanding can be done 
+### Relating an Understanding back to types
+In order to know what type, or types, are contained within an Understanding, an Understanding must be *resolved*. Resolving an Understanding removes the ability of Understandings to adjust across time, and as such should be performed at point of use rather than point of storage. Resolving an Understanding can be done in two ways:
+
+- By using the knowledge of the resolver
+- By using a system designed to handle and manage and resolve Understandings
+
+It is recommended to use the latter, as it removes yet another 'need to know in order to know' facet of nomenclature. What such a system entails will be discussed later in the technical documentation.
+
+### Understandings may be regional
+Unlike types, a dictionary of Understandings may be limited in geographic and taxonomic scope to suit the needs of the user base. As such, multiple different, overlapping dictionaries of Understandings may co-exist without conflict. Co-existence is possible because each Understanding resolves back to types, giving a common attribute which may be used for comparison. It is up to the user to determine which dictionaries they deem useful, accurate, or applicable.
+
+There is no suggested minimum or maximum absolute size to these dictionaries. The best guidance is to make the lists as widely applicable as possible, whilst keeping them flexible enough to be useful. Multiple small dictionaries require more management, whilst monolithic dictionaries lose the flexibility that they require.
+
+As an example, many invertebrate terrestrial taxa will likely operate best at country level. Larger animals, in particular those with highly mobile behaviour, will likely operate better at larger scales, sometimes even global.
+
+## An Engineer's explanation
+The following section lays out the logical proof of why Understandings are required to prevent the deterioration of nomenclature over time. The explanation relies on fundamental rules of logical data structures, formalised by E.F. Codd. In particular, the rule that each individual object requires a unique identifier to prevent confusion.
+
+### 2NF to 3NF
+The current way of handling nomenclature is second normal form. The current system focuses on the structuring of the reference objects and completely misses the fact that references to those objects are just that - *references* - and not the objects themselves. In true textbook manner, the result is a one-to-many to one-to-many relationship. The solution is, again, textbook, and involves the creation of the missing component to turn a potential many to many into two one to one-to-many relationships.
+
+### Composite keys to avoid serials or hashes
+Primary keys are designed as a composite of the information presented (parent/name/author/year/count), with count existing as a deadlock-breaker. Composite keys are specifically selected here as the target audience tends to be fragmented and disparate, with a generally low awareness and interest in managing data systems. The information in the composite key, other than 'count', are all (to some degree) familiar to the target audience, increasing the probability of correct usage.
+
+### Reading Understandings
+Understandings are designed to be machine readable via regex.
+
+#### Space-agnostic regex
+`^([^:]+): {0,1}iso. {0,1}([^:]+): {0,1}(.+)`
+
+|Capture group|Contents|
+|:---:|:---:|
+|1|Name|
+|2|Author|
+|3|Year|

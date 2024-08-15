@@ -7,7 +7,7 @@ The current way of handling nomenclature is second normal form. It focuses on th
 Primary keys are designed as a composite of the information presented (parent/name/author/year/count), with count existing as a deadlock-breaker. Composite keys are specifically selected here as the target audience tends to be fragmented and disparate, with a generally low awareness and interest in managing data systems. The information in the composite key, other than 'count', are all (to some degree) familiar to the target audience, increasing the probability of correct usage.
 
 ## Reading Understandings
-Understandings are designed to be machine readable via tools such as regex.
+Understandings are designed to be machine readable via regex.
 
 ### Space-agnostic regex
 `^([^:]+): {0,1}iso. {0,1}([^:]+): {0,1}(.+)`
