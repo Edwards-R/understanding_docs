@@ -22,7 +22,6 @@ The author of the Understanding
 The year of the Understanding
 
 ### Count
-
 Whilst every possible measure has been undertaken to avoid the need to use numerical counters in Understandings, there still exists the *possibility* that two identical Understandings are created. The respective international codes of nomenclature *strongly* discourage such a situation for occuring, however the potential still exists. As a system's strength is measured by how well said system handles exceptions rather than rules, `count` provides a clear path to resolve this exception.
 
 In the event that two identical Understandings are created and the respective codes ignored, a sequential number will be applied to each Understanding in turn. Authors are encouraged to use any means they deem relevant to decide on which Understanding goes first, as there is no meaning assigned to the value by the system.
