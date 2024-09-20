@@ -3,16 +3,16 @@
 ## Brief history
 *Bombus lucorum* is *the* poster child for Understandings, as the name '*Bombus lucorum*' has been used worldwide for a wide range of different 'things' at different times and in different places. The name itself stems from *Apis lucorum*, described by Linnaeus in 1761. The genus *Bombus* was created in by Latreille in 1802. The type specimen itself has been changed at least once, with the current specimen being determined by M.C. Day in 1977 (correctly, though still somewhat confusingly, labelled as *Apis lucorum Linnaeus*).
 
-Alongside these broad historic actions, there have been a plethora of other manipulations. What we current know of as *Bombus lucorum* has had a long and rich tradition of being confused and lumped with various other taxa. The story of the modern interpretation of *Bombus lucorum* starts with the splitting of the 1896 Saunders interpretation of *Bombus terrestris* by Sladen in 1912, giving us *B. terrestris* and *B. lucorum*. Rumblings of a cryptic complex within *B. lucorum* abounded for many years, though never reaching enough of a concensus to provide a definitive separation.
+Alongside these broad historic actions, there have been a plethora of other manipulations. What we current know of as *Bombus lucorum* has had a long and rich tradition of being confused and lumped with various other taxa. The story of the modern interpretation of *Bombus lucorum* starts with the splitting of the 1896 Saunders interpretation of *Bombus terrestris* by Sladen in 1912, giving us *B. terrestris* and *B. lucorum*. Rumblings of a cryptic complex within *B. lucorum* abounded for many years, though never reaching enough of a concensus to settle a definitive separation.
 
-With the advent and proliferation of genetic sequencing, the cryptic complex was finally broken into. Various regions accepted the complex at various times, as the evidence for how widespread the cryptic complex reached took time to assemble. In the BWARS sphere of responsibility, the critical work which separated the cryptic complex surrounding *B. lucorum* was performed by Murray et al in 2008. This work conclusively demonstrated the presence of *B. lucorum*, *B. magnus*, and *B. cryptarum* in the UK and Ireland. A further species was hinted at during analysis, and still rumbles around to date, but no work has yet managed to fully separate this potential.
+With the advent and proliferation of genetic sequencing, the cryptic complex was finally broken into. Over time, more regions recognised the existence of the cryptic complex within their sphere of responsibility. In the BWARS sphere of responsibility, the critical work which separated the cryptic complex surrounding *B. lucorum* was performed by Murray et al. in 2008. This work conclusively demonstrated the presence of *B. lucorum*, *B. magnus*, and *B. cryptarum* in the UK and Ireland. A further species was hinted at during analysis, but no work has yet managed to fully prove the existence of an additional species within the complex.
 
-The last action, as of the time of writing, was the 2011 discovery by Andreas & Horst that what was termed *Bombus lucorum* in China is a cryptic complex containing *B. lucorum* and *B. minshanicola*.
+The last action, as of the time of writing, was the 2011 discovery by Andreas & Horst that *Bombus lucorum* in China was a cryptic complex consisting of *B. lucorum* and *B. minshanicola*.
 
 ## BWARS Understandings
 
 ### Initial: Saunders, 1896
-The first interpretation of *Bombus lucorum* in relevance here is the interpretation of *Bombus terrestris* by Saunders in 1896:
+The first relevant interpretation of *Bombus lucorum* is by Saunders in 1896:
 
 |Understanding|Resolved interpretation|
 |---|---|
@@ -29,7 +29,7 @@ The first interpretation of *Bombus lucorum* in relevance here is the interpreta
 |Bombus terrestris agg: iso. Sladen: 1912|Bombus terrestris agg: iso. Sladen: 1912|
 
 ### Change 2: Murray et al, 2008
-Murray et al's paper splits *B. lucorum: iso. Sladen: 1912* up, separating the cryptic complex within.
+Murray et al's paper splits up *B. lucorum: iso. Sladen: 1912*, separating the cryptic complex within.
 
 |Understanding|Resolved interpretation|
 |---|---|
@@ -43,10 +43,10 @@ Murray et al's paper splits *B. lucorum: iso. Sladen: 1912* up, separating the c
 |Bombus lucorum agg: iso. Murray et al: 2008|Bombus lucorum agg: iso. Murray et al: 2008|
 
 ### Non-change 3: Andreas & Horst, 2011
-Critically, this work *does not* affect the BWARS Understandings. This is because the work does not address the geographic area which BWARS covers. Accordingly, the interpretations within the area which BWARS covers are not changed at all, as the resolved interpretations are all considered to resolve back to their respective type.
+Andreas & Horst's work *does not* affect the BWARS Understandings as the work does not address the geographic area which BWARS covers.
 
 ## Resolved Understandings and types
-Examining the types which each Understanding relates to paints another picture. Remember that an aggregate is resolved by resolving its components, which is why *Bombus terrestris agg: iso. Sladen: 1912* changes multiple times.
+Examining the types each Understanding relates to paints another picture. Remember that an aggregate is resolved by resolving its components, which is why *Bombus terrestris agg: iso. Sladen: 1912* changes multiple times.
 
 >NB: This section only handles resolved Understandings, as all Understandings **must** be resolved before being related to a type
 
