@@ -1,9 +1,9 @@
 # Understandings as an archival format for biological nomenclature
 
-## Abstract
-This document introduces 'Understandings' as an archival format for biological nomenclature, as well as guidance for their usage. An archival format is a way of storing data designed to maintain relevance over long periods of time, without substantial external input.
+## Introduction
+This document introduces 'Understandings' as an archival format for biological nomenclature, as well as guidance for their usage. Understandings are a way to, in a standardised, non-taxon-specific manner, differentiate between multiple interpretations of the same taxonomic name. Separation is achieved by attaching further information to traditional nomenclature.
 
-The archival nature of Understandings is designed to maintain the precision of biological nomenclature over time, in ways that conventional nomenclature cannot. Maintaining precision of a name against taxonomic types is a high priority for many systems, including:
+The archival nature of Understandings is designed to maintain the precision of biological nomenclature over time, in ways that conventional nomenclature cannot, without requiring substantial external input. Maintaining precision of a name against taxonomic types is a high priority for many systems, including:
 
 - Biological recording schemes
 - Academic writing
@@ -15,32 +15,30 @@ Currently, there is a lack of awareness as to what *can* be done - with current 
 
 An Understandings system may be run in many formats, from highly complex, specifically designed, custom packages, all the way to a piece of paper or Excel spreadsheet. Understandings systems running on lower-technology solutions, such as paper or Excel, are advised to focus on small sub-groupings of < 50 taxa due to the workload of manual management. However, it *is* possible to manage larger groupings using lower-technology solutions.
 
-Understandings are designed to be modular in taxonomic and geographic scope, as well as being non-exclusive in application. All Understandings are constructed on the backbone of taxonomic types. If two Understandings systems are utilising the same backbone of taxonomic types which, under the International Commission of Biological Nomenclature and International Commission of Zoological Nomenclature, users *should* be, translation of information between any number of Understandings systems is precise and painless.
+Understandings are designed to be modular in taxonomic and geographic scope, as well as being non-exclusive in application. All Understandings are constructed on the backbone of taxonomic types. If two Understandings systems are utilising the same backbone of taxonomic types, translation of information between any number of Understandings systems is precise and painless. Utilising a singular backbone ensures that Understandings are compliant with the International Commission of Biological Nomenclature and International Commission of Zoological Nomenclature.
 
 > As of right now, the system has not been tested on other biological domains. There are no reasons why Understandings would fail when applied to these other domains, but this document will only cover known and tested application of Understandings.
 
 ## Nomenclature/Taxonomic disjunction
-A nomenclatural disjunction occurs when research determines that the interpretation of a given taxon must change. The change does not have to be global, a disjunction may occur within in a limited geographic scope. Disjunctions are typically most evident when a taxon is split. In such a case, there exists extant data labelled with a name which, without further modification or interpretation, has the potential to refer to multiple taxa.
+A nomenclatural disjunction occurs when research determines that the interpretation of a given taxon must change. The change does not have to be global, a disjunction may occur within in a limited geographic scope. Disjunctions are typically most evident when a taxon is split. In such a case, there exists data labelled with a name which has the potential to refer to multiple taxa, without further modification or interpretation.
 
 ### Example
-> This section references '*Cryptic species diversity in a widespread bumble bee complex revealed using mitochondrial DNA RFLPs*' by Murray et al, 2008. DOI: `10.1007/s10592-007-9394-z`
+> This section references '*Cryptic species diversity in a widespread bumble bee complex revealed using mitochondrial DNA RFLPs*' by Murray et al., 2008. DOI: `10.1007/s10592-007-9394-z`
 
-In 2008, Murray et al demonstrated that what was known as *Bombus lucorum* in Great Britain and Ireland was a composite of three types:
+In 2008, Murray et al. demonstrated that what *was* known as *Bombus lucorum* in Great Britain and Ireland was a composite of three types:
 
 - *Bombus lucorum*
 - *Bombus cryptarum*
 - *Bombus magnus*
 
-The spread of these three taxa is ubiquitous in both geographic and temporal coverage, with no 'generic' method available to separate specimens.The only reliable method of separating these taxa currently remains at redetermination of individual specimens using genetic or chemical methods. Accordingly, all extant records of *Bombus lucorum* (as well as historic uses of *Bombus cryptarum* and *Bombus magnus*) are, according to the taxonomic work of Murray et al, to be considered as a mixture of *Bombus lucorum/cryptarum/magnus*.
+The spread of these three taxa is ubiquitous, both geographically and temporally, with no 'generic' method available to separate specimens. Currently, the only reliable method of separating these taxa is redetermination of individual specimens using genetic or chemical methods. All extant records of *Bombus lucorum* (as well as historic uses of *Bombus cryptarum* and *Bombus magnus*) are, according to the taxonomic work of Murray et al., to be considered as a mixture of *Bombus lucorum/cryptarum/magnus*.
 
-Examination of the GBIF entry for *Bombus lucorum* as of 2024-09-19 (https://www.gbif.org/species/1340298) still shows a large volume of data for '*Bombus lucorum*' in the geographic region covered by Murray et al. All of this data, other than ~200 records which have been genetically sequenced, is of the mixture rather than the singular type.
+Examination of the GBIF entry for *Bombus lucorum* as of 2024-09-19 (https://www.gbif.org/species/1340298) still shows a large volume of data for '*Bombus lucorum*' in the geographic region covered by Murray et al.. All of this data, other than ~200 records which have been genetically sequenced, is of the mixture rather than the singular type. Because Murray et al.'s work only addresses a limited geographic region, the changes impacts only that limited region. No new types were created as a result of this work, meaning that this work references a change in the *application* of types, rather than a change to types themselves.
 
-The multiple, uncontrolled, interpretations of a singular type, generated by changes, prevent clear communication. In turn, poor communication results in lower potential for collaboration. A core pillar of the extant taxonomic system is the facilitation of clear communication. Accordingly, the creation of a version control solution is a high priority.
-
-> Because the research performed only addresses a limited geographic region, the change impacts only that limited region. No new types were created as a result of this work, meaning that this work references a change in the *application* of types, rather than a change to types themselves.
+The multiple, uncontrolled, interpretations of a singular type prevent clear communication, resulting in lower potential for collaboration. The prevention of clear communication conflicts with the existing taxonomic system's goal of facilitating clear communication. The creation of a version control solution is therefore a high priority.
 
 ## An archival format
-Archival formats are formats designed to store information accurately for long periods of time. Understandings are an archival format for biological nomenclature which use a form of version control to operate. Within an Understanding system, any member Understanding may be interrogated to find out which currently valid types are contained within that Understanding. As information and knowledge surrounding taxa changes, the Understanding system ensures that nomenclatural changes are applied to member Understandings with the least amount of effort and intervention possible.
+> Archival formats are formats designed to store information accurately for long periods of time. Understandings are an archival format for biological nomenclature which use a form of version control to operate. Within an Understanding system, any member Understanding may be interrogated to find out which currently valid types are contained within that Understanding. As information and knowledge surrounding taxa changes, the Understanding system ensures that nomenclatural changes are applied to member Understandings with the least amount of effort and intervention possible.
 
 > It should be noted that there are a great many situations where it will take the redetermination of a specimen (or voucher of a specimen) in order to arrive at a modern single-type interpretation. In such situations, the Understandings system will return the collection of *potential* member types.
 
@@ -48,20 +46,20 @@ Archival formats are formats designed to store information accurately for long p
 The Understandings system is based in relational databasing, using a third normal form design. The entire purpose of Understandings is to maintain the *relation* between interpretations of taxonomy and types. Accordingly, a relational database is the logical place for such a system. Reaching third normal form guarantees continued precision of the interpretations over time, satisfying the archival requirements of the system.
 
 ## Understandings and types
-- In an Understandings world, types are composed of
+- In an Understandings world, types are composed of:
   - physical specimen & genetic sequencing
   - a name
   - a description
 - A description is the documentation which establishes the limits of the taxonomic 'region' claimed by the taxon
   - Everything that falls within this region *is* this taxon
   - Everything that falls outside this region *is not* this taxon
-
+---
 The composition of a type is formalised when considered as part of the Understandings system. The components are divided into three portions:
 - The name, author, and year of declaration of the type. This forms the 'identifier' for the type
 - A physical specimen, as well as materials derived from that individual specimen e.g. genetic barcode, whole genome sequence
 - A description which establishes the limits of the taxonomic region claimed by the taxon.
 
-Of these parts, the identifier (name, author, and year) may not be changed. The other two parts may be changed, generating a new Understanding when they are. The strict declaration of these aspects, and their handling, is the core of the Understandings system's background. Notably, the declaration enables the safe declaration of a replacement type specimen. All material identified based on a replacement type specimen will be immediately distinguishable from any other type specimen. Should an error be made in the assignment of a replacement type specimen, the impact of that error will be entirely minimised. Material identified according to the erroneous designation will be immediately apparent, whilst material identified not using the erroneous designation will not be affected at all.
+Of these parts, the identifier (name, author, and year) may not be changed. The other two parts may be changed, generating a new Understanding when they are. The strict declaration of these aspects, and their handling, is the core of the Understandings system's background. Notably, the separation of the components enables the safe declaration of a replacement type specimen. All material identified based on a replacement type specimen will be immediately distinguishable from any other type specimen. Should an error be made in the assignment of a replacement type specimen, the impact of that error will be minimised. Material identified according to the erroneous designation will be immediately apparent, whilst material identified not using the erroneous designation will not be affected at all.
 
 The ability to safely declare a new type specimen, whilst safeguarding extant data, has been specifically tested in the Understandings system. The target use cases are:
 - types where the type specimen has been lost entirely
@@ -69,9 +67,9 @@ The ability to safely declare a new type specimen, whilst safeguarding extant da
 - types where the type specimen is non-existent
 - situations where the types descriptions are unclear, overlapping, or unknown
 
-These are all critical use cases found in aculeate hymenopteran taxonomy, where the current system's lack of ability to handle error safely is causing taxonomists to hesitate in conducting broad-scale modernisation of their taxonomy. The publication of 403 new species using 'minimalist revision and description' methods by [Sharkey et al in 2021](https://zookeys.pensoft.net/article/55600/) raised considerable tensions within the taxonomic community. As an umbrella response, Zamani et al's publication '[DNA barcodes on their own are not enough to describe a species](https://resjournals.onlinelibrary.wiley.com/doi/full/10.1111/syen.12538)' covers the critical points in regards to the Understandings system.
+These are all critical use cases found in aculeate hymenopteran taxonomy, where the current system's lack of ability to handle error safely is causing taxonomists to hesitate in conducting broad-scale modernisation of their taxonomy. The publication of 403 new species using 'minimalist revision and description' methods by [Sharkey et al. in 2021](https://zookeys.pensoft.net/article/55600/) raised considerable tensions within the taxonomic community. As an umbrella response, Zamani et al.'s publication '[DNA barcodes on their own are not enough to describe a species](https://resjournals.onlinelibrary.wiley.com/doi/full/10.1111/syen.12538)' covers the critical points in regards to the Understandings system.
 
-In summary, Sharkey et al argue that in order to deliver the description of new taxa in a reasonable timeframe, the process of discovery and decription must be sped up. Zamani et al respond that Sharkey's process is inappopriate for multiple reasons, of which the core salient points are the establishment of a 'parallel taxonomic system' and the idea that databasing of results is a significant bottleneck to the process of description.
+In summary, Sharkey et al. argue that in order to deliver the description of new taxa in a reasonable timeframe, the process of discovery and decription must be sped up. Zamani et al. respond that Sharkey's process is inappopriate for multiple reasons, of which the core salient points are the establishment of a 'parallel taxonomic system' and the idea that databasing of results is a significant bottleneck to the process of description.
 
 ### Notes - two ways that Understandings change
 
