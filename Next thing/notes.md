@@ -97,7 +97,31 @@ The ways in which an Understanding can be modified are very strictly controlled 
 - Split
 - Compound
 
-All regular operations of an Understanding system will be one of the above. 
+All regular operations of an Understanding system will be one of the above. THere are irregular operations, but the number of these being utilised in a well-run system should be extremely low.
+
+### Create
+Creation is used when a new Understanding, that has not derived from any existing Understanding in the system, needs to be added into the system. The most common reason for using create, outside of initial setup, is newly arrived taxa from outside of the geographic scope of the system.
+
+A variant of creation is also used to create synonym Understandings to back-fill information. This variant may be used at any point, but never to create a non-synonym Understanding.
+
+### Merge
+Merging refers to the operation that merges multiple Understandings into one. In plainer language, the operation reflects a decision that what *was* considered multiple taxa are now considered one.
+
+### Split
+A split occurs when what was considered to be one taxon is now considered to be multiple. Notably, a split operation also involves the creation of an aggregate Understanding. This aggregate, written as `x agg`, represents the novel state of the existing information. As an example, when Murray et al split *Bombus lucorum*, this also resulted in `*Bombus lucorum agg*: iso. Murray et al: 2008`. The previous Understanding of *Bombus lucorum* uses the new aggregate version, as it is impossible to assign records to any of the new taxa without redetermination of specimens.
+
+### Compound
+Some operations exist that are best regarded as a compound of the previous steps. The most common of these is the transfer of one taxon to another parent. For example, transferring a species to a different genus. The logic behind this is that a genus is formed out of its component pieces - in our example, species. If a component is removed, that genus is no longer exactly the same. In fact, it is a different *Understanding* of what that genus is. 'Moving' a taxon is therefore a compound operation of a split. The taxa to be moved are then held 'in isolation', from where they are merged with their destination to form a new Understanding. 
+
+### Irregular operations
+Irregular operations are primarily concerned with fixing errors in the system which have not yet had time to propagate, as well as moving synonymy around. Irregular operations should, in a well-run system, be extremely rare. When arriving at a desire to make an irregular operation, spend at least twice as long as already spent attempting to perform the operation using regular operations.
+
+## Propagation of higher rank changes
+When an operation is performed on an Understanding, all Understandings with the changed Understanding as their parent are also changed. Using the BWARS Understanding system for an example, if the family 'Apidae' were to be split, this would result in new Understandings of the relevant genera, and then in turn the relevant species. The author and year of the 'children' Understandings is the same as that of the main change. Only the currently valid, non-aggregate Understandings are propagated.
+
+The exact details of why this rule is in place, as well as a full examination of the consequences of *not* following, would take up approximately as much time as writing and reading this entire document. As such, it is recommended to either use a prebuilt Understandings library management platform, or restrict a system to a singular rank - usually species - so as to avoid needing to interact with this aspect of Understandings manually.
+
+Simplified, the reasoning behind the propagation of changes is to firstly prevent the perpetuation of synonymy, and secondly to prevent the creation of non-existant synonyms.
 
 ## How to create an Understandings system
 This section covers how to start and fill out an Understandings system. The process is broken down into a number of steps, but please do keep in mind that there is significant potential to encounter 'holes' in taxonomic knowledge. When a hole is encountered, the Understandings system encourages the consultation of taxon experts, or the closest possible alternative. Understandings provide considerable ability to adjust nomenclature, which means that imperfections in Understandings are not nearly as dangerous as they would be in taxonomy. **Perfection is the enemy of progress**. Start in the best place possible, then use the built in abilities of Understandings to refine over time.
