@@ -18,9 +18,27 @@ An Understandings system may be run in many formats, from highly complex, specif
 Understandings are designed to be modular in taxonomic and geographic scope, as well as being non-exclusive in application. All Understandings are constructed on the backbone of taxonomic types. If two Understandings systems are utilising the same backbone of taxonomic types, translation of information between any number of Understandings systems is precise and painless. Utilising a singular backbone ensures that Understandings are compliant with the International Commission of Biological Nomenclature and International Commission of Zoological Nomenclature.
 
 > As of right now, the system has not been tested on other biological domains. There are no reasons why Understandings would fail when applied to these other domains, but this document will only cover known and tested application of Understandings.
+>
+## What is an Understanding?
+An Understanding refers to a particular interpretation of a taxonomic work. The core idea has been in use for many years, particularly in situations where taxonomists must differentiate between multiple interpretations of the same taxon. For example, a taxonomist may talk about 'X sensu author'(*sense of*) or 'X auct nec' (*of other authors*). These are all variations on the theme of finding a way to talk about multiple interpretations of the same work. Understandings are a codified version of the same idea, with added functionality to ensure longevity and maintain the greatest taxonomic precision possible.
+
+### How to write Understandings
+Understandings come with a default method of being written, though it is anticipated that other formats will develop as more users test the system and identify deficiencies. The default format is called the 'iso format', short for 'In the Sense Of'. Written down, a iso-format Understanding is composed of:
+
+`Name: iso. Author: Year: Version`
+
+The author and year refer to the interpretation being referenced. When read aloud, it is often useful to say the full text 'in the sense of' rather than the abbreviation. Doing so will allow people who are not familiar with Understanding, yet are familiar with taxonomy, to fully understand the intent. For example, `Andrena scottica: iso. Else & Edwards: 2018` can be read as 'Andrena scottica in the sense of Else & Edwards, 2018'.
+
+The name can be a singular entry e.g. `Bombus` or a binomial e.g. `Bombus lucorum`. The most common use of Understandings in the BWARS system, by far, are binomial Understandings e.g.
+`Bombus lucorum: iso. Murray et al: 2008`.
+
+## An archival format
+> Archival formats are formats designed to store information accurately for long periods of time. Understandings are an archival format for biological nomenclature which use a form of version control to operate. Within an Understanding system, any member Understanding may be interrogated to find out which currently valid types are contained within that Understanding. As information and knowledge surrounding taxa changes, the Understanding system ensures that nomenclatural changes are applied to member Understandings with the least amount of effort and intervention possible.
+
+> It should be noted that there are a great many situations where it will take the redetermination of a specimen (or voucher of a specimen) in order to arrive at a modern single-type interpretation. In such situations, the Understandings system will return the collection of *potential* member types.
 
 ## Nomenclature/Taxonomic disjunction
-A nomenclatural disjunction occurs when research determines that the interpretation of a given taxon must change. The change does not have to be global, a disjunction may occur within in a limited geographic scope. Disjunctions are typically most evident when a taxon is split. In such a case, there exists data labelled with a name which has the potential to refer to multiple taxa, without further modification or interpretation.
+Understandings may generated when a a type is modified, or in the event of a nomenclatural disjunction. A nomenclatural disjunction occurs when research determines that the interpretation of a given taxon must change. The change does not have to be global, a disjunction may occur within in a limited geographic scope. Disjunctions are typically most evident when a taxon is split. In such a case, there exists data labelled with a name which has the potential to refer to multiple taxa, without further modification or interpretation.
 
 ### Example
 > This section references '*Cryptic species diversity in a widespread bumble bee complex revealed using mitochondrial DNA RFLPs*' by Murray et al., 2008. DOI: `10.1007/s10592-007-9394-z`
@@ -36,11 +54,6 @@ The spread of these three taxa is ubiquitous, both geographically and temporally
 Examination of the GBIF entry for *Bombus lucorum* as of 2024-09-19 (https://www.gbif.org/species/1340298) still shows a large volume of data for '*Bombus lucorum*' in the geographic region covered by Murray et al.. All of this data, other than ~200 records which have been genetically sequenced, is of the mixture rather than the singular type. Because Murray et al.'s work only addresses a limited geographic region, the changes impacts only that limited region. No new types were created as a result of this work, meaning that this work references a change in the *application* of types, rather than a change to types themselves.
 
 The multiple, uncontrolled, interpretations of a singular type prevent clear communication, resulting in lower potential for collaboration. The prevention of clear communication conflicts with the existing taxonomic system's goal of facilitating clear communication. The creation of a version control solution is therefore a high priority.
-
-## An archival format
-> Archival formats are formats designed to store information accurately for long periods of time. Understandings are an archival format for biological nomenclature which use a form of version control to operate. Within an Understanding system, any member Understanding may be interrogated to find out which currently valid types are contained within that Understanding. As information and knowledge surrounding taxa changes, the Understanding system ensures that nomenclatural changes are applied to member Understandings with the least amount of effort and intervention possible.
-
-> It should be noted that there are a great many situations where it will take the redetermination of a specimen (or voucher of a specimen) in order to arrive at a modern single-type interpretation. In such situations, the Understandings system will return the collection of *potential* member types.
 
 ## Technical basis for the Understandings system
 The Understandings system is based in relational databasing, using a third normal form design. The entire purpose of Understandings is to maintain the *relation* between interpretations of taxonomy and types. Accordingly, a relational database is the logical place for such a system. Reaching third normal form guarantees continued precision of the interpretations over time, satisfying the archival requirements of the system.
@@ -63,9 +76,34 @@ These are all critical use cases found in aculeate hymenopteran taxonomy, where 
 
 In summary, Sharkey et al. argue that in order to deliver the description of new taxa in a reasonable timeframe, the process of discovery and decription must be sped up. Zamani et al. respond that Sharkey's process is inappopriate for multiple reasons, of which the core salient points are the establishment of a 'parallel taxonomic system' and the idea that databasing of results is a significant bottleneck to the process of description.
 
+## Operations in an Understandings system
+- Very strictly defined operations
+- Create
+- Create (as synonym)
+- Merge
+- Split
+- Compound
+  - Transfer
+- Manual
+  - Be VERY careful
+  - Things can break and go horribly wrong
+  - If things are already broken/horribly wrong, this is still needed to fix things
+- Higher rank changes
+---
+The ways in which an Understanding can be modified are very strictly controlled to ensure the continued operation of the archival aspect of Understandings. There are four defined operations:
+
+- Create
+- Merge
+- Split
+- Compound
+
+All regular operations of an Understanding system will be one of the above. 
 
 ## How to create an Understandings system
 This section covers how to start and fill out an Understandings system. The process is broken down into a number of steps, but please do keep in mind that there is significant potential to encounter 'holes' in taxonomic knowledge. When a hole is encountered, the Understandings system encourages the consultation of taxon experts, or the closest possible alternative. Understandings provide considerable ability to adjust nomenclature, which means that imperfections in Understandings are not nearly as dangerous as they would be in taxonomy. **Perfection is the enemy of progress**. Start in the best place possible, then use the built in abilities of Understandings to refine over time.
+
+### Define a unique name for the system
+Each Understandings system needs a unique name, in order to aid in comparison between systems. It is recommended to keep this name short to aid in comprehension, as when comparing between systems manually this name will prefix every entry. As an example, the system in which Understandings were developed has the tag 'BWARS'.
 
 ### Defining scope
 The first stage in establishing a new Understandings system is to define the geographic and taxonomic scope. In general, the idea is Understandings should operate at the largest size possible before becoming unwieldy. In practice, the scope depends vastly upon the subject taxa and geographic region of interest. A larger taxonomic scope is overall preferable, as it reduces the number of disparate places users need to go in order to find information. However, a larger taxonomic scope means a far higher variety of appropriate geographic ranges become appropriate, which weakens the overall system. It is recommended to firstly follow any taxonomic of recording present in the target geographic area. These divisions will tend to contain the knowledge required to establish an Understanding system, as well as the core target audience of users.
@@ -73,6 +111,15 @@ The first stage in establishing a new Understandings system is to define the geo
 When considering geographic scope, the goal is to reach as wide an area as possible before problems occur. The most common problem encountered will likely be when users in one portion of the covered area wish to make a change, whilst others do not wish to make a change. If the difference in such a situation becomes irreconcilable, the solution is to simply make a copy of the current state of the system, dividing the geographic area without loss of information. Splitting an Understanding system into separate areas is a much simpler task than combining, so it makes sense to over-estimate rather than under-estimate.
 
 For guidance, look at the distribution of taxon-specific recording schemes in Great Britain. These will give you an idea of the lower bound of scope. If there is still doubt as to whether the scope of a proposed system is appropriate, either pick some scenarios to game out or simply commit to the system. Understandings are designed to be incredibly forgiving and maleable, making changes far easier to implement than traditional taxonomy.
+
+### Define applicable ranks
+One useful aspect of an Understandings system is that it is not required to utilise the entire rank backbone. The ability to truncate the ranks is especially useful when addressing a small taxonomic grouping. For example, the BWARS Understandings addresses:
+ - Superfamily
+ - Family
+ - Genus
+ - Species
+
+The most important, and unbreakable, rule is that every entity must have an entry in the ranks above it. In the BWARS system, a species *must* have a genus, family, and superfamily. A genus must have a family and superfamily.
 
 ### Identify a starting point for knowledge
 Whilst it may be possible to trace the lineage of nomenclature through every change, all the way back to type declaration, most taxa do not have that luxury. There will be periods of uncertainty and confusion, where the progression of nomenclature cannot be established. It is recommended to establish a 'false start' date for an Understandings system to prevent needing to sort through increasingly old and difficult to obtain/interpret taxonomic works.
@@ -88,28 +135,19 @@ Examine the distribution of data over time for the taxonomig group previously id
 Once the starting point of knowledge and desired starting point of data are known, compare the two. If the starting point of data is equal to or after the starting point of knowledge, no further action needs to be taken. If the starting point of data is *prior* to the starting point of knowledge, then there needs to be a plan for generating an Understanding. In the development of Understandings, the name of the scheme plus current year has been used when there is no available information e.g. 'Bombus: iso. BWARS: 2021'. Doing this firmly creates an Understanding, with the added inference that no taxonomic authority could be definitively linked to that interpretation.
 
 ### What makes a good basis for an Understanding
-There are three other points when considering a work for the basis of an Understanding. These points are not mandatory, but are substantial improvements to the quality of the output. The first concerns the accessibility of the taxonomic resource. Articles published behind paywalls in journals are the lowest quality backings for Understandings, as they often have steep fees associated with access. These fees are a significant impediment to utilisation, especially in areas where there is considerable non-academic research being conducted.
+There are three points when considering a work for the basis of an Understanding. These points are not mandatory, but are substantial improvements to the quality of the output. The first concerns the accessibility of the taxonomic resource. Articles published behind paywalls in journals are the lowest quality backings for Understandings, as they often have steep fees associated with access. These fees are a significant impediment to utilisation, especially in areas where there is considerable non-academic research being conducted. The second 'tier' of availability are published literature which the user must buy, such as many keys to identification. The third, and best, are works which are open access in a common format.
 
-The second point is that the reference material should be directly applicable to the geographic realm of interest. The gold standard for this aspect is that the work should include multiple specimens from that geographic region. If a work does *not* specifically include the subject geographic region, then a separate work should be undertaken to ascertain whether the work does indeed apply to the geographic area. This new work, which can simply reference the taxonomic work and state that the work applies to the region of interest, would then be the basis of the Understanding. In essence, a researcher has taken a piece of work and validated that the work applies to a given area. It is this evidence 
+The second point is that the reference material should be directly applicable to the geographic realm of interest. The gold standard for this aspect is that the work should include multiple specimens from the geographic region in question. If a work does *not* specifically include the geographic region, then a separate work should be undertaken to ascertain whether the work does indeed apply to that area. This new work, which can simply reference the taxonomic work and state that the work applies to the region of interest, would then be the basis of the Understanding. In essence, a researcher has taken a piece of work and validated that the work applies to a given area.
+
+The third point is that the work should enable the identification of the subject taxa, ideally through a key. Works that provide genetic or chemical methods are acceptable, as there are many situations where other methods are not yet discovered. However, such works are considered inferior due to the increased difficulty of applying the identification method.
+
+It will not be plausible for every Understanding reference to meet all three criteria when dealing with past information. For future works, there is no reason why works should not meet all three, as the combination is the bare minimum for reliable application of taxonomic work to reality.
 
 ---
 
 # Notes
-So at this point we've said what they are and how to get the start point. Now talk about
+  
+Then move on to 'how to store this in a spreadsheet'
 
-- What makes a good basis for an Understanding
-  - Public access
-  - Applicable to the geographic realm
-  - Has key for people to follow
-
-After that, I think it's on to the practical running part? Need to give this some thought.
-
-- What to store
-- Creation
-- Synonyms and resolving
-
-Then move on to complex post initiation operations
-- Merge
-- Split
-- Compound
-  - Moving a taxon
+## How to store an Understanding system
+There are currently two options for storing Understandings. The first, and by *far* the more complex, is '[NoNomS](https://github.com/Edwards-R/nonoms)' (Normalised Nomenclatural Storage), a Postgresql extension purpose built for Understandings.
