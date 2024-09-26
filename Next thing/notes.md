@@ -77,19 +77,6 @@ These are all critical use cases found in aculeate hymenopteran taxonomy, where 
 In summary, Sharkey et al. argue that in order to deliver the description of new taxa in a reasonable timeframe, the process of discovery and decription must be sped up. Zamani et al. respond that Sharkey's process is inappopriate for multiple reasons, of which the core salient points are the establishment of a 'parallel taxonomic system' and the idea that databasing of results is a significant bottleneck to the process of description.
 
 ## Operations in an Understandings system
-- Very strictly defined operations
-- Create
-- Create (as synonym)
-- Merge
-- Split
-- Compound
-  - Transfer
-- Manual
-  - Be VERY careful
-  - Things can break and go horribly wrong
-  - If things are already broken/horribly wrong, this is still needed to fix things
-- Higher rank changes
----
 The ways in which an Understanding can be modified are very strictly controlled to ensure the continued operation of the archival aspect of Understandings. There are four defined operations:
 
 - Create
@@ -109,6 +96,8 @@ Merging refers to the operation that merges multiple Understandings into one. In
 
 ### Split
 A split occurs when what was considered to be one taxon is now considered to be multiple. Notably, a split operation also involves the creation of an aggregate Understanding. This aggregate, written as `x agg`, represents the novel state of the existing information. As an example, when Murray et al split *Bombus lucorum*, this also resulted in `*Bombus lucorum agg*: iso. Murray et al: 2008`. The previous Understanding of *Bombus lucorum* uses the new aggregate version, as it is impossible to assign records to any of the new taxa without redetermination of specimens.
+
+Splits require particular attention as, when a split is performed, all existing data is moved to an aggregate. Aggregate data is of far less value to science than non-aggregate, and so the cost-benefit of performing a split vs create should be assessed. There is no definitive rule for when to utilise a split vs create. Instead, the guidance is to ask the question '*Is there significant, widespread, confusion present in the taxon?*'. If the answer is yes, use split. If no (i.e. most of the information present is clean and of only one taxon), then the situation may be better handled by a creation.
 
 ### Compound
 Some operations exist that are best regarded as a compound of the previous steps. The most common of these is the transfer of one taxon to another parent. For example, transferring a species to a different genus. The logic behind this is that a genus is formed out of its component pieces - in our example, species. If a component is removed, that genus is no longer exactly the same. In fact, it is a different *Understanding* of what that genus is. 'Moving' a taxon is therefore a compound operation of a split. The taxa to be moved are then held 'in isolation', from where they are merged with their destination to form a new Understanding. 
@@ -167,11 +156,93 @@ The third point is that the work should enable the identification of the subject
 
 It will not be plausible for every Understanding reference to meet all three criteria when dealing with past information. For future works, there is no reason why works should not meet all three, as the combination is the bare minimum for reliable application of taxonomic work to reality.
 
+## How to store an Understanding system
+There are currently two options for storing Understandings. The first, and by *far* the more complex, is '[NoNomS](https://github.com/Edwards-R/nonoms)' (Normalised Nomenclatural Storage), a Postgresql extension purpose built for Understandings. However, this requires a running PostgreSQL server, as well as the SQL knowledge of how to run & control such a database. This is a very high bar to pass for the majority of people who would wish to use an Understandings system and, as such, this following section will instead address a low-tech alternative: running an Understandings system from a spreadsheet. Hopefully in the future there will be greater support for a more user-friendly Understandings platform, but the development of such is outside the scope of planned volunteer time.
+
+The spreadsheet version of Understandings will be significantly limited in scope, as the largest challenge will be the ongoing maintenance of such a system. *Do not ignore this recommendation!* Systems which grow beyond the size where they can be supported are not very useful. The primary limitation will be that this spreadsheet-based system will only address Understandings in one taxonomic rank - likely species. This action is to specifically prevent the need to handle multi-level taxonomic changes, which quickly become extremely complicated to track and implement without assistance.
+
+The simplest Understandings system, with the above limitation, can be run in a spreadsheet using two columns. The first column is the Understanding, known simply as the Understanding. The second column is the Understanding which reflects the current interpretation of that Understanding, known as the *resolved* Understanding. These may be the same item.
+
+Once an Understanding is entered, it must never be changed or removed, as it may be in use outside of the system. Any modifications must now be handled using Operations. The *resolved* understanding may be changed at any time to reflect changes in Understandings.
+
+### Example
+Starting from one taxon, *Bombus terrestris*: iso. Saunders: 1896
+|Understanding|Resolved interpretation|
+|---|---|
+|Bombus terrestris: iso. Saunders: 1896|Bombus terrestris: iso. Saunders: 1896|
+---
+---
+Sladen, in 1912, performs a split operation on *Bombus lucorum*: iso. Saunders: 1896. First, add the results of the split.
+
+||Understanding||Resolved interpretation|
+|---|---|---|---|
+||Bombus terrestris: iso. Saunders: 1896||Bombus terrestris: iso. Saunders: 1896|
+|+|Bombus terrestris: iso. Sladen: 1912|+|Bombus terrestris: iso. Sladen: 1912|
+|+|Bombus lucorum: iso. Sladen: 1912|+|Bombus lucorum: iso. Sladen: 1912|
+---
+---
+Next, add the aggregate Understanding.
+
+||Understanding||Resolved interpretation|
+|---|---|---|---|
+||Bombus terrestris: iso. Saunders: 1896||Bombus terrestris: iso. Saunders: 1896|
+||Bombus terrestris: iso. Sladen: 1912||Bombus terrestris: iso. Sladen: 1912|
+||Bombus lucorum: iso. Sladen: 1912||Bombus lucorum: iso. Sladen: 1912|
+|+|Bombus terrestris agg: iso. Sladen: 1912|+|Bombus terrestris agg: iso. Sladen: 1912|
+
+---
+---
+A split was used, which means that there is *significant, widespread confusion* within existing data. Accordingly all existing records of *Bombus terrestris*: iso. Saunders: 1912 contain an unknown-yet-significant amount of data from each of the split's components. The current resolved Understanding of *Bombus terrestris*: iso. Saunders: 1912 is therefore *Bombus terrestris agg*: iso. Sladen: 1912.
+
+||Understanding||Resolved interpretation|
+|---|---|---|---|
+||Bombus terrestris: iso. Saunders: 1896|+|Bombus terrestris agg: iso. Sladen: 1912|
+||Bombus terrestris: iso. Sladen: 1912||Bombus terrestris: iso. Sladen: 1912|
+||Bombus lucorum: iso. Sladen: 1912||Bombus lucorum: iso. Sladen: 1912|
+||Bombus terrestris agg: iso. Sladen: 1912||Bombus terrestris agg: iso. Sladen: 1912|
+
+---
+---
+Following this, in 2008 Murray et al. split *Bombus lucorum*: iso. Sladen: 1912. The same steps are followed. First, add the results of the split.
+
+||Understanding||Resolved interpretation|
+|---|---|---|---|
+||Bombus terrestris: iso. Saunders: 1896||Bombus terrestris agg: iso. Sladen: 1912|
+||Bombus terrestris: iso. Sladen: 1912||Bombus terrestris: iso. Sladen: 1912|
+||Bombus lucorum: iso. Sladen: 1912||Bombus lucorum: iso. Sladen: 1912|
+||Bombus terrestris agg: iso. Sladen: 1912||Bombus terrestris agg: iso. Sladen: 1912|
+|+|Bombus lucorum: iso. Murray et al: 2008|+|Bombus lucorum: iso. Murray et al: 2008|
+|+|Bombus cryptarum: iso. Murray et al: 2008|+|Bombus cryptarum: iso. Murray et al: 2008|
+|+|Bombus magnus: iso. Murray et al: 2008|+|Bombus magnus: iso. Murray et al: 2008|
+
+---
 ---
 
-# Notes
-  
-Then move on to 'how to store this in a spreadsheet'
+Next, add the aggregate Understanding
 
-## How to store an Understanding system
-There are currently two options for storing Understandings. The first, and by *far* the more complex, is '[NoNomS](https://github.com/Edwards-R/nonoms)' (Normalised Nomenclatural Storage), a Postgresql extension purpose built for Understandings.
+||Understanding||Resolved interpretation|
+|---|---|---|---|
+||Bombus terrestris: iso. Saunders: 1896||Bombus terrestris agg: iso. Sladen: 1912|
+||Bombus terrestris: iso. Sladen: 1912||Bombus terrestris: iso. Sladen: 1912|
+||Bombus lucorum: iso. Sladen: 1912||Bombus lucorum: iso. Sladen: 1912|
+||Bombus terrestris agg: iso. Sladen: 1912||Bombus terrestris agg: iso. Sladen: 1912|
+||Bombus lucorum: iso. Murray et al: 2008||Bombus lucorum: iso. Murray et al: 2008|
+||Bombus cryptarum: iso. Murray et al: 2008||Bombus cryptarum: iso. Murray et al: 2008|
+||Bombus magnus: iso. Murray et al: 2008||Bombus magnus: iso. Murray et al: 2008|
+|+|Bombus lucorum agg: iso. Murray et al: 2008|+|Bombus lucorum agg: iso. Murray et al: 2008|
+
+---
+---
+
+A split was used, which means that there is significant, widespread confusion within existing data. Accordingly all existing records of *Bombus lucorum*: iso. Sladen: 1912 contain an unknown-yet-significant amount of data from each of the split's components. The current resolved Understanding of *Bombus lucorum*: iso. Sladen: 1912 is therefore *Bombus lucorum agg*: iso. Murray et al: 2008.
+
+||Understanding||Resolved interpretation|
+|---|---|---|---|
+||Bombus terrestris: iso. Saunders: 1896||Bombus terrestris agg: iso. Sladen: 1912|
+||Bombus terrestris: iso. Sladen: 1912||Bombus terrestris: iso. Sladen: 1912|
+||Bombus lucorum: iso. Sladen: 1912|+|Bombus lucorum agg: iso. Murray et al: 2008|
+||Bombus terrestris agg: iso. Sladen: 1912||Bombus terrestris agg: iso. Sladen: 1912|
+||Bombus lucorum: iso. Murray et al: 2008||Bombus lucorum: iso. Murray et al: 2008|
+||Bombus cryptarum: iso. Murray et al: 2008||Bombus cryptarum: iso. Murray et al: 2008|
+||Bombus magnus: iso. Murray et al: 2008||Bombus magnus: iso. Murray et al: 2008|
+||Bombus lucorum agg: iso. Murray et al: 2008||Bombus lucorum agg: iso. Murray et al: 2008|
