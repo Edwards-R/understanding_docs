@@ -167,9 +167,9 @@ Once an Understanding is entered, it must never be changed or removed, as it may
 
 ### Example
 Starting from one taxon, *Bombus terrestris*: iso. Saunders: 1896
-|Understanding|Resolved interpretation|
-|---|---|
-|Bombus terrestris: iso. Saunders: 1896|Bombus terrestris: iso. Saunders: 1896|
+||Understanding||Resolved interpretation|
+|---|---|---|---|
+|+|*Bombus terrestris: iso. Saunders: 1896*|+|*Bombus terrestris: iso. Saunders: 1896*|
 ---
 ---
 Sladen, in 1912, performs a split operation on *Bombus lucorum*: iso. Saunders: 1896. First, add the results of the split.
@@ -177,8 +177,8 @@ Sladen, in 1912, performs a split operation on *Bombus lucorum*: iso. Saunders: 
 ||Understanding||Resolved interpretation|
 |---|---|---|---|
 ||Bombus terrestris: iso. Saunders: 1896||Bombus terrestris: iso. Saunders: 1896|
-|+|Bombus terrestris: iso. Sladen: 1912|+|Bombus terrestris: iso. Sladen: 1912|
-|+|Bombus lucorum: iso. Sladen: 1912|+|Bombus lucorum: iso. Sladen: 1912|
+|+|*Bombus terrestris: iso. Sladen: 1912*|+|*Bombus terrestris: iso. Sladen: 1912*|
+|+|*Bombus lucorum: iso. Sladen: 1912*|+|*Bombus lucorum: iso. Sladen: 1912*|
 ---
 ---
 Next, add the aggregate Understanding.
@@ -188,7 +188,7 @@ Next, add the aggregate Understanding.
 ||Bombus terrestris: iso. Saunders: 1896||Bombus terrestris: iso. Saunders: 1896|
 ||Bombus terrestris: iso. Sladen: 1912||Bombus terrestris: iso. Sladen: 1912|
 ||Bombus lucorum: iso. Sladen: 1912||Bombus lucorum: iso. Sladen: 1912|
-|+|Bombus terrestris agg: iso. Sladen: 1912|+|Bombus terrestris agg: iso. Sladen: 1912|
+|+|*Bombus terrestris agg: iso. Sladen: 1912*|+|*Bombus terrestris agg: iso. Sladen: 1912*|
 
 ---
 ---
@@ -196,7 +196,7 @@ A split was used, which means that there is *significant, widespread confusion* 
 
 ||Understanding||Resolved interpretation|
 |---|---|---|---|
-||Bombus terrestris: iso. Saunders: 1896|+|Bombus terrestris agg: iso. Sladen: 1912|
+||Bombus terrestris: iso. Saunders: 1896|+|*Bombus terrestris agg: iso. Sladen: 1912*|
 ||Bombus terrestris: iso. Sladen: 1912||Bombus terrestris: iso. Sladen: 1912|
 ||Bombus lucorum: iso. Sladen: 1912||Bombus lucorum: iso. Sladen: 1912|
 ||Bombus terrestris agg: iso. Sladen: 1912||Bombus terrestris agg: iso. Sladen: 1912|
@@ -211,9 +211,9 @@ Following this, in 2008 Murray et al. split *Bombus lucorum*: iso. Sladen: 1912.
 ||Bombus terrestris: iso. Sladen: 1912||Bombus terrestris: iso. Sladen: 1912|
 ||Bombus lucorum: iso. Sladen: 1912||Bombus lucorum: iso. Sladen: 1912|
 ||Bombus terrestris agg: iso. Sladen: 1912||Bombus terrestris agg: iso. Sladen: 1912|
-|+|Bombus lucorum: iso. Murray et al: 2008|+|Bombus lucorum: iso. Murray et al: 2008|
-|+|Bombus cryptarum: iso. Murray et al: 2008|+|Bombus cryptarum: iso. Murray et al: 2008|
-|+|Bombus magnus: iso. Murray et al: 2008|+|Bombus magnus: iso. Murray et al: 2008|
+|+|*Bombus lucorum: iso. Murray et al: 2008*|+|*Bombus lucorum: iso. Murray et al: 2008*|
+|+|*Bombus cryptarum: iso. Murray et al: 2008*|+|*Bombus cryptarum: iso. Murray et al: 2008*|
+|+|*Bombus magnus: iso. Murray et al: 2008*|+|*Bombus magnus: iso. Murray et al: 2008*|
 
 ---
 ---
@@ -229,7 +229,7 @@ Next, add the aggregate Understanding
 ||Bombus lucorum: iso. Murray et al: 2008||Bombus lucorum: iso. Murray et al: 2008|
 ||Bombus cryptarum: iso. Murray et al: 2008||Bombus cryptarum: iso. Murray et al: 2008|
 ||Bombus magnus: iso. Murray et al: 2008||Bombus magnus: iso. Murray et al: 2008|
-|+|Bombus lucorum agg: iso. Murray et al: 2008|+|Bombus lucorum agg: iso. Murray et al: 2008|
+|+|*Bombus lucorum agg: iso. Murray et al: 2008*|+|*Bombus lucorum agg: iso. Murray et al: 2008*|
 
 ---
 ---
@@ -240,7 +240,7 @@ A split was used, which means that there is significant, widespread confusion wi
 |---|---|---|---|
 ||Bombus terrestris: iso. Saunders: 1896||Bombus terrestris agg: iso. Sladen: 1912|
 ||Bombus terrestris: iso. Sladen: 1912||Bombus terrestris: iso. Sladen: 1912|
-||Bombus lucorum: iso. Sladen: 1912|+|Bombus lucorum agg: iso. Murray et al: 2008|
+||Bombus lucorum: iso. Sladen: 1912|+|*Bombus lucorum agg: iso. Murray et al: 2008*|
 ||Bombus terrestris agg: iso. Sladen: 1912||Bombus terrestris agg: iso. Sladen: 1912|
 ||Bombus lucorum: iso. Murray et al: 2008||Bombus lucorum: iso. Murray et al: 2008|
 ||Bombus cryptarum: iso. Murray et al: 2008||Bombus cryptarum: iso. Murray et al: 2008|
