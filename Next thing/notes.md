@@ -246,3 +246,27 @@ A split was used, which means that there is significant, widespread confusion wi
 ||Bombus cryptarum: iso. Murray et al: 2008||Bombus cryptarum: iso. Murray et al: 2008|
 ||Bombus magnus: iso. Murray et al: 2008||Bombus magnus: iso. Murray et al: 2008|
 ||Bombus lucorum agg: iso. Murray et al: 2008||Bombus lucorum agg: iso. Murray et al: 2008|
+---
+---
+
+
+## Compound Understandings
+Occasionally it is necessary to create an item which represents multiple Understandings. There are two defined methods for doing this: hybrids and complexes. Each follow similar rulings to Understandings, with the goal of ensuring that compounds of Understandings are well documented. Do not every try to 'update' the contents of a compound Understanding if one of the component Understandings is updated. Instead, declare a new compound Understanding.
+
+### Complex
+A complex Understanding uses one of the component names, as well as the author and year of a published document that details the components of the compound. This work is intended to be purely a reference document, documenting only the compound Understanding and its components, so that other users of the data can use with confidence. Compound Understandings may be internal to a specific project, rather than being defined for the entire scope of the Understandings system. Such is particularly the case with complexes, which may be useful in a project where the participants lack the ability to reliably determine specific taxon confusions.
+
+A complex Understanding is written as
+
+> *Name cpx*: iso. Author: Year
+
+### Hybrid
+Hybrid Understandings are for when a specimen is decided to be a hybrid of two taxa. A hybrid Understanding is written as two Understandings, with 'x' in the middle.
+
+*Name1*: iso. Author1: Year1 x *Name2*: iso. Author2: Year2
+
+## Practical use of Understandings
+The following section covers a range of practical tips for using Understandings and running an Understandings system.
+
+- store the intended meaning
+- Resolve only when using the data, not on storing
