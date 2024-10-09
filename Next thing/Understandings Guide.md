@@ -1,7 +1,7 @@
 # Understandings: An archival format for biological nomenclature
 
 ## Abstract
-
+A novel method of handling biological nomenclature bypasses multiple current blockers, whilst simultaneously improving type precision of long-term data storage.
 
 ## Introduction
 This document introduces 'Understandings' as an archival format for biological nomenclature, as well as providing guidance for their usage. Understandings are a way to, differentiate between multiple interpretations of the same taxonomic name in a standardised, non-taxon-specific manner. Differentiation is achieved by attaching further information to traditional nomenclature.
