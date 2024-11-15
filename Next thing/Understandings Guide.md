@@ -1,12 +1,24 @@
+# Alt structure
+
+## Abstract
+A novel method of handling biological nomenclature which bypasses multiple current blockers, whilst simultaneously improving type precision of long-term data storage. 
+This document introduces 'Understandings' as both an every-day archival format for biological nomenclature, as well as providing guidance for their usage.
+## Introduction
+
+### Problem statement
+
+### Introduce Understandings & how they solve the problem
+
+
 # Understandings: An archival format for biological nomenclature
 
 ## Abstract
-A novel method of handling biological nomenclature bypasses multiple current blockers, whilst simultaneously improving type precision of long-term data storage.
+A novel method of handling biological nomenclature which bypasses multiple obstacles in both taxonomy and nomenclature, whilst simultaneously improving to-type precision of long-term nomenclatural data storage.
 
 ## Introduction
-This document introduces 'Understandings' as an archival format for biological nomenclature, as well as providing guidance for their usage. Understandings are a way to, differentiate between multiple interpretations of the same taxonomic name in a standardised, non-taxon-specific manner. Differentiation is achieved by attaching further information to traditional nomenclature.
+This document introduces 'Understandings' as an archival format for biological nomenclature, as well as providing guidance for their usage. Understandings are a method of differentiating between multiple interpretations of the same taxonomic name in a standardised, non-taxon-specific manner.
 
-The archival nature of Understandings is designed to maintain the precision of biological nomenclature over time, in ways that conventional nomenclature cannot, without requiring substantial external input. Maintaining precision of a name against taxonomic types is a high priority for many systems, including:
+Maintaining precision of a name against taxonomic types is a high priority for many systems, including:
 
 - Biological recording schemes
 - Academic writing
@@ -14,7 +26,7 @@ The archival nature of Understandings is designed to maintain the precision of b
 - Private reference collections
 - Academic data collection
 
-Currently, there is a lack of awareness as to what *can* be done - with current technology, design patterns, and resources - to create archival biological nomenclature. Consequently, the vast majority of users of the above list of systems are either unaware of the potential for nomenclature and taxonomy to diverge, or unaware of solutions to manage such occurrences.
+Currently, there is a lack of awareness as to what *can* be done to create archival biological nomenclature with current technology, design patterns, and resources. Consequently, the vast majority of users of the above list of systems are either unaware of the potential for nomenclature and taxonomy to diverge, or unaware of solutions to manage such occurrences.
 
 An Understandings system may be run in many formats, from highly complex, specifically designed, custom packages, all the way to a piece of paper or Excel spreadsheet. Understandings systems running on lower-technology solutions, such as paper or Excel, are advised to focus on small sub-groupings of < 50 taxa due to the workload of manual management. However, it *is* possible to manage larger groupings using lower-technology solutions.
 
@@ -43,8 +55,8 @@ Archival formats are designed to store information accurately for long periods o
 
 It should be noted that there are many situations where it will take the redetermination of a specimen (or voucher of a specimen) in order to arrive at a modern single-type interpretation. In such situations, the Understandings system will return the collection of *potential* member types represented by the Understanding.
 
-## Nomenclature/Taxonomic disjunction
-Understandings may be generated when a type is modified, or in the event of a nomenclatural disjunction. A nomenclatural disjunction occurs when research determines that the interpretation of a given taxon must change. The change does not have to be global - a disjunction may occur within a limited geographic scope. Disjunctions are typically most evident when a taxon is split. In such a case, there exists data labelled with a name which has the potential to refer to multiple taxa, without further modification or interpretation.
+## Nomenclature/Taxonomic divergence
+Understandings may be generated when a type is modified, or in the event of a nomenclatural divergence. A nomenclatural divergence occurs when research determines that the interpretation of a given taxon must change. The change does not have to be global - a divergence may occur within a limited geographic scope. Divergences are typically most evident when a taxon is split. In such a case, there exists data labelled with a name which has the potential to refer to multiple taxa, without further modification or interpretation.
 
 ### Example
 > This section references '*Cryptic species diversity in a widespread bumble bee complex revealed using mitochondrial DNA RFLPs*' by Murray et al., 2008. DOI: `10.1007/s10592-007-9394-z`
