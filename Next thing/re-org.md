@@ -71,16 +71,39 @@ Reference material utilised in any work used as a basis of Understanding should 
 The selected information should enable the identification of the taxa in question. Ideally, this should be the medium of a dichotomous key, or similar level of practical application. Works that only provide genetic or chemical identification methods are accepted, as there are many situations where other identification methods, such as morphological, are not yet discovered. However, works which only provide genetic or chemical methods of identification are considered inferior to those which provide non-laboratory methods, due to the increased cost and difficulty of applying the identification method.
 
 ## How to store an Understandings system
-There are currently two options for storing Understandings. The first, and by *far* the more complex, is '[NoNomS](https://github.com/Edwards-R/nonoms)' (Normalised Nomenclatural Storage), a PostgreSQL extension purpose-built for Understandings. NoNomS requires a running PostgreSQL server, as well as the SQL knowledge of how to run & control such a database. Setting up and managing a PostgreSQL server will likely require the assistance of a software engineer (or similar). A more accessible, low-tech, option is to run an Understandings system within a spreadsheet. Hopefully in the future there will be greater support for a more user-friendly Understandings platform, but the development of such is outside the scope of planned volunteer time.
+There are currently two options for storing Understandings. The first, and by *far* the more complex, is '[NoNomS](https://github.com/Edwards-R/nonoms)' (Normalised Nomenclatural Storage), a PostgreSQL extension purpose-built for Understandings. NoNomS requires a running PostgreSQL server, as well as the SQL knowledge of how to run & control such a database. Setting up and managing a PostgreSQL server will likely require the assistance of a software engineer (or similar). A more accessible, low-tech, option is to run an Understandings system within a spreadsheet. Hopefully in the future there will be greater support for a more user-friendly Understandings platform, but the development of such is outside the scope of planned volunteer time which has produced NoNomS.
 
 The largest challenge associated with a manually-managed Understandings system is the management of large volumes of information without assistance. This is particularly true when making modifications to higher order taxa, where changes must propagate through the child taxa according to strict rules. To mitigate this challenge, it is recommended to limit the scope of a spreadsheet-based Understandings system to one taxonomic rank - likely species. *Do not ignore this recommendation!* Systems which grow beyond the size where they can be managed and supported quickly lose usefulness as they become dated and inaccurate.
 
+### Resolving an Understanding
+The first step to interpreting any given Understanding is to identify the current interpretation of that Understanding. This process is called 'resolving' the understanding. 
+
+Each Understanding within a complete Understandings system should have a second Understanding attached to it
+
+### The simplest possible Understandings system
 The simplest Understandings system, with the above limitation, can be run in a spreadsheet using two columns. The first column is the Understanding, known simply as the Understanding. The second column is the Understanding which reflects the current interpretation of that Understanding, known as the *Resolved* Understanding. In the case that an Understanding represents the currently correct understanding of how to interpret a type, the Understanding will match the Resolved Understanding.
 
-## Updating/removing Understandings from the Understandings system
-Once an Understanding is entered into the Understandings system, that Understanding must never be changed or removed, as there may exist references/uses to that Understanding outside of the system. Removing, or obscuring by changing, any Understanding may lead to a situation where a previously used Understandings no longer has any match within the system. Instead, any modifications must now be handled using Operations, which are specifically designed to ensure continuity of information and conformity to taxonomic types.
+## Operations within an Understanding system
+The Understandings system provides three fundamental operations which may be used to manage Understandings. Each and every operation may only take place upon members of the exact same rank. It is *strictly* forbidden to cross rank when performing operations, as doing so will render the entire system and all data based upon it useless within a very short time. The operations are:
 
-The *Resolved Understanding* may be changed at any time, to reflect changes in where any given Understanding is currently considered. This enables the Understandings system to consisently send users to the current interpretation of any Understanding.
+- create
+- split
+- merge
+
+#### Create
+A create operation is used on when the type represented by the Understanding has not ever been present in the region of interest. The predominant example of this is colonisation by a new arrival. The other significant use of the `create` operation is during the initial set up of a new Understandings system. When using `create`, be sure that `split` is not a more applicable operation.
+
+#### Split
+A split is the operation to use when it is discovered that what was thought to be one entity is in fact composed of multiple. In addition, a `split` should be preferred over a `create` if the 'novel' taxon has been in any way significantly recorded under an existing Understanding.
+
+#### Merge
+A merge is used to combine multiple understandings, within the same parent Understanding (e.g. species within the genus *Bombus: iso. BWARS: 2020*) into one output Understanding.
+
+### Removing Understandings from the Understandings system
+Once an Understanding is entered into the Understandings system, that Understanding must never be changed or removed, as there may exist references/uses to that Understanding outside of the system. Removing, or obscuring by changing, any Understanding may lead to a situation where a previously used Understandings no longer has any match within the system.
+
+### Updating the resolved Understanding
+The *Resolved Understanding* may be changed at any time to reflect changes in where any given Understanding is currently considered. This enables the Understandings system to consisently send users to the current interpretation of any Understanding.
 
 ### Example
 Starting from one taxon, *Bombus terrestris*: iso. Saunders: 1896
@@ -165,12 +188,16 @@ A split was used, which means that there is significant, widespread confusion wi
 ||Bombus magnus: iso. Murray et al: 2008||Bombus magnus: iso. Murray et al: 2008|
 ||Bombus lucorum agg: iso. Murray et al: 2008||Bombus lucorum agg: iso. Murray et al: 2008|
 ---
----
 
 ## Compound Understandings
-Occasionally it is necessary to create an 'item' which represents multiple Understandings. There are two defined methods for doing so: hybrids and complexes. Each method follows similar rulings to Understandings, with the goal of ensuring that compound Understandings are well documented. Never try to 'update' the contents of a compound Understanding if one of the component Understandings is updated. Instead, declare a new compound Understanding using the new component or components.
+Occasionally it is necessary to create an 'item' which represents multiple Understandings. Note that this does not include aggregates (one taxon is found to be composed of multiple types), but focuses on a deliberate requirement to purposefully compound two well-known and separated Understandings. The two encountered reasons so far as:
 
-Compound Understandings do not belong in the same 'table' as Understandings, and must occupy a separate table.
+- Taxa which cannot be easily separated in a complex
+- Hybridisation of taxa
+ 
+Each identified reason has its own creation method. The methods follow similar rulings to Understandings, with the goal of ensuring that compound Understandings are well documented. A compound Understanding should never be 'updated', even in the case of an update to one of the component Understandings. Instead, declare a new compound Understanding using the new component or components or rely on resolving the underlying Understandings.
+
+Compound Understandings do not belong in the same space as Understandings, and must occupy a their own, separated, space.
 
 ### Complex
 A complex Understanding uses one of the component's names, chosen by the creator of the Understanding. The author and year of a published document that details the components of the compound is then added, forming the trinity of name, author, and year that Understandings rely on. This published document is intended to be purely a reference point, containing only the compound Understanding and its component Understandings. so that other users of the data can use with confidence. Compound Understandings may be internal to a specific project, rather than being defined for the entire scope of the Understandings system. Such is particularly the case with complexes, which may be useful in a project where the participants lack the ability to reliably determine specific taxon confusions.
@@ -184,8 +211,15 @@ Hybrid Understandings are for when a specimen is decided to be a hybrid of two t
 
 > *Name1*: iso. Author1: Year1 x *Name2*: iso. Author2: Year2
 
-## Conclusion
-The current nomenclatural system causes the meaning of a taxonomic name to disassociate from the taxon under multiple scenarios. These scenarios are crucial to the continued use of the taxonomic system and therefore cannot be prohibited. The system proposed here recognises these disassociations, as well as their root cause in design, and solves the issue as much as it is possible to be solved. As a result, the nomenclatural and taxonomic system becomes far more robust, dynamic, useful, and accurate. Using Understandings, held in Understandings systems, it is finally possible to construct a truly global database of types, as well as practical, useful, and accurate databases of nomenclature.
+## A critical reflection on the state of current nomenclatural and taxonomic systems
+Numerous, frequently frustrating, aspects of taxonomy and nomenclature were encountered during the process of designing Understandings. This section will select a few of the most irritating, from the point of view of a 'programmer' with a specialisation in system architecture.
+
+### Setting the bar
+The vast majority of taxonomic research and information comes from a very *very* limited number of areas, especially once historical information starts to be considered. There are regions which have had *hundreds* of years to hone their taxonomy to a state where we worry more about people splitting species along the finest of hairs rather than the ability to quickly, cleanly, and concisely describe entirely novel species or even genera previously unknown to science. Estimates vary as to the number of undescribed taxa, discovered or undiscovered, though the general concensus is that the number is substantially more than those currently described. Yet, even with the enhanced capabilities that genetic sequencing provides, adding new taxa to any form of 'shared global library' is proving very difficult. One of the core difficulties lies in incredibly high burden of evidence required to describe a taxon. As a, by now fairly experienced, system architect, there are some major observations to be made on this topic:
+
+1. Setting your standard of entry for any new additions to the system at a level which has taken the current entries centuries to obtain, with levels of funding utterly unobtainable for most of the world, is gatekeeping of the highest order. The obsession with perfection is actively killing the relevance of taxonomic systems, as well as causing a vast amount of issues across the entire scope of responsibility.
+
+2. If any system cannot adapt to the demands of its users, an alternative will eventually be made that does. The outcry and hand-wringing about 'shadow systems' and 'the problems of genetics making parallel systems' is fundamentally driven by the unwillingness of the current system to *actually make meaningful adaptation*. The result is a *self-imposed* problem driven by a complete lack of inertia and willingness to find a solution from existing systems. A solution is incredibly achievable, but will require concessions from all sides.
 
 ---
 ---
@@ -219,3 +253,10 @@ Understandings are based on the principle of normalised relational databases. Se
 
 ## Leftovers
 The core idea behind Understandings has been in use for many years, particularly in situations where taxonomists must differentiate between multiple interpretations of the same taxon. For example, a taxonomist may talk about '*X sensu author*'(sense of) or '*X auct nec*' (of other authors). These are all variations on the theme of finding a way to talk about multiple interpretations of the same work. Understandings are a codified version of the same idea, with added functionality to ensure longevity and maintain the greatest taxonomic precision possible.
+
+
+---
+---
+---
+## Conclusion
+The current nomenclatural system causes the meaning of a taxonomic name to disassociate from the taxon under multiple scenarios. These scenarios are crucial to the continued use of the taxonomic system and therefore cannot be prohibited. The system proposed here recognises these disassociations, as well as their root cause in design, and solves the issue as much as it is possible to be solved. As a result, the nomenclatural and taxonomic system becomes far more robust, dynamic, useful, and accurate. Using Understandings, held in Understandings systems, it is finally possible to construct a truly global database of types, as well as practical, useful, and accurate databases of nomenclature.
