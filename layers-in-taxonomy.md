@@ -37,3 +37,5 @@ Whilst the versioning system *works*, version numbers are very hard to follow al
 
 ## Conclusion
 We have used the principle of the separation of concerns to divide the proposed system into the taxonomic and interpretation areas. Using these areas, we applied taxonomic versioning and interpretation versioning independently, solving the issues that the idea of versioning started with. However, the end result is an abstract number with very little to aid in comprehension. A more human-centric label is required.
+
+[Next page](./human-centric-labels.md)

@@ -52,3 +52,5 @@ The supplementary information is the same for objects in both the taxonomic and 
 
 ## Conclusion
 Using a hybrid of existing taxonomic versioning and scientific reference systems, we have a clean and simple version identifier. The identifier is usable as a reference to a scientific explanation of the change which has produced the version. However, protocols to differentiate between the taxonomic and interpretation layers, as both use the same suite of information to distinguish between versions.
+
+[Next page](./separating-areas.md)

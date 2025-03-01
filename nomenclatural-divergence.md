@@ -80,3 +80,5 @@ What about when a taxonomic change needs to happen? What version does that chang
 
 ## Conclusion
 We have examined two instances of the same critical failure within the Linnaean system where changes to objects within the system do not have their changes reflected in their identifiers. These failures can be rectified very easily, but there is a lingering problem in the design space of where the solutions should be placed.
+
+[Next page](./layers-in-taxonomy.md)
