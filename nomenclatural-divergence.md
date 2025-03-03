@@ -8,7 +8,7 @@ This result was, of course, entirely false. The changes in perceived populations
 ## Solving Nomenclatural Divergence
 Nomenclatural Divergence is, at its base level, caused by a *failure to implement version control*. Linnaean nomenclature, governed by the codes, states that there may only be one valid use of a name at one time. It would be forbidden to declare a new genus *Bombus* as a child of *Apidae*, given that one already exists. However, the codes and their accompanying systems do not have a provision to manage multiple instances of the same name, if only one of them exists at a time.
 
-For example, the above example using *Hylaeus* was deemed valid according to the codes. The names never repeated themselves - there was one *H. annularis* and one *H. dilatatus*, and then there was one *H. dilatatus* and one *H. annularis*.
+The above example using *Hylaeus* was deemed valid according to the codes. The names never repeated themselves - there was one *H. annularis* and one *H. dilatatus*, and then there was one *H. dilatatus* and one *H. annularis*.
 
 |Before|After|
 |---|---|
@@ -31,7 +31,7 @@ The solution therefore is as simple as 'don't make beginner-level mistakes in yo
 |*Hylaeus annularis v1*|*Hylaeus dilatatus v2*|
 |*Hylaeus dilatatus v1*|*Hylaeus annularis v2*|
 
-## We don't stop there
+## Nomenclatural divergence in a different scope
 The above example happened at the taxonomic level. The types themselves had their names swapped, changing their accepted names for everyone at the same time. But what about when a problem occurs in a more limited scope? What do we do then?
 
 To examine this, we will pick the bumblebee *Bombus lucorum*, specifically in the range of the United Kingdom and Ireland. *Bombus lucorum* within this range - and surrounding regions - has been the subject of longstanding uncertainty as to whether there is only *Bombus lucorum*, or whether there are other species present in a cryptic complex. In 2008, a paper was published that laid the matter to rest - *B. lucorum* in the United Kingdom and Ireland was indeed a complex of multiple species.
@@ -59,7 +59,7 @@ Now we know that if we encounter *Bombus lucorum v1* that it represents the aggr
 
 This version of nomenclatural divergence is at the root of why *every single one* of the 'global taxonomic list' projects have failed. Such projects will continue to fail until this is addressed - and this *includes* genetic libraries that attempt to use Linnaean nomenclature in any shape, way, or form.
 
-## Not quite the end
+## And in the worst case scenario
 An added complication arises with the second instance of nomenclatural divergence: where does the version number go? If the type of *Bombus lucorum* starts at *v3*, does that make the regional version *v4*?
 
 |Before|After|
