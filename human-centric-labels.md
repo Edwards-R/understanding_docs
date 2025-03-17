@@ -47,7 +47,7 @@ Firstly, we find the version information for the type itself. This information *
 Simple, familiar, and concise.
 
 
-## Separate the writing of areas
+## Separate the concerns
 The supplementary information is the same for objects in both the taxonomic and interpretation areas. Whilst we may have solved the problem of identifying the correct information to include, we still do not have a clear way of indicating whether the information belongs to the taxonomic or interpretation area. This is the next step to be solved in our goal for clear and concise information.
 
 ## Conclusion

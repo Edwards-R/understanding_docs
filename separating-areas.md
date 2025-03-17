@@ -66,4 +66,4 @@ With the advent of a relational model, it becomes possible to shortcut longer pr
 ## Conclusion
 We started off with a desire to simplify the way in which we can write out a full set of nomenclature, from type to type version to interpretation. Whilst ee have identified standard template patterns that allow us to do so, additional areas of optimisation and query still exist. The impact of the interpretation layer being formed of multiple collections of entries raises a number of questions which still need answers.
 
-[Next](./non-global-areas.md)
+[Next](./separation-of-concerns.md)
