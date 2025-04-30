@@ -7,7 +7,7 @@ Luckily for us, there already exists a precedent for human-centric versioning wi
 However, we can improve on this slightly. Scientific reference systems operate on the same protocol. As an example, this site could be referred to as *Edwards, 2025*. By specifically adopting a referencing system as our identifier, we can anchor a version to a published, ideally accessible, piece of work that contains the in-depth information on how that version differs from the previous.
 
 ### What about DoI/ISBN/ISSN?
-Whilst it is a good idea to store identifiers like DoI/ISBN/ISSN alongside changes, these belong in a dedicated storage rather than being attached to the name itself. None of the above identifiers are *human readable*, being designed for machine-facilitated searching instead.
+Whilst it is a good idea to store identifiers like DoI/ISBN/ISSN alongside changes, these belong in a dedicated storage rather than being attached to the name itself. None of the above identifiers are *human readable*, being designed for machine-facilitated searching instead. The goal of the system being proposed here is that it is inherently human-friendly.
 
 ### In case of emergency, add number
 There exists the possibility, extremely slight as it may be, that a singular type is worked on by people with the same surnames in the same year. Such a situation is far more probable in cultures where surnames are less individualistic. For example, if Wang, 2025 published a paper on *Bombus*, which was quickly followed by Wang, 2025, who refuted the work then we have:
