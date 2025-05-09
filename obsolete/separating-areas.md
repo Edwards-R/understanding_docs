@@ -1,4 +1,9 @@
-# Separating areas
+> Using a hybrid of existing taxonomic versioning and scientific reference systems, we have produced a clean and simple version identifier. We have also identified the three tiers of versioning which need to be created as the type name, type concept, and interpretations. However, our example specifically mentions the interpretation to be in the GB context only. Why is this, and what are the implications for maintaining a globally-applicable taxon list?
+
+# Regional areas
+
+> re-do this to focus on the need for interpretations to be regional
+
 So far, we have identified two instances of a fundamental flaw in Linnaean nomenclature which are leading to divergences between a type and its name. We then proceeded to use standard design methods to provide a standard solution, then used scientific standard practices to turn the engineering solution into a more human-friendly version. However, using the same solution to both problems means that there are two sets of the same versioning attributes. One set applies to the type, the other to the interpretation. What is now required is to provide an easy to use method of distinguishing between uses of the taxonomic and interpretation layers.
 
 ## Separating the layers in writing
@@ -61,6 +66,8 @@ The organisation of these three aspects can also be laid out using standard desi
 With this organisation of data, anything from a type to an interpretation may be condensed into any object communication patterns, such as XML, YAML, TOML, JSON etc.
 
 ### Full stack or short stack
+> WTF is with that title? Hell no!
+
 With the advent of a relational model, it becomes possible to shortcut longer processes in certain situations. For example, if the type, type version, and interpretation are all linked in the manner prescribed, it is possible to identify the full stack from the interpretation alone. However, this 'short stack' will only work *within an individual instance*. To follow more, we need to understand the limitations of the interpretation area. We previously stated that *interpretations are also potential results of non-global modification*. These non-global modifications mean that there is a need for multiple collections of entries in the interpretation area, one to service each 'non-global' area. Such a revelation raises a number of questions. What size should each 'non-global' area be? Why are separate areas needed? What are the mechanisms for sharing data across these areas?
 
 ## Conclusion
