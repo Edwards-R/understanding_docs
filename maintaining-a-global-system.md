@@ -1,6 +1,8 @@
 # Maintaining a global system
 > This doc needs to outline the one-to-many relationships and let me use interpretations without having to constantly point out that they refer to the same type concept & the type concepts refer to the same type name
 
+> Idea from S: Do example of cardinality as human body. One body has two arms, each arm has 5 fingers. Each finger still belongs to the same body.?
+
 In the previous chapter on designing human-centric labels, it was mentioned that interpretations may be regional in nature rather than global. Given that a core tenet of the Linnaean taxonomic system is its global nature, how can a regional nomenclature maintain global applicability? The answer lies in the hierarchy of these elements.
 
 ## The three elements
@@ -11,6 +13,9 @@ So far, we have established three separate areas of concern within the Linnaean 
 - Interpretation
 
 These three elements exist in a strictly defined hierarchy, starting with the type name and ending with the interpretation. Each type name will have one or more concept versions, and each concept version will have one or more interpretations. In reverse, each interpretation relates to one concept version and each concept version relates to one type name. This type of design is called a one to one-to-many relationship, and is foundational to data system designs across the world and throughout history. Most importantly for us, because each interpretation relates to one concept and therefore one type name, each interpretation can be resolved back to a singular type.
+
+### A tactile example
+The typical human has one body. That body has two arms. Each arm then has multiple fingers. Each finger belongs to an arm, and each arm to the same body. Therefore, all fingers belong to the same body.
 
 ### Bombus as an example
 To illustrate how the linkage between the various components is maintained, this example uses a suite of species from the genera *Bombus* (Bumblebees). The genus is found worldwide, is well studied (for an invertebrate) and, due to the typical identification methods relying on colours, contains a number of regionally cryptic taxa. The combination of factors makes *Bombus* an excellent example candidate to illustrate the various ways in which nomenclatural disjunctions occur, and how they can be solved.
@@ -61,18 +66,16 @@ In 2008, Murray et al corrected the interpretation of Latreille's concept versio
 |Concept year|1802|
 |**Interpretation**|
 |Interpretation author|Murray et al|
-|Interpretation year|2008|
+|Interpretation year|2008|v
 
-> New subheader here? Maybe
+Note how the name, the name author, and the name year remain constant throughout every example. This happens because each and every example is a versioning, in some way, of the same name. Note too that it is possible, given this list of options, to provide only the name, interpretation author, and interpretation year (e.g *Bombus lucorum*, Murray et al, 2008) and still arrive at a singular type name. This ability to 'shortcut' the process will become extremely important later, as it allows the offloading of the majority of work to automated systems. Once the bulk of work is taken up by such automation, the increased complexity of utilising a three-tier system over a one-tier system is almost entirely erradicated.
 
-As can be seen in this example, the type name never changes. All items here are versions, in some way, of that singular type name. There are two concept versions of this singular type: that of Linnaeus in 1761, and that of Latreille in 1802. Additionally, there are three interpretations of these two concept versions. One interpretation belonging to the concept version authored by Linnaeus in 1761, and two interpretations belonging to the concept version authored by Latreille in 1802.
+## Regionality and globality
+Now that the system is fully divided up into areas of concern, it is possible to divide these areas once more. Our type name and type version are *global*, as they refer to the library of types managed by the respective nomenclatural codes. Our interpretations, however, may be *regional*. Multiple, distinct, sets of regional interpretations may be attached to any given concept version, and all will still link back to a given type name.
 
-Associating from the interpretation back to the type name here, we can see that the interpretation of *Bombus lucorum* by Murray et al in 2008 refers to the type name by Linnaeus in 1761.
+## Summary
+The Linnaean taxonomic system has been divided up into two components: name and concept version. A third component has been added, which is the interpretation. These three components have been structured to provide a clear link between the three areas of responsibility, as well as allowing interpretations to be regional. Nomenclatural disjunction is therefore identifiable at both the type concept and interpretation levels. When writing nomenclature, an interpretation can be given without needing to state the type name details or the concept version, as both of these are contained within the framework of the proposed system.
 
-In this manner, each and every interpretation belongs to a concept version. In turn, each and every concept version belongs to a type name.
+Now that there is a framework, the next step is to provide a demonstration of that framework in action.
 
-> something something... IDK, getting lost in the sauce here. There's only so many ways to say 'it works if you just think about it'. To be fair, this is the part that causes most soft eng students to just blank.
-
-> Next section is a summary (maybe turn the above into the summary?) that then leads on to 'Now that we can relate a given interpretation to a type, we can look at how we can make a regional system that ends up in a global agreement'.
-
-> **NB** The section *after* the regional stuff probably needs to be about resolving an interpretation. Answer the question '*if A == B, then why use both A & B?*'
+[Next](./interpretation-regions.md)
