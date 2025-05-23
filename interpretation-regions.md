@@ -125,10 +125,6 @@ Following the work of Murray et al, Bossert et al (2016) performed genetic analy
 
 https://pubmed.ncbi.nlm.nih.gov/31966158/
 
-## A brief history
-> Start point was at Latreille 1802
-> Then lucorum and cryptarum in Bossert et al 2016
-
 As before, the first step is to establish the initial position of *Bombus lucorum* and *Bombus cryptarum* in Austria. For the purpose of this explanation, this position is considered to be the same as for Great Britain, where only *Bombus lucorum* was known to occur:
 
 |Attribute|Value|
@@ -163,7 +159,7 @@ Since the recognition of *Bombus cryptarum* is a regional event, only the interp
 |Interpretation author|Bossert et al|
 |Interpretation year|2016|
 
-When using the interpretation shortcut, we end up with three distinct interpretations:
+When using the interpretation shortcut, we end up with three distinct interpretations for Austria:
 
 |Name|Interpetation author|Interpretation year|
 |---|:-:|:-:|
@@ -171,57 +167,25 @@ When using the interpretation shortcut, we end up with three distinct interpreta
 |*Bombus lucorum*|Bossert et al|2016|
 |*Bombus cryptarum*|Bossert et al|2016|
 
----
----
----
+## Comparing the two regions
+Using the established interpretations, we can examine how using interpretations in a regional context provides a simple solution to regional nomenclatural disjunctions. The following tables lists the interpretations used, for each region, at specified points in time:
 
-### UK & IE
-|Type Name|Type Author|Type Year|Type Version Author|Type Version Year|Type Version Number|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|*Bombus lucorum*|Linnaeus|1761|Linnaeus|1761|1|
-|*Bombus lucorum*|Linnaeus|1761|Murray et al|2008|1|
-|*Bombus cryptarum*|Linnaeus|1761|Murray et al|2008|1|
-|*Bombus magnus*|Linnaeus|1761|Murray et al|2008|1|
+|Year|Region|*Bombus lucorum*|*Bombus cryptarum*|*Bombus magnus*|
+|---|---|---|---|---|
+|1802|Great Britain|Latreille, 1802| | |
+|| Austria|Latreille, 1802| | |
+|2008|Great Britain|Murray et al, 2008|Murray et al, 2008|Murray et al, 2008|
+|| Austria|Latreille, 1802| | |
+|2016|Great Britain|Murray et al, 2008|Murray et al, 2008|Murray et al, 2008|
+|| Austria|Bossert et al, 2016|Bossert et al, 2016 | |
 
-### Austria
-|Type Name|Type Author|Type Year|Type Version Author|Type Version Year|Type Version Number|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|*Bombus lucorum*|Linnaeus|1761|Linnaeus|1761|1|
-|*Bombus lucorum*|Linnaeus|1761|Bossert et al|2016|1|
-|*Bombus cryptarum*|Linnaeus|1761|Bossert et al|2016|1|
-|*Bombus magnus*|Linnaeus|1761|Bossert et al|2016|1|
+Now that interpretations have been stated, we can look down a name's column to see how that single type name is used in different ways, across time and across regions.
 
-### Side-by-side analysis
-> Side-by-side timeline, with the type author & year, plus TVN, removed (can just look up to the previous table if confused) and replace with `A` for Austria and `B` for UK/IE. The resulting confusion is why the only practical solution is to subdivide responsibility. This is far too confusing to be practically useful in one unified block.
+## Identifying the right interpretation
+From the tables above, we can see that Great Britain has two distinct interpretations of the name *Bombus lucorum*. One by Latreille in 1802, and one by Murray et al in 2008. Both of these interpretations exist, and have data stored under them - even though the interpretations may not always be recognised. The Global Biodiveristy Information Foundation (GBIF) is characteristic of this problem, displaying data from Great Britain as '*Bombus lucorum*' across the nomenclatural divergence between Latreille, 1802 and Murray et al, 2008. Following the nomenclatural codes, only *one* interpretation of a concept version may be considered currently correct. Accordingly, the next step is to design the synonymy of interpretations so that we can always reach the currently correct interpretation.
 
-#### 1761
-|Region|Name|TV Author|TV Year|
-|:-:|---|---|:-:|
-|A|*Bombus lucorum*|Linnaeus|1761|
-|B|*Bombus lucorum*|Linnaeus|1761|
+## Conclusion
+Regional variation in interpretations have been demonstrated, as well as their regionally bounded solution. Using regionally bounded interpretations allows nomenclatural divergence in different areas to be identified and accounted for in ways the the current Linnaean system can not enable. Whilst multiple interpretations are now identifiable, there is still confusion when accessing data using non-current interpretations.
 
-#### 2008
-|Region|Name|TV Author|TV Year|
-|:-:|---|---|:-:|
-|A|*Bombus lucorum*|Linnaeus|1761|
-|B|*Bombus lucorum*|Linnaeus|1761|
-|B|*Bombus lucorum*|Murray et al|2008|
-|B|*Bombus cryptarum*|Murray et al|2008|
-|B|*Bombus magnus*|Murray et al|2008|
+[Next](./resolving-interpretations.md)
 
-#### 2016
-|Region|Name|TV Author|TV Year|
-|:-:|---|---|:-:|
-|A|*Bombus lucorum*|Linnaeus|1761|
-|A|*Bombus lucorum*|Bossert et al|2016|
-|A|*Bombus cryptarum*|Bossert et al|2016|
-|A|*Bombus magnus*|Bossert et al|2016|
-|B|*Bombus lucorum*|Linnaeus|1761|
-|B|*Bombus lucorum*|Murray et al|2008|
-|B|*Bombus cryptarum*|Murray et al|2008|
-|B|*Bombus magnus*|Murray et al|2008|
-
-
-
-
-> **NB** The next section needs to talk about resolving interpretations. So far, we only identify where a nomenclatural disjuction has taken place - we've never solved it. 
