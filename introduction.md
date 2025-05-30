@@ -6,3 +6,5 @@ However, there are significant errors in the design which result in drastically 
 With change inevitable, and a perfect, rigid, system implausible, what is to be done? To follow an engineer's quote: *perfection is the enemy of progress* - and progress is certainly possible. By utilising some well-understood and developed ideas from the discipline of system architecture, we can identify exactly where the Linnaean system fails to handle change, isolate the fault, and insert a solution. Whilst such a solution will induce *some* change to how users interact with the Linnaean taxonomic system, the true amount of change is incredibly minor. Crucially, the changes will still obey the vast majority of the nomenclatural codes, and the vast majority of our current taxonomic knowledge may be preserved and utilised. Indeed, our current taxonomic knowledge will be *enhanced* by these changes to the underlying system, allowing us to utilise them with far greater accuracy than before.
 
 The first step is, as previously stated, to identify *where* the error occurs. To do that, we need to examine the idea of *nomenclatural divergence*.
+
+[Next page](./nomenclatural-divergence.md)

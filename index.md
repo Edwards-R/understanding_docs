@@ -1,10 +1,11 @@
 # Biological Understandings
-This site serves as the documentation hub for Biological Understandings. Biological Understandings are a method to transform existing Linnaean-style nomenclature into a more robust form, fixing multiple critical errors along the way. This site will explain what an Understanding is, why they are required, how to read and follow them, and how to create a simple Understandings system, suitable for running in a spreadsheet.
+This site serves as the repository for the re-design of Linnaean taxonomy. The goal of this project is to create a truly global, automatically updating, user-friendly replacement for the Linnaean system - without sacrificing the accumulated knowledge gained so far.
 
-[Start here](nomenclatural-divergence.md)
+[Start here](./introduction.md.md)
 
-
-- [1. Nomenclatural Divergence](nomenclatural-divergence.md)
-- [2. Layers in taxonomy](./layers-in-taxonomy.md)
-- [3. Human-centric labels](./human-centric-labels.md)
-- [4. Separating areas](./separating-areas.md)
+- [1. Introduction](./introduction.md)
+- [2. Nomenclatural Divergence](nomenclatural-divergence.md)
+- [3. Layers in taxonomy](./layers-in-taxonomy.md)
+- [4. Human-centric labels](./human-centric-labels.md)
+- [5. Interpretation regions](./interpretation-regions.md)
+- [6. Resolving interpretations](./resolving-interpretations.md)

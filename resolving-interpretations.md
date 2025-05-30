@@ -75,20 +75,6 @@ By navigating to this associated interpretation, a process known as 'resolving',
 ## Implications for storing data
 Resolving an interpretation cannot be done in advance of using that interpretation, as doing so prevents modernisation. Without the ability to modernise, nomenclatural divergence once again is able to take place. Instead, nomenclature should be stored and operate on the level of interpretations, with taxonomy used at point-of-consumption. One particular use for resolving back to taxonomy is when compiling data across multiple interpretation regions.
 
-> Example is needed
-> - Record from GB: B. lucorum 1997
-> - Record from GB: B. lucorum 2015
-> - Record from Austria: B. lucorum 2015
->
-> Store the 1997 record and resolve it  (goes to itself)
-> Store the 2015 records and resolve them (goes to itself)
-> Analyse the entire dataset in 2025
-> Oh no, problems!
->
-> Store records as interpretations
-> Remember two regions!
-> 
-
 ## A practical example
 For this example we will use *Bombus lucorum*, with interpretations taken from the regions of Great Britain and Austria. Using the interpretations from Great Britain, this example will demonstrate the differences between resolving at point of storage vs resolving at point of consumption. The example will then move on to demonstrate how resolving at point of consumption allows the merging of regional datasets with absolute taxonomic clarity.
 
@@ -118,6 +104,8 @@ When resolved in 2010 (and remembering that Murray et al showed that Latreille's
 |---|---|---|
 |*Bombus lucorum* Murray et al, 2008|*Bombus lucorum* Murray et al, 2008|*Bombus lucorum*, Linnaeus 1761|
 
+> Pay attention to column headers. Without specific formatting, it is very easy to confuse interpretations and types.
+
 With this, nomenclatural disjuction is finally solved. We have a method of identifying, storing, and now resolving, every situation where a type name no longer matches the type concept.
 
 ### Cross regional
@@ -133,38 +121,38 @@ Performing the same comparison for Austria as we did Great Britain (pre- and pos
 #### Resolving in 1996
 Using this data and storing as interpretations, we can combine data from Great Britain and Austria by resolving when we consume. Consuming and resolving our data from 1996 gives us:
 
-> |Region|Interpretation|Type(s)|
-> |---|---|---|
-> |Great Britain|*Bombus lucorum* Latreille, 1802|*Bombus lucorum* Linnaeus, 1761|
-> |---|---|---|
-> |Austria|*Bombus lucorum* Latreille, 1802|*Bombus lucorum* Linnaeus, 1761|
+|Region|Interpretation|Type(s)|
+|---|---|---|
+|Great Britain|*Bombus lucorum* Latreille, 1802|*Bombus lucorum* Linnaeus, 1761|
+|---|---|---|
+|Austria|*Bombus lucorum* Latreille, 1802|*Bombus lucorum* Linnaeus, 1761|
 
 Both interpretations resolve to the same, singular type. In accordance with how types work, these two records should be considered to be of the exact same taxon and can therefore be compared.
 
 #### Resolving in 2010
 Moving forward to 2010, which is *after* Murray et al yet *before* Bossert et al, the same two records provide the following when resolved at consumption:
 
-> |Region|Interpretation|Type(s)|
-> |---|---|---|
-> |Great Britain|*Bombus lucorum* Latreille, 1802|*Bombus lucorum* Linnaeus, 1761|
-> |||*Bombus magnus* Vogt, 1911|
-> |||*Bombus cryptaum* Fabricius, 1775|
-> |---|---|---|
-> |Austria|*Bombus lucorum* Latreille, 1802|*Bombus lucorum* Linnaeus, 1761|
+|Region|Interpretation|Type(s)|
+|---|---|---|
+|Great Britain|*Bombus lucorum* Latreille, 1802|*Bombus lucorum* Linnaeus, 1761|
+|||*Bombus magnus* Vogt, 1911|
+|||*Bombus cryptaum* Fabricius, 1775|
+|---|---|---|
+|Austria|*Bombus lucorum* Latreille, 1802|*Bombus lucorum* Linnaeus, 1761|
 
-Here we can see the increased knowledge gained by Murray et al automatically reflected in the data. The user is *immediately* able to notice that *Bombus lucorum* from Great Britain, intepreted according Latreille, 1802, has undergone a nomenclatural disjunction.
+Here we can see the increased knowledge gained by Murray et al automatically reflected in the data. The consumer is *immediately* able to notice that *Bombus lucorum* from Great Britain, intepreted according Latreille, 1802, has undergone a nomenclatural disjunction.
 
 If we add a record from Great Britain, interpreted according to Murray et al, 2008, the result is as follows:
 
-> |Region|Interpretation|Type(s)|
-> |---|---|---|
-> |Great Britain|*Bombus lucorum* Latreille, 1802|*Bombus lucorum*, Linnaeus 1761|
-> |||*Bombus magnus* Vogt, 1911|
-> |||*Bombus cryptaum* Fabricius, 1775|
-> |---|---|---|
-> |Great Britain|*Bombus lucorum* Murray et al, 2008|*Bombus lucorum* Linnaeus, 1761|
-> |---|---|---|
-> |Austria|*Bombus lucorum* Latreille, 1802|*Bombus lucorum* Linnaeus, 1761|
+|Region|Interpretation|Type(s)|
+|---|---|---|
+|Great Britain|*Bombus lucorum* Latreille, 1802|*Bombus lucorum*, Linnaeus 1761|
+|||*Bombus magnus* Vogt, 1911|
+|||*Bombus cryptaum* Fabricius, 1775|
+|---|---|---|
+|Great Britain|*Bombus lucorum* Murray et al, 2008|*Bombus lucorum* Linnaeus, 1761|
+|---|---|---|
+|Austria|*Bombus lucorum* Latreille, 1802|*Bombus lucorum* Linnaeus, 1761|
 
 The user is immediately able to see the disjunction in *Bombus lucorum* data from Great Britain, as well as what data correctly resolves to the type name *Bombus lucorum* Linnaeus, 1761. This correct data can be used for scientific study, whilst the nomenclaturally disjunct data typically must be discarded.
 
@@ -172,15 +160,25 @@ The user is immediately able to see the disjunction in *Bombus lucorum* data fro
 
 Concluding the example set, we step forward to 2020. Here, both regions of Great Britain and Austria have identified a nomenclatural disjunction in *Bombus lucorum*. The example reflects these discoveries, as well as adding a fourth record using the Bossert et al 2015 interpretation.
 
-> |Region|Interpretation|Type(s)|
-> |---|---|---|
-> |Great Britain|*Bombus lucorum* Latreille, 1802|*Bombus lucorum*, Linnaeus 1761|
-> |||*Bombus magnus* Vogt, 1911|
-> |||*Bombus cryptaum* Fabricius, 1775|
-> |---|---|---|
-> |Great Britain|*Bombus lucorum* Murray et al, 2008|*Bombus lucorum* Linnaeus, 1761|
-> |---|---|---|
-> |Austria|*Bombus lucorum* Latreille, 1802|*Bombus lucorum* Linnaeus, 1761|
-> |||*Bombus cryptaum* Fabricius, 1775|
-> |---|---|---|
-> |Austria|*Bombus lucorum* Bossert et al, 2015|*Bombus lucorum* Linnaeus, 1761|
+|Region|Interpretation|Type(s)|
+|---|---|---|
+|Great Britain|*Bombus lucorum* Latreille, 1802|*Bombus lucorum*, Linnaeus 1761|
+|||*Bombus magnus* Vogt, 1911|
+|||*Bombus cryptaum* Fabricius, 1775|
+|---|---|---|
+|Great Britain|*Bombus lucorum* Murray et al, 2008|*Bombus lucorum* Linnaeus, 1761|
+|---|---|---|
+|Austria|*Bombus lucorum* Latreille, 1802|*Bombus lucorum* Linnaeus, 1761|
+|||*Bombus cryptaum* Fabricius, 1775|
+|---|---|---|
+|Austria|*Bombus lucorum* Bossert et al, 2015|*Bombus lucorum* Linnaeus, 1761|
+
+## Resolving concept versions and type names
+The same logic of resolving may be applied to concept versions and type names. Indeed, type names already posess a level of resolving in the current Linnaean system - synonyms. Any design specification, however, falls firmly within the realm of the *implementation* of design as opposed to the *specification* of design. As such, no further details on *how* such a system may be managed will be outlined herein.
+
+## Conclusion
+Interpretations may be used to store nomenclature in a time-safe, regional manner. Resolving an interpretation at the point of consumption means that the end user is always able to incorporate the maximum amount of taxonomic and nomenclatural knowledge, vastly increasing the taxonomic precision of end-user products.
+
+There are multiple problems still to be addressed. Interpretations and taxonomic names are written identically whilst referring to very distinct ideas, which is a highly undesirable situation. Keeping track of interpretations, type concepts, and type names in a strict manner requires automation, which in turn requires a strict set of rules to be laid out (and for people to follow them). The absence of a suitable scheme managing taxonomy for zoology is also a significant impediment to establishing the proposed system, albeit one which can be overcome safely.
+
+The next stage of this work is to design an implementation of the protocols set out within this document.

@@ -1,8 +1,4 @@
 # Maintaining a global system
-> This doc needs to outline the one-to-many relationships and let me use interpretations without having to constantly point out that they refer to the same type concept & the type concepts refer to the same type name
-
-> Idea from S: Do example of cardinality as human body. One body has two arms, each arm has 5 fingers. Each finger still belongs to the same body.?
-
 In the previous chapter on designing human-centric labels, it was mentioned that interpretations may be regional in nature rather than global. Given that a core tenet of the Linnaean taxonomic system is its global nature, how can a regional nomenclature maintain global applicability? The answer lies in the hierarchy of these elements.
 
 ## The three elements
