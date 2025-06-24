@@ -1,5 +1,5 @@
 # Nomenclatural Divergence
-A core critical flaw in Linnaean taxonomy is *nomenclatural divergence*. Nomenclatural divergence is a term for what happens when the type concept and type name diverge in use from one another. In a nomenclatural divergence, there exists data under a type's name which no longer obeys the type concept. This mismatch leads to many varieties of problems in any downstream applications of that name, such as Red Lists, genetic libraries, scientific papers etc. Nomenclatural divergence is the source of one of the largest wastes of a user's time when dealing with scientific nomenclature: checking that all the nomenclature in a given sample/study are modern and trustworthy.
+Nomenclatural divergence is a term for what happens when the type concept and type name diverge in use from one another. In a nomenclatural divergence, there exists data under a type's name which no longer obeys the type concept. This mismatch leads to many varieties of problems in any downstream applications of that name, such as Red Lists, genetic libraries, scientific papers etc. Nomenclatural divergence is the source of one of the largest wastes of a user's time when dealing with scientific nomenclature: checking that all the nomenclature in a given sample/study are modern and trustworthy.
 
 In one example situation, the names *Hylaeus annularis* and *Hylaeus dilatatus* were swapped during the period of study. The two species are very distinct in the number of records in the study dataset. What was originally called *Hylaeus dilatatus* had 36 records, whilst what was originally called *Hylaeus annularis* had 1,579.  Accordingly, the swap led to the researchers 'uncovering' a vast and sudden increase in *H. dilatatus* (36 -> 1,579), with an accompanying catastrophic crash in *H. annularis* (1,579 -> 36).
 
@@ -66,7 +66,7 @@ Now we know that if we encounter *Bombus lucorum v1* that it represents the aggr
 - *Bombus cryptarum v1*
 - *Bombus magnus v1*
 
-However, this solution presents a problem: the nomenclatural divergence examined here is not global in nature. The only regions which can use this nomenclature and Great Britain and Ireland, as the solution represents a regionally-bounded conclusion.
+However, this solution presents a problem: the nomenclatural divergence examined here is not global in nature. The only regions which can use this nomenclature are Great Britain and Ireland, as the solution represents a regionally-bounded conclusion.
 
 ## And in the worst case scenario
 An added complication arises with the second instance of nomenclatural divergence: what is the next version number? If the type of *Bombus lucorum* starts at *v3*, does that make the regional version *v4*?
@@ -86,6 +86,46 @@ Who maintains the unique list of regional variations in that case, to prevent re
 ||*Bombus magnus v1*|*Bombus magnus v2*|
 
 What about when a taxonomic change needs to happen? What version does that change stem from if all the options are regional variations? Clearly there is a little more work to do yet.
+
+## Sensu lato and sensu stricto
+Traditional taxonomy would solve the issue here very quickly, by the use of *sensu stricto* and *sensu lato*. The pre-change version of *Pipistrelle pipistrellus* would become *Pipistrelle pipistrellus sensu lato*, and the post-change version *Pipistrelle pipistrellus sensu stricto*. However, there are two critical flaws in this approach that render the system unusable.
+
+### Multiple times
+It is not guaranteed to only want to adjust a taxon once - indeed, adjusting once is likely an abnormality rather than regularity. For example, the name *Andrena trimmerana* has been used in three specific ways in a period of 10 years. The first change can be managed with *sensu*, giving the following
+
+|Name|
+|---|
+|*Andrena trimmerana sensu lato*|
+|*Andrena trimmerana sensu stricto*|
+
+However, when we want to add the third in, what does this get called?
+
+|Name|
+|---|
+|*Andrena trimmerana sensu lato*|
+|*Andrena trimmerana sensu stricto*|
+|*Andrena trimmerana ??*|
+
+In the past, such situations tended to evolve over longer periods of time e.g. 100+ years, which allowed the situation to be solved by 'forgetting' about the first change. With increased attention, dependency, and the advent of genomics, changes occur far faster, more frequently, and have higher potential impact on existing systems. 
+
+### Elephants (and systems) never forget
+This table shows how, over long time periods, the use of *sensu* tends to shift between different versions of the type concept.
+
+|Name (early)| Name (late)|
+|---|---|
+|*Andrena trimmerana sensu lato*|**Forgotten**|
+|*Andrena trimmerana sensu stricto*|*Andrena trimmerana sensu lato*|
+|**Doesn't exist yet**|*Andrena trimmerana sensu stricto*|
+
+Such a 'forgetful' system is all very well if the only users of such a system are humans with the ability to code-swap between the two time periods. There will be a point of confusion in the switch-over portion, but either side of this switch-over will (theoretically) be stable.
+
+|Early|Switch-over|Late|
+|---|---|---|
+|Stable|Unstable|Stable
+
+However, there are two critical flaws in this approach. The first is that the switch-over period has been observed to last decades at the very least, with the likely limiting factor being human lifespan. Such a long time period means that instability operates for far longer than is considered acceptable, especially given the ease of solutions.
+
+Secondly, *a good, long-term, system should never forget*. Forgetting is antithecal to the very purpose of a safe, long-term, storage system for data. Accordingly, using 'forgetting' as a method to manage a functional limitation simply will not suffice for the purpose of long term data storage. There is much more to be said about the downstream negative results of 'forgetting' about something, but for the purpose of this document it is enough to say that implementing 'forgetting' as a management system is an unacceptably poor solution.
 
 ## Conclusion
 We have examined two instances of the same critical failure within the Linnaean system where changes to objects within the system do not have their changes reflected in their identifiers. These failures can be rectified very easily, but there is a lingering problem in the design space of where the solutions should be placed.
