@@ -1,5 +1,5 @@
 # Layers in taxonomy
-Previously, we identified and started the process of solving the issue of nomenclatural divergence. However, the solution encountered a series of design problems which need to be overcome. Specifically, the solution identified two distinct varieties of nomenclatural divergence, and it was not at all clear how to implement the version control that the solution demands. Thankfully, we can once again use well-established system design patterns to solve this almost instantly.
+Previously, we identified and started the process of solving the issue of nomenclatural divergence. However, the envisioned solution encountered a series of design problems which need to be overcome. Specifically, the solution identified two distinct varieties of nomenclatural divergence, and it was not at all clear how to implement a version control system that the solution demands. Thankfully, we can once again use well-established system design patterns to solve the issue almost instantly.
 
 ## Separation of Concerns
 In software parlance, a 'concern' refers to a specific area of responsibility for a given part of a design. For example, a sending a letter via post can be considered to have four concerns:
