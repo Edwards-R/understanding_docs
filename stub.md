@@ -1,0 +1,2 @@
+# The short version
+The 'standard' nomenclature system currently used e.g. *Bombus lucorum* does not contain the information required to guarantee that name remains usably accurate over time. We have to add more data to the name to 'fix' the meaning in place so that future users of the data can use the name with the appropriate level of confidence.
