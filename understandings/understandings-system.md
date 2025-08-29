@@ -39,8 +39,38 @@ It would be ideal to start tracking Interpretations at their point of conception
 #### Data from before the false origin
 If encountering data from before the false origin, the first action to take is to consider whether the volume of data and suspected taxonomic complexity is enough to cause *significant, widespread, confusion in the interpretation of the data*. If the answer is *yes*, then the precision option is to create a new Interpretation with a date *prior* to the false origin. The author of this Interpretation would be the author the Understanding System. If the answer is *no*, then the data can simply be assigned to the oldest Interpretation in the system. The goal is, as always, to minimise disruption whilst maximising accuracy.
 
-## Taxonomic limitations
+### Taxonomic limitations
 Whilst it is possible to implement the Understandings System to cover all life, it is expected that the majority of implementations will concern themselves with a sub-set of taxa. To do this, simply start at the highest relevant rank and progress from there. For example, the BWARS Understandings implementation starts with the superfamilies for the Aculeate hymenoptera. No ranks are present above Superfamily, and the sub-ranks of Family, Genus, and Species are present as normal.
+
+### Geographic limitations
+Interpretations are designed to be geographically restricted by design. A key portion of setting up an implementation of the Understandings System is to decide on the geographic boundaries of said system. The exact limits of any implementation will vary depending on the nature of the taxa in question, as well as the diversity of taxa in that region. In general, expect to create:
+
+- larger geographic limits for larger taxa, smaller limits for smaller taxa
+- larger geographic limits for less taxonomically rich areas, smaller areas for more taxonomically rich areas
+
+When in doubt, a national level is a good starting point. Then, seek to expand the area if possible. There are some situations where a national level may not be appropriate. Small island chains with high levels of endemic species are one such scenario where it may be more appropriate to work at sub-national level. Remember that whilst more, smaller spatial units allow greater precision, more units means more administrative workload in maintaining accuracy. Always seek to keep the spatial unit as large as possible.
+
+## Running an Understandings System
+The Understandings system is managed by `Operations`. An Operation is a defined procedure that modifies Understandings in a given way. There are 4 defined 'perfect' Operations:
+
+|Name|Description|
+|---|---|
+|*Create*|Create an entirely new, currently valid, Understanding. This cannot create synonyms|
+|*Split*|Split one Understanding into multiple|
+|*Merge*|Combine multiple Understandings into one|
+|*Redirect*|Modify where an existing Understanding resolves to|
+
+These are called 'perfect' Operations as, in a perfect system, these are the only Operations which would be required. However, we have already outlined in 'Temporal Limitations', a perfect system is frequently impractical to achieve. To manage the outlier cases we use the 'imperfect' Operations:
+
+|Name|Description|
+|---|---|
+|*Create junior synonym*|Create an entirely new, synonym only, Understanding. This cannot create currently valid Understandings. Frequently used to add in newly discovered historic synonymys|
+|*Manual adjustment*|Anything and everything, with no safety checks. Most often used to revert previous mistakes, but should be used with whatever safety rails are available|
+
+Manual adjustment is a high risk Operation to use as it represents 'anything'. Improper use of manual adjustment can result in cascading failure - use sparingly, if at all.
+
+### Operations and Ranks
+Operations may only take place over a single rank. For example, an Operation performed on a Genus may not incorporate a Species.
 
 ## Notes
 Need to divide this into sectors:
