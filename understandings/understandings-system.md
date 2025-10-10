@@ -4,7 +4,7 @@ The Understandings System is responsible for maintaining accurate linkage betwee
 The Understandings System is designed in layers, with each layer holding a distinct set of responsibilities. This document will examine each layer in turn, then culminate in real-world examples which demonstrate various aspects of the Understandings System. Firstly though we must examine the idea of *systematic, widespread, confusion*.
 
 ## Systematic Widespread Confusion
-Every modification to an Interpretation involves a trade off between continuity of use and precision. Do you prefer stability and accept a certain level of inaccuracy, or does the desired level of accuracy require a change in interpretation? To answer this question, the idea of *systematic widespread confusion* was coined. When presented with an opportunity for a change which could be handled in multiple ways, ask the question *does this situation represent significant widespread confusion in the interpretation of data?*. This is a question that should be directed at the taxonomic experts for the relevant area, as only they are likely to be able to provide an answer. If the answer is *yes*, then the need for precision outweighs the need for stability. If the answer is *no*, then favour stability over precision. If the answer is *I don't know* then favour precision over stability.
+Every modification to an Interpretation involves a trade off between continuity of use and precision. Do you prefer stability and accept a certain level of inaccuracy, or does the desired level of accuracy require a change in interpretation to separate distinct meanings? To answer this question, the idea of *systematic widespread confusion* was coined. When presented with an opportunity for a change which could be handled in multiple ways, ask the question *does this situation represent significant widespread confusion in the interpretation of data?*. This is a question that should be directed at the taxonomic experts for the relevant area, as only they are likely to be able to provide an answer. If the answer is *yes*, then the need for precision outweighs the need for stability. If the answer is *no*, then favour stability over precision. If the answer is *I don't know* then favour precision over stability.
 
 ## System Setup
 The first phase of the Understandings System is the setup phase. This phase is where the taxonomic, temporal, and spatial limits of the system are decided upon.
@@ -33,8 +33,12 @@ Whilst ranks are entirely at the discretion of each implementation of Understand
 
 The first i.e. highest rank in your system should ideally be one of these ranks. Then, all skeleton ranks between the first and lowest rank should be included. For example, if I want to go from Family to Subspecies, I need to include Genus and Species as well.
 
+There are *no* other restrictions on the use of any Ranks within the Understandings system.
+
 ### Temporal limitations
-It would be ideal to start tracking Interpretations at their point of conception (i.e. when the type is declared). However, such a goal is often either entirely unobtainable, or so difficult to obtain that it becomes impractical. It is, in some instances, perfectly acceptable to limit the start date of an Understandings system so that entirely exhaustive documentation becomes unneccessary. For example, if a taxon is well documented in a region since 1956 then an Understandings system may choosed to use 1956 as a 'false origin' start date. The limitation would then be that any data prior to 1956 would exist under the type system alone, rather than enjoying the benefits of Interpretations. However, as the question has uncovered that doing so would not result in *significant widespread confusion* then this limitation is deemed acceptable.
+It would be ideal to start tracking Interpretations at their point of conception (i.e. when the type is declared). However, such a goal is often either entirely unobtainable, or so difficult to obtain that it becomes impractical. It is, in some instances, perfectly acceptable to limit the start date of an Understandings system so that entirely exhaustive documentation becomes unneccessary. For example, if a taxon is well documented in a region since 1956 then an Understandings system may choose to use 1956 as a 'false origin' start date. The limitation would then be that any data prior to 1956 would exist under the type system alone, rather than enjoying the benefits of Interpretations. However, as the question has uncovered that doing so would not result in *significant widespread confusion* then this limitation is deemed acceptable.
+
+This 'false origin' may be applied uniformly to all taxa within that implementation of the Understandings system, or in an ad-hoc manner as deemed relevant. Neither option is 'better' than the other.
 
 #### Data from before the false origin
 If encountering data from before the false origin, the first action to take is to consider whether the volume of data and suspected taxonomic complexity is enough to cause *significant, widespread, confusion in the interpretation of the data*. If the answer is *yes*, then the precision option is to create a new Interpretation with a date *prior* to the false origin. The author of this Interpretation would be the author the Understanding System. If the answer is *no*, then the data can simply be assigned to the oldest Interpretation in the system. The goal is, as always, to minimise disruption whilst maximising accuracy.
@@ -56,7 +60,7 @@ The Understandings system is managed by `Operations`. An Operation is a defined 
 |Name|Description|
 |---|---|
 |*Create*|Create an entirely new, currently valid, Understanding. This cannot create synonyms|
-|*Split*|Split one Understanding into multiple|
+|*Split*|Split one Understanding into multiple, plus the aggregate Understanding that represents the unknown|
 |*Merge*|Combine multiple Understandings into one|
 |*Redirect*|Modify where an existing Understanding resolves to|
 
@@ -70,35 +74,16 @@ These are called 'perfect' Operations as, in a perfect system, these are the onl
 Manual adjustment is a high risk Operation to use as it represents 'anything'. Improper use of manual adjustment can result in cascading failure - use sparingly, if at all.
 
 ### Operations and Ranks
-Operations may only take place over a single rank. For example, an Operation performed on a Genus may not incorporate a Species.
+Operations may only take place over a single rank. For example, an Operation performed on a Genus may not incorporate a Species. If multiple ranks require modifying, the ranks are divided into the progenitor (highest rank) and child (all other) ranks. The Operation is called on the progenitor rank, and then propagates down the tree by calling operations on the child ranks.
 
-## Notes
-Need to divide this into sectors:
-
-- The setup of the system
-    - Rank limits
-    - Taxonomic limits
-    - Spatial limits
-    - Temporal limits
-- The running of the system
-    - What are operations
-        - Only permissible 'things' to do with the system
-        - Designed to maintain constant to sychronicity with our current knowledge of the types
-        - Single rank operations only
-            - If an operation wants to affect multiple ranks, it has to break the operation down by rank
-            - Changes can, and do, cascade down the ranks
-    - Operations at single stage
-        - Automated operations
-            - Create
-            - Split
-            - Merge
-        - Manual operations
-            - Redirect
-            - Add synonym
-- What to do when there is no versioned type system
+## Working without a versioned Type system
     - Just do it all manually
     - Higher workload
     - No global propagation
     - Requires someone to be aware of the change first
 
+A strict implementation of Interpretations requires that a versioned Type system exists. Currently, no such system exists and there are no plans to create any. The Understandings System handles the absence of a type management system by simply skipping over the requirement. Modifications to a Type which would result in the creation of a new Type version also create a new Interpretation, as per the design of Interpretations. Accordingly, a new type version may be handled by implementing the resulting Interpretation change.
 
+The only trade-off is that each relevant Interpretation system must do their own change rather than relying on a centralised repository. On the positive side, manual management does provide greater ability for people to choose the changes that are desirable. By enabling choice, taxonomic vandalism (real or perceived) may be avoided entirely. Manual management of Type changes is slower and more labour-intensive, but far better than not having any management.
+
+##
