@@ -1,23 +1,39 @@
 # Examples
 ## Normal use
 Examples of the Understandings System during normal use.
+
+> We didn't have one so we used a key as basis
+> 
+> Ellen is attempting to find out the person from FERA, but don't hold my breath
 ### Adding a new interpretation
 In 2016, *Vespula velutina* was first sighted in the United Kingdom. Whilst the public regularly confuses this species with multiple other taxa, it does not take much ability to identify. This first confirmed record in 2016 was from the area of Tetbury - a highly suspicious location for any of the usual colonisation routes that such organisms take. *Vespula velutina* is, however, well known for synanthropic dispersal. Many specimens have since turned up in fresh vegetables from countries such as France.
 
 With this information, we can now evaluate the presence of 'significant, widespread, confusion'. Our taxon is easily recognised, and almost certainly not present in the area for a significant amount of time before its recognition. Accordingly, there is close to zero potential for confusion. *Vespula velutina* is therefore added to the Understandings system as an *addition*.
 
-Now that we know the operation to use, we need to find a suitable author and year to use as the basis for our Understanding. The year is easy - 2016. The author is a little harder. Ideally, we want to have a person as the author, as that allows us to tie a decision to a person rather than a faceless organisation where it could be any number of people. If we do not know the person, then we have a much harder time knowing if the person *got it wrong* when identifying the taxon. Not so much a problem when working with a taxon this simple, but absolutely crucial for the majority of situations. We have two options here:
+Now that we know the operation to use, we need to find a suitable author and year to use as the basis for our Understanding. The year is easy - 2016. The author is a little harder. Ideally, we want to have a person as the author, as that allows us to tie a decision to a person rather than a faceless organisation where it could be any number of people. If we do not know the person, then we have a much harder time knowing if the person *got it wrong* when identifying the taxon. Not so much a problem when working with a taxon this simple, but absolutely crucial for the majority of situations. We have three options here:
 
 - Identify the person who performed the identification
 - Use the generic name of the Understandings System implementation
+- Pick a reliable key to use
 
 #### Identify the person
 In this scenario, we find out who the person was that identified the specimens from Tetbury. There are any number of avenues we can take. Contacting the organisation that performed the organisation is the most straightforward, though in our scenario slightly more complex as the organisation has been absorbed and moved through various names since then. In smaller and more niche situations, the pool of potential identifiers is often small enough that *someone* knows who it is directly. Asking around can often find out the answer very easily.
 
-For purely demonstrative purposes we will use the name 'Arvdan'. This produces the Understanding of `Vespula velutina: iso. Arvdan: 2016`.
+For purely demonstrative purposes we will use the fictional name 'Arvdan', who wrote their paper 'Vespula velutina *in Great Britain*' in 2016. This produces the Understanding of `Vespula velutina: iso. Arvdan: 2016`.
 
 #### Use the generic name of the Understandings System implementation
 Each implementation of the Understandings Systems comes with its own 'generic' name. This name can be anything, but is recommended to be the same as the organisation managing the implementation. In this scenario, the organisation is BWARS, providing the Understanding `Vespula velutina: iso. BWARS: 2016`.
+
+#### Pick a reliable key to use
+When faced with a situation where we don't have a known author to base an Understanding on, we can instead fall back on a key to provide *an* author for a citeable reference. The same guidance applies to selecting a key as does selecting a taxonomic work. The ideal key should:
+
+- cover the geographic region in question
+- cover the temporal range in question
+- provide the means to uniquely identify the taxon in question
+
+In this example, we can use Archer's 1989 key. This key covers the Channel Islands, where *V. velutina* is known to have been found for a while as a synanthropic import. The Channel Islands are directly adjacent to the subject area for this example, and it is a reasonable assumption that it is the same strain that will eventually colonise the south of England.
+
+Using the Archer key produces the Understanding `Vespula velutina: iso. Archer: 1989`.
 
 ### Splitting an Interpretation
 In 2025, the UK population of the ant *Tetramorium caespitum* (Linnaeus, 1758) was found to contain specimens of *Tetramorium alpestre* Steiner et al, 2010. The first question is, as always, on the presence of *significant, widespread, confusion*. Ants in the UK tend to attract far less attention than bees or even wasps, typically being very difficult to identify. As a result, when changes are found in established ant taxa, there tends to be a significant degree of confusion when examining past data. Such is the case in this instance, with the authors finding significant material of each taxon within the existing pool of data. This confusion is also *widespread*, as the confusions within that pool of data covers almost the entire range of the originating taxon. The answer is therefore that there *is* significant, widespread, confusion. To add the newly discovered presence of *Tetramorium alpestre* thus requires the use of a *split*.
@@ -48,9 +64,9 @@ Whilst there is the facade of conformity in the Linnaean taxonomic system, reali
 
 > ***IMPORTANT***
 >
-> 'Old' names which have simply fallen out of disuse for the global scientific community for significant periods of time should be **suppressed** upon discovery. Any and every change creates an increase in confusion. Increases in confusion should only happen if there is clarity to be gained from doing so. Re-instating an 'old' name because "that's what the code says to do" is ***not*** increasing clarity.
+> 'Old' names which have simply fallen out of disuse for the global scientific community for significant periods of time should be **suppressed** upon discovery. Any and every change creates an increase in confusion. Increases in confusion should only happen if there is clarity to be gained from doing so. Reinstating an 'old' name because "that's what the code says to do" is ***not*** increasing clarity.
 
-For this example, we will use *Andrena confinis*, which is the modern name for what was *Andrena congruens*, as per an article in the BWARS newsletter by Wood, 2022.
+For this example, we will use *Andrena confinis*, which is the modern name for what was *Andrena congruens*, as per an article in the BWARS newsletter by Wood, 2022. Here, the name change is performed because the GB name was being used incorrectly. Changing brings the Understandings System in line with the international standard, thereby improving clarity at the slight cost of increased confusion.
 
 Technically speaking, a name change is a merge with only one participant. Following the merge protocols, we find our input Understandings (only one in the case of a name change). In this situation, the input is `Andrena congruens: iso. Amiet et al: 2010`. We then find our output, which is `Andrena confinis: iso. Wood: 2022`, and use the input and output to perform a merge.
 
@@ -81,7 +97,34 @@ If the risk is *low*, then simply use the current and more modern Understanding.
 If the risk is moderate, then first ask a taxon expert where they place the risk and follow either the low or high risk strategy. If the taxon expert also doesn't know, the scheme organisers should decide between
 - More work, more confusion, but more precision (high risk)
 - Less work, less confusion, but less precision (low risk)
+
 There is no perfect answer to this scenario, and the correct route will depend entirely on what the taxon experts say or the scheme organisers decide. 
 
-- Example of what happens when a record comes in from pre Understandings system start. e.g. 'Bombus terrestris' starts in 1956, but a record comes in from 1890. Record gets assigned to 1956 version, and then do a version with the 'trap' Understanding of 'Bombus terrestris: iso. BWARS: 1800'
-- Systematic widespread confusion. Give example where there is minimal and where there is a lot of confusion.
+## The presence of significant widespread confusion
+The presence of absence of significant widespread confusion is the most pivotal question when needing to add a new Understanding. The following examples present some guidance on how and why each action was chosen.
+
+### Absence of significant widespread confusion
+In 2023, a surveyor picked up an odd-looking wasp whilst conducting a survey near the Royal Portbury Docks. Whilst the surveyor could immediately identify the genus, the specimen did not conform to any of the small group of species known to be present in the country. Further consultation with available literature sources identified the wasp as *Eumenes mediterraneus*, which was not previously known to have been found in the country. As a new Understanding must therefore be created, the question of significant widepsread confusion is then posed.
+
+The largest hint to the potential of confusion in this scenario is the location in which the specimen was found: the docks. *Eumenes* contains a number of species which have been documented to spread via containers, as the metal walls of said containers offer an abundant and well suited site on which to construct their mud nests. In particular, *E. mediterraneus* is exceptionally commonly found using this technique - allowing it to spread widely across European ports.
+
+The second hint is that the surveyor immediately picked the wasp out as different. There are two species of non-synanthropic *Emunes* known in the Understandings region, one of which is vagrant. One other species is known synanthropically, though has only been seen once (that the author is aware of). The key aspect here is that the genus had *one* potential confusion with a resident and well-recorded taxon, and the surveyor discounted that one whilst in the field. It is therefore extremely unlikely that this species has been present in the region for any length of time, as surveyors would have picked it out. The probability of significant confusion is therefor incredibly low.
+
+When it comes to the presence or not of widespread confusion, the predominant mainland species in the region, `Eumenes coarctatus: iso. Richards: 1980`, is only found in a very restricted range. This is likely a climate restriction, which tend to be very strictly delineated in this taxonomic group. Given the immediacy of identifying 'something different' the surveyor display, the probability of there being any widespread confusion within this very restricted range is very minimal.
+
+In conclusion, the presence of *Eumenes mediterraneus* in the Understanding's region is almost certainly a synanthropic arrival. There is no evidence of significant confusion with any extant group, nor indeed any relaistic probability of confusion at all.
+
+
+
+- New species arrives and is immediately picked up on
+- Use Matt Smith's arrival
+
+
+### Present
+- Messy split with taxon that is everywhere and no-one knows where the problems are
+- Andrena scotica/trimmerana
+
+- Long standing dissagreement over the presence & validity of taxa
+- Andrena trimmerana was agreed upon, it exists
+- Something else there, but not always easy to find
+- 
