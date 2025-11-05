@@ -41,9 +41,9 @@ In 2025, the UK population of the ant *Tetramorium caespitum* (Linnaeus, 1758) w
 The author of this split in this scenario is easy to find. The discovery was published in the British Journal of Entomology and Natural History:
 > Jarman, A.P. and Seifert, B. (2025) The alpine ant, Tetramorium alpestre Steiner et al., 2010, newly recognised as a native British species from Scotland (Hymenoptera: Formicidae). British Journal of Entomology and Natural History 38: 7-20
 
-This information is perfect. We have the authors, which we can format appropriately to be 'Jarman & Seifert'. The paper details everything we need to know about the discovery, applies to the whole geographic range of the Understandings implementation, and provides the characters required for determination.
+This information is perfect. We have the authors, which we can format appropriately to be 'Jarman & Seifert'. The paper details everything we need to know about the discovery, applies to the whole geographic range of our Understandings System implementation, and provides the characters required for determination.
 
-All that is left to do before we implement the `split` operation is find the original Understanding, which is
+All that is left to do before we implement the `split` operation is find the original Understanding within our Understandings System, which is
 
 > Tetramorium caespitum: iso. Schlick-Steiner: 2006
 
