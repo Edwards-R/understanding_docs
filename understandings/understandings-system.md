@@ -36,7 +36,7 @@ The first i.e. highest rank in your system should ideally be one of these ranks.
 There are *no* other restrictions on the use of any Ranks within the Understandings system.
 
 ### Temporal limitations
-It would be ideal to start tracking Interpretations at their point of conception (i.e. when the type is declared). However, such a goal is often either entirely unobtainable, or so difficult to obtain that it becomes impractical. It is, in some instances, perfectly acceptable to limit the start date of an Understandings system so that entirely exhaustive documentation becomes unneccessary. For example, if a taxon is well documented in a region since 1956 then an Understandings system may choose to use 1956 as a 'false origin' start date. The limitation would then be that any data prior to 1956 would exist under the type system alone, rather than enjoying the benefits of Interpretations. However, as the question has uncovered that doing so would not result in *significant widespread confusion* then this limitation is deemed acceptable.
+It would be ideal to start tracking Interpretations at their point of conception (i.e. when the type is declared). However, such a goal is often either entirely unobtainable, or so difficult to obtain that it becomes impractical. It is, in some instances, perfectly acceptable to limit the start date of an Understandings system so that entirely exhaustive documentation becomes unnecessary. For example, if a taxon is well documented in a region since 1956 then an Understandings system may choose to use 1956 as a 'false origin' start date. The limitation would then be that any data prior to 1956 would exist under the type system alone, rather than enjoying the benefits of Interpretations. However, as the question has uncovered that doing so would not result in *significant widespread confusion* then this limitation is deemed acceptable.
 
 This 'false origin' may be applied uniformly to all taxa within that implementation of the Understandings system, or in an ad-hoc manner as deemed relevant. Neither option is 'better' than the other.
 
@@ -68,7 +68,7 @@ These are called 'perfect' Operations as, in a perfect system, these are the onl
 
 |Name|Description|
 |---|---|
-|*Create junior synonym*|Create an entirely new, synonym only, Understanding. This cannot create currently valid Understandings. Frequently used to add in newly discovered historic synonymys|
+|*Create junior synonym*|Create an entirely new, synonym only, Understanding. This cannot create currently valid Understandings. Frequently used to add in newly discovered historic synonyms|
 |*Manual adjustment*|Anything and everything, with no safety checks. Most often used to revert previous mistakes, but should be used with whatever safety rails are available|
 
 Manual adjustment is a high risk Operation to use as it represents 'anything'. Improper use of manual adjustment can result in cascading failure - use sparingly, if at all.
@@ -85,5 +85,3 @@ Operations may only take place over a single rank. For example, an Operation per
 A strict implementation of Interpretations requires that a versioned Type system exists. Currently, no such system exists and there are no plans to create any. The Understandings System handles the absence of a type management system by simply skipping over the requirement. Modifications to a Type which would result in the creation of a new Type version also create a new Interpretation, as per the design of Interpretations. Accordingly, a new type version may be handled by implementing the resulting Interpretation change.
 
 The only trade-off is that each relevant Interpretation system must do their own change rather than relying on a centralised repository. On the positive side, manual management does provide greater ability for people to choose the changes that are desirable. By enabling choice, taxonomic vandalism (real or perceived) may be avoided entirely. Manual management of Type changes is slower and more labour-intensive, but far better than not having any management.
-
-##

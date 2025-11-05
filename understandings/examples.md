@@ -25,7 +25,7 @@ For purely demonstrative purposes we will use the fictional name 'Arvdan', who w
 Each implementation of the Understandings Systems comes with its own 'generic' name. This name can be anything, but is recommended to be the same as the organisation managing the implementation. In this scenario, the organisation is BWARS, providing the Understanding `Vespula velutina: iso. BWARS: 2016`.
 
 #### Pick a reliable key to use
-When faced with a situation where we don't have a known author to base an Understanding on, we can instead fall back on a key to provide *an* author for a citeable reference. The same guidance applies to selecting a key as does selecting a taxonomic work. The ideal key should:
+When faced with a situation where we don't have a known author to base an Understanding on, we can instead fall back on a key to provide *an* author for a citable reference. The same guidance applies to selecting a key as does selecting a taxonomic work. The ideal key should:
 
 - cover the geographic region in question
 - cover the temporal range in question
@@ -104,27 +104,24 @@ There is no perfect answer to this scenario, and the correct route will depend e
 The presence of absence of significant widespread confusion is the most pivotal question when needing to add a new Understanding. The following examples present some guidance on how and why each action was chosen.
 
 ### Absence of significant widespread confusion
-In 2023, a surveyor picked up an odd-looking wasp whilst conducting a survey near the Royal Portbury Docks. Whilst the surveyor could immediately identify the genus, the specimen did not conform to any of the small group of species known to be present in the country. Further consultation with available literature sources identified the wasp as *Eumenes mediterraneus*, which was not previously known to have been found in the country. As a new Understanding must therefore be created, the question of significant widepsread confusion is then posed.
+In 2023, a surveyor picked up an odd-looking wasp whilst conducting a survey near the Royal Portbury Docks. Whilst the surveyor could immediately identify the genus, the specimen did not conform to any of the small group of species known to be present in the country. Further consultation with available literature sources identified the wasp as *Eumenes mediterraneus*, which was not previously known to have been found in the country. As a new Understanding must therefore be created, the question of significant widespread confusion is then posed.
 
 The largest hint to the potential of confusion in this scenario is the location in which the specimen was found: the docks. *Eumenes* contains a number of species which have been documented to spread via containers, as the metal walls of said containers offer an abundant and well suited site on which to construct their mud nests. In particular, *E. mediterraneus* is exceptionally commonly found using this technique - allowing it to spread widely across European ports.
 
-The second hint is that the surveyor immediately picked the wasp out as different. There are two species of non-synanthropic *Emunes* known in the Understandings region, one of which is vagrant. One other species is known synanthropically, though has only been seen once (that the author is aware of). The key aspect here is that the genus had *one* potential confusion with a resident and well-recorded taxon, and the surveyor discounted that one whilst in the field. It is therefore extremely unlikely that this species has been present in the region for any length of time, as surveyors would have picked it out. The probability of significant confusion is therefor incredibly low.
+The second hint is that the surveyor immediately picked the wasp out as different. There are two species of non-synanthropic *Eumenes* known in the Understandings region, one of which is vagrant. One other species is known synanthropically, though has only been seen once (that the author is aware of). The key aspect here is that the genus had *one* potential confusion with a resident and well-recorded taxon, and the surveyor discounted that one whilst in the field. It is therefore extremely unlikely that this species has been present in the region for any length of time, as surveyors would have picked it out. The probability of significant confusion is therefore incredibly low.
 
 When it comes to the presence or not of widespread confusion, the predominant mainland species in the region, `Eumenes coarctatus: iso. Richards: 1980`, is only found in a very restricted range. This is likely a climate restriction, which tend to be very strictly delineated in this taxonomic group. Given the immediacy of identifying 'something different' the surveyor display, the probability of there being any widespread confusion within this very restricted range is very minimal.
 
-In conclusion, the presence of *Eumenes mediterraneus* in the Understanding's region is almost certainly a synanthropic arrival. There is no evidence of significant confusion with any extant group, nor indeed any relaistic probability of confusion at all.
-
-
-
-- New species arrives and is immediately picked up on
-- Use Matt Smith's arrival
-
+In conclusion, the presence of *Eumenes mediterraneus* in the Understanding's region is almost certainly a synanthropic arrival via container ship. There is no evidence of significant confusion with any extant group, nor indeed any realistic probability of confusion at all. The correct course of action to take is to add *Eumenes mediterraneus* as a new Understanding rather than a split of an existing Understanding.
 
 ### Present
+The names *Andrena scotica*, *Andrena carantonia*, and *Andrena trimmerana* have been embroiled in dispute for well over a hundred years. The genus *Andrena* is one of the largest genera of bees and covers a wide range globally. The genus is also known to have radiated quite substantially, suggesting a high degree of change is somehow inherent in the group. This combination of factors has led to a number of significant confusions in the taxonomic group
+
+
 - Messy split with taxon that is everywhere and no-one knows where the problems are
 - Andrena scotica/trimmerana
 
-- Long standing dissagreement over the presence & validity of taxa
+- Long standing disagreement over the presence & validity of taxa
 - Andrena trimmerana was agreed upon, it exists
 - Something else there, but not always easy to find
 - 

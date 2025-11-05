@@ -11,7 +11,7 @@ Previously, we demonstrated the division of the Linnaean taxonomic system into t
 > - put the two together, sorted by time
 > - summarise that the two different regions have different interpretations at different points of time
 
-Whilst taxonomy may be global, that global nature is only in concept. In practice, various regions may have differening applications of taxonomy to match their own practical needs. The most obvious example of this regionality is when a region discovers that they harbour a cryptic complex of well-established taxa. To examine *why* regionality exists, as well as the need to accurately handle regionality in order to maximise precision, the next section will walk through a real life example of the discovery of a cryptic taxon. 
+Whilst taxonomy may be global, that global nature is only in concept. In practice, various regions may have differing applications of taxonomy to match their own practical needs. The most obvious example of this regionality is when a region discovers that they harbour a cryptic complex of well-established taxa. To examine *why* regionality exists, as well as the need to accurately handle regionality in order to maximise precision, the next section will walk through a real life example of the discovery of a cryptic taxon. 
 
 ## Establishing the participating type components
 The participating type names in this exercise are:
@@ -77,7 +77,7 @@ In 2008, Murray et al positively identified a cryptic complex within the Latreil
 |Concept author|Fabricius|
 |Concept year|1775|
 
-The three taxonomic concepts (*B. lucorum*, *B. magnus*, & *B. cryptarum*) were, in 2008, well established and in frequent usage. There is therefore a problem: information of *Bombus lucorum*, interpretated according to Latreille in 1802, *from the region of Great Britain* has been found to not correspond or obey the global type concept declared by Latreille in 1802. The situation in Great Britain has reached nomenclatural divergence, yet the wider world is not in nomenclatural divergence.
+The three taxonomic concepts (*B. lucorum*, *B. magnus*, & *B. cryptarum*) were, in 2008, well established and in frequent usage. There is therefore a problem: information of *Bombus lucorum*, interpreted according to Latreille in 1802, *from the region of Great Britain* has been found to not correspond or obey the global type concept declared by Latreille in 1802. The situation in Great Britain has reached nomenclatural divergence, yet the wider world is not in nomenclatural divergence.
 
 To solve this, we need to use regionally isolated interpretations to refer to the globally applicable concept versions. Here, the new interpretation results from Murray et al in 2008, providing the following interpretations:
 
@@ -113,7 +113,7 @@ To solve this, we need to use regionally isolated interpretations to refer to th
 
 With this information recorded, we can switch using only the interpretation as a shortcut. Accordingly, this provides us with a list of the interpretations of these three taxa in Great Britain:
 
-|Name|Interpetation author|Interpretation year|
+|Name|Interpretation author|Interpretation year|
 |---|:-:|:-:|
 |*Bombus lucorum*|Latreille|1802|
 |*Bombus lucorum*|Murray et al|2008|
@@ -161,7 +161,7 @@ Since the recognition of *Bombus cryptarum* is a regional event, only the interp
 
 When using the interpretation shortcut, we end up with three distinct interpretations for Austria:
 
-|Name|Interpetation author|Interpretation year|
+|Name|Interpretation author|Interpretation year|
 |---|:-:|:-:|
 |*Bombus lucorum*|Latreille|1802|
 |*Bombus lucorum*|Bossert et al|2016|
@@ -182,7 +182,7 @@ Using the established interpretations, we can examine how using interpretations 
 Now that interpretations have been stated, we can look down a name's column to see how that single type name is used in different ways, across time and across regions.
 
 ## Identifying the right interpretation
-From the tables above, we can see that Great Britain has two distinct interpretations of the name *Bombus lucorum*. One by Latreille in 1802, and one by Murray et al in 2008. Both of these interpretations exist, and have data stored under them - even though the interpretations may not always be recognised. The Global Biodiveristy Information Foundation (GBIF) is characteristic of this problem, displaying data from Great Britain as '*Bombus lucorum*' across the nomenclatural divergence between Latreille, 1802 and Murray et al, 2008. Following the nomenclatural codes, only *one* interpretation of a concept version may be considered currently correct. Accordingly, the next step is to design the synonymy of interpretations so that we can always reach the currently correct interpretation.
+From the tables above, we can see that Great Britain has two distinct interpretations of the name *Bombus lucorum*. One by Latreille in 1802, and one by Murray et al in 2008. Both of these interpretations exist, and have data stored under them - even though the interpretations may not always be recognised. The Global Biodiversity Information Foundation (GBIF) is characteristic of this problem, displaying data from Great Britain as '*Bombus lucorum*' across the nomenclatural divergence between Latreille, 1802 and Murray et al, 2008. Following the nomenclatural codes, only *one* interpretation of a concept version may be considered currently correct. Accordingly, the next step is to design the synonymy of interpretations so that we can always reach the currently correct interpretation.
 
 ## Conclusion
 Regional variation in interpretations have been demonstrated, as well as their regionally bounded solution. Using regionally bounded interpretations allows nomenclatural divergence in different areas to be identified and accounted for in ways the the current Linnaean system can not enable. Whilst multiple interpretations are now identifiable, there is still confusion when accessing data using non-current interpretations.

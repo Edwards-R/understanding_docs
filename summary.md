@@ -1,5 +1,5 @@
 # Summary
-Whilst this documentation removes the ability of a nomenclatural divergence to occur, there are still multiple areas which require further development. The primary focus for futher development is in the creation of a practical implementation of the proposed system so that real-life testing may be performed.
+Whilst this documentation removes the ability of a nomenclatural divergence to occur, there are still multiple areas which require further development. The primary focus for further development is in the creation of a practical implementation of the proposed system so that real-life testing may be performed.
 
 There are multiple problems still to be addressed before a viable system may be considered finalised.
 

@@ -40,7 +40,7 @@ Whilst examining specimens in the British Natural History Museum, Notton & Dathe
 
 Summarising the interpretations, in this case one per concept change, we therefore have:
 
-|Name|Interpetation author|Interpretation year|
+|Name|Interpretation author|Interpretation year|
 |---|:-:|:-:|
 |*Hylaeus annularis*|Kirby|1802|
 |*Hylaeus dilatatus*|Kirby|1802|
@@ -87,7 +87,7 @@ In Great Britain there are two interpretations of *Bombus lucorum*:
 
 First, an occurrence record of *Bombus lucorum* from 1996 is stored. This will be entered as '*Bombus lucorum* *interpretation* Latreille, 1802'. When resolved, this record will provide '*Bombus lucorum* Linnaeus, 1761', as the interpretation by Latreille in 1802 is the currently correct interpretation and therefore resolves to the type.
 
-Next, fast-forward to 2010 and store another record. This record has been afforded all the benefits of modern science and has been genetically sequenced - we are therefore very confident that it is '*Bombus lucorum* *interpretation* Murray et al, 2008'. When resolved, this record will provide '*Bombus lucorum* Linaeus 1761', as the interpretation by Murray et al in 2008 is the currently correct interpretation.
+Next, fast-forward to 2010 and store another record. This record has been afforded all the benefits of modern science and has been genetically sequenced - we are therefore very confident that it is '*Bombus lucorum* *interpretation* Murray et al, 2008'. When resolved, this record will provide '*Bombus lucorum* Linnaeus 1761', as the interpretation by Murray et al in 2008 is the currently correct interpretation.
 
 However, the first record, entered as '*Bombus lucorum* *interpretation* Latreille, 1802', has an issue. If we resolved then stored, this will be stored as the type name - *Bombus lucorum* - despite the work of Murray et al demonstrating that *Bombus lucorum* *interpretation* Latreille, 1802 does not equate to the type, being a cryptic aggregate. If we store the interpretation and resolve at point of use, we have two interpretations:
 
@@ -100,13 +100,13 @@ When resolved in 2010 (and remembering that Murray et al showed that Latreille's
 |:-:|:-:|:-:|
 |*Bombus lucorum* Latreille, 1802|*Bombus lucorum* aggregate Murray et al, 2008|*Bombus lucorum*, Linnaeus 1761|
 |||*Bombus magnus* Vogt, 1911|
-|||*Bombus cryptaum* Fabricius, 1775|
+|||*Bombus cryptarum* Fabricius, 1775|
 |---|---|---|
 |*Bombus lucorum* Murray et al, 2008|*Bombus lucorum* Murray et al, 2008|*Bombus lucorum*, Linnaeus 1761|
 
 > Pay attention to column headers. Without specific formatting, it is very easy to confuse interpretations and types.
 
-With this, nomenclatural disjuction is finally solved. We have a method of identifying, storing, and now resolving, every situation where a type name no longer matches the type concept.
+With this, nomenclatural disjunction is finally solved. We have a method of identifying, storing, and now resolving, every situation where a type name no longer matches the type concept.
 
 ### Cross regional
 Performing the same comparison for Austria as we did Great Britain (pre- and post- interpretation change i.e. 1996 and 2018), we achieve the following table:
@@ -114,7 +114,7 @@ Performing the same comparison for Austria as we did Great Britain (pre- and pos
 |Origin interpretation|Resolved interpretation|Type(s) included|
 |:-:|:-:|:-:|
 |*Bombus lucorum* Latreille, 1802|*Bombus lucorum* aggregate Bossert et al, 2016|*Bombus lucorum*, Linnaeus 1761|
-|||*Bombus cryptaum* Fabricius, 1775|
+|||*Bombus cryptarum* Fabricius, 1775|
 |---|---|---|
 |*Bombus lucorum* Bossert et al, 2016|*Bombus lucorum* Bossert et al, 2016|*Bombus lucorum*, Linnaeus 1761|
 
@@ -136,11 +136,11 @@ Moving forward to 2010, which is *after* Murray et al yet *before* Bossert et al
 |---|---|---|
 |Great Britain|*Bombus lucorum* Latreille, 1802|*Bombus lucorum* Linnaeus, 1761|
 |||*Bombus magnus* Vogt, 1911|
-|||*Bombus cryptaum* Fabricius, 1775|
+|||*Bombus cryptarum* Fabricius, 1775|
 |---|---|---|
 |Austria|*Bombus lucorum* Latreille, 1802|*Bombus lucorum* Linnaeus, 1761|
 
-Here we can see the increased knowledge gained by Murray et al automatically reflected in the data. The consumer is *immediately* able to notice that *Bombus lucorum* from Great Britain, intepreted according Latreille, 1802, has undergone a nomenclatural disjunction.
+Here we can see the increased knowledge gained by Murray et al automatically reflected in the data. The consumer is *immediately* able to notice that *Bombus lucorum* from Great Britain, interpreted according Latreille, 1802, has undergone a nomenclatural disjunction.
 
 If we add a record from Great Britain, interpreted according to Murray et al, 2008, the result is as follows:
 
@@ -148,7 +148,7 @@ If we add a record from Great Britain, interpreted according to Murray et al, 20
 |---|---|---|
 |Great Britain|*Bombus lucorum* Latreille, 1802|*Bombus lucorum*, Linnaeus 1761|
 |||*Bombus magnus* Vogt, 1911|
-|||*Bombus cryptaum* Fabricius, 1775|
+|||*Bombus cryptarum* Fabricius, 1775|
 |---|---|---|
 |Great Britain|*Bombus lucorum* Murray et al, 2008|*Bombus lucorum* Linnaeus, 1761|
 |---|---|---|
@@ -164,17 +164,17 @@ Concluding the example set, we step forward to 2020. Here, both regions of Great
 |---|---|---|
 |Great Britain|*Bombus lucorum* Latreille, 1802|*Bombus lucorum*, Linnaeus 1761|
 |||*Bombus magnus* Vogt, 1911|
-|||*Bombus cryptaum* Fabricius, 1775|
+|||*Bombus cryptarum* Fabricius, 1775|
 |---|---|---|
 |Great Britain|*Bombus lucorum* Murray et al, 2008|*Bombus lucorum* Linnaeus, 1761|
 |---|---|---|
 |Austria|*Bombus lucorum* Latreille, 1802|*Bombus lucorum* Linnaeus, 1761|
-|||*Bombus cryptaum* Fabricius, 1775|
+|||*Bombus cryptarum* Fabricius, 1775|
 |---|---|---|
 |Austria|*Bombus lucorum* Bossert et al, 2015|*Bombus lucorum* Linnaeus, 1761|
 
 ## Resolving concept versions and type names
-The same logic of resolving may be applied to concept versions and type names. Indeed, type names already posess a level of resolving in the current Linnaean system - synonyms. Any design specification, however, falls firmly within the realm of the *implementation* of design as opposed to the *specification* of design. As such, no further details on *how* such a system may be managed will be outlined herein.
+The same logic of resolving may be applied to concept versions and type names. Indeed, type names already possess a level of resolving in the current Linnaean system - synonyms. Any design specification, however, falls firmly within the realm of the *implementation* of design as opposed to the *specification* of design. As such, no further details on *how* such a system may be managed will be outlined herein.
 
 ## Conclusion
 Interpretations may be used to store nomenclature in a time-safe, regional manner. Resolving an interpretation at the point of consumption means that the end user is always able to incorporate the maximum amount of taxonomic and nomenclatural knowledge, vastly increasing the taxonomic precision of end-user products.

@@ -19,7 +19,7 @@ To illustrate how the linkage between the various components is maintained, this
 ## Each interpretation relates to a single type name
 During this exercise, we will examine the various concept versions and interpretations of the name *Bombus lucorum* Linnaeus 1761. Please note that this is not an exhaustive list in any way, and only serves as an example.
 
-The origin concept version of the name *Bombus lucorum* Linnaeus 1761 is, by definition, created by Linnaeaus in 1761. A similar situation is true for the origin interpretation of that concept version, which is also attributed to Linnaeus 1761.
+The origin concept version of the name *Bombus lucorum* Linnaeus 1761 is, by definition, created by Linnaeus in 1761. A similar situation is true for the origin interpretation of that concept version, which is also attributed to Linnaeus 1761.
 
 |Attribute|Value|
 |:--|--:|
@@ -64,7 +64,7 @@ In 2008, Murray et al corrected the interpretation of Latreille's concept versio
 |Interpretation author|Murray et al|
 |Interpretation year|2008|v
 
-Note how the name, the name author, and the name year remain constant throughout every example. This happens because each and every example is a versioning, in some way, of the same name. Note too that it is possible, given this list of options, to provide only the name, interpretation author, and interpretation year (e.g *Bombus lucorum*, Murray et al, 2008) and still arrive at a singular type name. This ability to 'shortcut' the process will become extremely important later, as it allows the offloading of the majority of work to automated systems. Once the bulk of work is taken up by such automation, the increased complexity of utilising a three-tier system over a one-tier system is almost entirely erradicated.
+Note how the name, the name author, and the name year remain constant throughout every example. This happens because each and every example is a versioning, in some way, of the same name. Note too that it is possible, given this list of options, to provide only the name, interpretation author, and interpretation year (e.g *Bombus lucorum*, Murray et al, 2008) and still arrive at a singular type name. This ability to 'shortcut' the process will become extremely important later, as it allows the offloading of the majority of work to automated systems. Once the bulk of work is taken up by such automation, the increased complexity of utilising a three-tier system over a one-tier system is almost entirely eradicated.
 
 ## Regionality and globality
 Now that the system is fully divided up into areas of concern, it is possible to divide these areas once more. Our type name and type version are *global*, as they refer to the library of types managed by the respective nomenclatural codes. Our interpretations, however, may be *regional*. Multiple, distinct, sets of regional interpretations may be attached to any given concept version, and all will still link back to a given type name.
