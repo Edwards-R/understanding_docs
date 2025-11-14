@@ -1,5 +1,5 @@
 # Biological Understandings
-This site serves as the repository for the re-design of Linnaean taxonomy. The goal of this project is to create a truly global, automatically updating, user-friendly replacement for the Linnaean system - without sacrificing the accumulated knowledge gained so far.
+This site serves as the repository for the re-design of Linnaean taxonomy. The goal of the Biological Understandings project is to create a solution to a number of data management problems relating to the Linnaean taxonomic system, whilst maintaining a sympathetic approach to existing use.
 
 [Start here](./introduction.md)
 

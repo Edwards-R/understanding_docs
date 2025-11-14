@@ -1,5 +1,5 @@
 # Human-centric labels
-Previously, we arrived at a way to version types and interpretations in order to solve nomenclatural divergence. However, the labelling of these versions was very rudimentary. Using pure numbers (v1, v2, v3 etc) may be logically complete, but it is typically more difficult for humans to remember the exact meaning of what a given number refers to. In order to significantly improve the usability of our proposed modification, a different solution to version identification must be found.
+Previously, we arrived at a way to version types and interpretations in order to solve nomenclatural divergence. However, the labelling of these versions was very rudimentary. Using pure numbers (t1, t2, t3 etc) may be logically complete, but it is typically more difficult for humans to remember the exact meaning of what a given number refers to. In order to significantly improve the usability of our proposed modification, a different solution to version identification must be found.
 
 ## Borrowing from what already exists
 Luckily for us, there already exists a precedent for human-centric versioning within the field of taxonomy. Homonym taxa arise from a situation in which the same name is given to two different taxa. For example, *Ransonia* has been used a genus in two situations (see [Tonini et al](https://doi.org/10.11646/zootaxa.4097.1.7)). To pre-emptively enable such mistakes to be identified and rectified, each taxon name has the author and year of declaration attached:
@@ -20,7 +20,9 @@ Under the redesign of the taxonomic system, the 'root' component of a type is it
 |Name author|Linnaeus|
 |Name year|1761|
 
-Attached to this is a version of the taxon concept. Latreille, in 1802, moved this species to Bombus. As such, Latreille is the author of the current concept.
+Attached to this is a version of the taxon concept. Latreille, in 1802, moved *lucorum* to the genus *Bombus*. As such, Latreille is the author of the current concept.
+
+> A note for entomologists who are wondering about *Apis lucorum*: The handling of splits and merges of parent taxon groupings are far too complex to be discussed at this point. This example picks up after Latreille's change to the organisation of Linnaeus's type.
 
 |Attribute|Value|
 |:--|--:|

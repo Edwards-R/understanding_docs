@@ -14,19 +14,19 @@ Using the idea of concerns, we can solve our problem of versioning in a very nea
 ## How does this fix our problem?
 Now that the two areas of taxonomy and interpretation have separated, the versioning follows the same procedure. First, apply the version to the type, e.g.
 
-> *Bombus lucorum v4*
+> *Bombus lucorum t4*
 
 Next, apply the interpretation version to the versioned type, e.g.
 
-> *Bombus lucorum v4* **v3**
+> *Bombus lucorum t4* **i3**
 
 This gives us the 3rd interpretation of the 4th version of the type. When a taxonomist wishes to review the type, they act on the 4th version of the type. The '3rd interpretation' of that type is irrelevant to them, and is simply ignored. The resulting type would be version 5:
 
-> *Bombus lucorum v5*
+> *Bombus lucorum t5*
 
 As this is a new version of the type, this also spawns the first interpretation of that version of the type:
 
-> *Bombus lucorum v5* **v1**
+> *Bombus lucorum t5* **i1**
 
 The taxonomists may now operate safely and securely on the type, and the interpreters of the type may now create as many versions of their interpretation as they desire, without interfering with taxonomy.
 

@@ -8,7 +8,7 @@ In one example situation, the names *Hylaeus annularis* and *Hylaeus dilatatus* 
 The result was, of course, false. The change in records was being driven entirely by the *nomenclatural divergence* in the data, as opposed to any true change in the number of records. The fault was explained when the researchers reached out to taxon experts for their assistance in interpretation. Having been made aware of this change during publication - and having dissented the validity of a 'straight swap' of nomenclature - the taxon expert was able to explain what had happened. Without the specialist knowledge provided by the taxon experts, there was no indicator to the researchers that any change had taken place. Even if the researchers *somehow* knew that a change had taken place, they would then have to piece together the (typically disconnected) trail of evidence that led to the nomenclatural divergence.
 
 ## Are nomenclatural divergences the result of poor taxonomy
-Nomenclatural divergences are specifically not the result of poor taxonomic practices, at least as far as the 2025 editions of the respective taxonomic codes are defined. Whilst the above example is, very arguably, a significant mistake in the application of the zoological code, the vast majority of nomenclatural divergences are caused 'routine' activity. The following sections will cover one such case in *Bombus lucorum*, which has been extensively examined over many years.
+Nomenclatural divergences are specifically not the result of poor taxonomic practices. Whilst the above example is, very arguably, a significant mistake in the application of the zoological code, the vast majority of nomenclatural divergences are caused by 'routine' activity. The following sections will cover one such case in *Bombus lucorum*, which has been extensively examined over many years.
 
 ## Solving Nomenclatural Divergence
 Nomenclatural Divergence is, at its base level, caused by a failure to implement version control in a suitable manner. Linnaean nomenclature, governed by the codes, states that there may only be one valid use of a name at one time. For example, it would be forbidden to declare a new genus *Bombus* as a child of *Apidae*, given that one already exists. However, the codes and their accompanying systems do not have a provision to manage multiple instances of the same name, even if only one of them exists at a time.
@@ -106,10 +106,7 @@ However, when we want to add the third in, what does this get called?
 |*Andrena trimmerana sensu stricto*|
 |*Andrena trimmerana ??*|
 
-In the past, such situations tended to evolve over longer periods of time e.g. 100+ years, which allowed the situation to be solved by 'forgetting' about the first change. With increased attention, dependency, and the advent of genomics, changes occur far faster, more frequently, and have higher potential impact on existing systems. 
-
-### Elephants (and systems) never forget
-This table shows how, over long time periods, the use of *sensu* tends to shift between different versions of the type concept.
+In the past, such situations tended to evolve over longer periods of time e.g. 100+ years, which allowed the situation to be solved by 'forgetting' about the first change. With increased attention, dependency, and the advent of genomics, changes occur far faster, more frequently, and have higher potential impact on existing systems. This table shows how, over long time periods, the use of *sensu* tends to shift between different versions of the type concept.
 
 |Name (early)| Name (late)|
 |---|---|

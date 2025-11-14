@@ -45,7 +45,7 @@ When spoken aloud, this is
 >
 > Next page goes into the Understandings system
 >
-> We can now write an Interpretation in one, albeit fairly long, line. This line, according to the principles of Interpretations, carries the entire taxonomic and nomenclatural status in it. 
+> We can now write an Interpretation in one, albeit fairly long, line. This line, according to the principles of Interpretations, carries the entire taxonomic and nomenclatural status in it. The next step is to examine the Understandings System to see how this information is created and maintained.
 ---
 
 
