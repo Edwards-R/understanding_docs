@@ -1,5 +1,5 @@
 # Resolving Interpretations
-In each interpretation region, each concept version has a singular interpretation which is considered to the currently correct. As a result, there are potentially multiple interpretations within any given region which are in nomenclatural divergence. Interpretations so far have only allowed the identification of different interpretations. Now they will be improved to allow for solving of nomenclatural divergence.
+In each interpretation region, each concept version has a singular interpretation which is considered to be currently correct. As a result, there are potentially multiple interpretations within any given region which are in nomenclatural divergence. Interpretations so far have only allowed the identification of different interpretations. Now they will be improved to allow for solving of nomenclatural divergence.
 
 ## Working examples
 To illustrate the first stages of this example, we will use a situation of two confused types: *Hylaeus annularis* and *Hylaeus dilatatus*:
@@ -20,7 +20,9 @@ To illustrate the first stages of this example, we will use a situation of two c
 |Concept author|Kirby|
 |Concept year|1802|
 
-Whilst examining specimens in the British Natural History Museum, Notton & Dathe realised that the material of these two taxa did not match the concept established by Kirby in 1802. The author of this changed concept remains uncertain, predominantly due to the very lax way in which taxonomy has been handled thus far. The solution was made more complex by the way in which the solution was handled, which was to effectively swap the type concepts across these two active names. Breaking the taxonomic process down into the new system, Notton & Dathe effectively declared new concept versions as follows:
+Whilst examining specimens in the British Natural History Museum, Notton & Dathe realised that the material of these two taxa did not match the concept established by Kirby in 1802. The material was too precisely mis-attributed to be the result of a simple determination error. Further investigation revealed the presence of an alteration of the Kirby concept that had become pervasive, with multiple well-used keys using the altered concept rather than the original. The national recording schemes were also using the altered concept, with almost all the 'original' concept uses being found in older museum collections.
+
+The zoological codes recognise, in general, two different methods of resolving such a situation. The first is to recognise that a change has happened and then reverse that change to restore the original state. This action is the preferred course. The second, which is generally less desirable, is to accept the change as the new normal. This action is usually only taken when there is a demonstrable need to do so, such as the changed version being in common use for a significant amount of time, or where the negative impacts of correction outweigh any positives. In this scenario, the authors decided to utilise the 'default' option of reverting a discovered change. Breaking the taxonomic process down into the new system, Notton & Dathe effectively declared new concept versions as follows:
 
 |Attribute|Value|
 |:--|--:|

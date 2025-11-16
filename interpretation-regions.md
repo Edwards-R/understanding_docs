@@ -2,16 +2,21 @@
 Previously, we demonstrated the division of the Linnaean taxonomic system into three components, as well how these components enable the use of regional variation. In this section we will examine a simplified real world scenario which utilises the three component system across two regions to provide precise, modernised, to-type precision of nomenclature.
 
 ## Concept vs reality in the face of cryptic taxa
-> Refresher of previous page on Bombus lucorum.
-> - start with the type names
-> - then add the type concepts
-> - now run the GB scenario
-> - summarise the GB scenario
-> - now run the Swedish scenario
-> - put the two together, sorted by time
-> - summarise that the two different regions have different interpretations at different points of time
-
 Whilst taxonomy may be global, that global nature is only in concept. In practice, various regions may have differing applications of taxonomy to match their own practical needs. The most obvious example of this regionality is when a region discovers that they harbour a cryptic complex of well-established taxa. To examine *why* regionality exists, as well as the need to accurately handle regionality in order to maximise precision, the next section will walk through a real life example of the discovery of a cryptic taxon. 
+
+## Refresher on definitions
+|Term|Definition|
+|---|---|
+|Name| The name of a type|
+|Name author| The author of the type|
+|Name year| The year in which the author declared the type|
+|Concept| A particular version of a type. Can generally be altered by changing the type specimen, changing the taxon limits of the type, or changing the parent type|
+|Concept author| The author of a particular Concept|
+|Concept year| The year in which the Concept author declared their taxonomic modification or creation of a type|
+|Interpretation|A particular interpretation of a Concept, often regionally bounded|
+|Interpretation author|The author of an Interpretation|
+|Interpretation year|The year in which the Interpretation author declared their Interpretation|
+
 
 ## Establishing the participating type components
 The participating type names in this exercise are:
@@ -24,7 +29,9 @@ The participating type names in this exercise are:
 
 Expanding this table allows us to reference the type concept version for each taxon.
 
-> Note that the types and their versions used here are approximated, as precise type concept versioning requires the attention of an experienced taxonomist. Such taxonomically precise versioning would also provide a significant barrier to ease of comprehension, making complexity undesirable in educational examples.
+> Note that the types and their versions used here are approximated, as precise type concept versioning requires the attention of an experienced taxonomist. These approximations will only be detectable by expert taxonomists who cover *Bombus*, and there is no practical impact of using approximations in these examples. Taxonomically precise versioning required far longer to explain and comprehend, whilst not adding any measurable value to a foundational explanation.
+
+> The type version used in this demonstration starts at the point of declaration of the genus *Bombus* by Latreille in 1802.  
 
 |Name|Author|Year|Concept Author|Concept Year|
 |:-:|:-:|:-:|:-:|:-:|
