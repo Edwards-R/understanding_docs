@@ -2,9 +2,6 @@
 ## Normal use
 Examples of the Understandings System during normal use.
 
-> We didn't have one so we used a key as basis
-> 
-> Ellen is attempting to find out the person from FERA, but don't hold my breath
 ### Adding a new interpretation
 In 2016, *Vespula velutina* was first sighted in the United Kingdom. Whilst the public regularly confuses this species with multiple other taxa, it does not take much ability to identify. This first confirmed record in 2016 was from the area of Tetbury - a highly suspicious location for any of the usual colonisation routes that such organisms take. *Vespula velutina* is, however, well known for synanthropic dispersal. Many specimens have since turned up in fresh vegetables from countries such as France.
 
@@ -60,7 +57,7 @@ The input Understandings are:
 The output Understanding, using Guichard's 2002 key is `Passaloecus turionum: iso. de Beaumont: 1964`. All data previously ending at any of the inputs is automatically redirected to the output.
 
 ## Changing a name
-Whilst there is the facade of conformity in the Linnaean taxonomic system, reality is far from conforming. A fairly frequent action taken is to 'rename' a taxon - either as the result of inadvertant synonymy or the discovery of an older name.
+Whilst there is the facade of conformity in the Linnaean taxonomic system, reality is far from conforming. A fairly frequent action taken is to 'rename' a taxon - either as the result of inadvertent synonymy or the discovery of an older name.
 
 > ***IMPORTANT***
 >
@@ -114,8 +111,12 @@ When it comes to the presence or not of widespread confusion, the predominant ma
 
 In conclusion, the presence of *Eumenes mediterraneus* in the Understanding's region is almost certainly a synanthropic arrival via container ship. There is no evidence of significant confusion with any extant group, nor indeed any realistic probability of confusion at all. The correct course of action to take is to add *Eumenes mediterraneus* as a new Understanding rather than a split of an existing Understanding.
 
-### Present
-The names *Andrena scotica*, *Andrena carantonia*, and *Andrena trimmerana* have been embroiled in dispute for well over a hundred years. The genus *Andrena* is one of the largest genera of bees and covers a wide range globally. The genus is also known to have radiated quite substantially, suggesting a high degree of change is somehow inherent in the group. This combination of factors has led to a number of significant confusions in the taxonomic group
+### Presence of significant, widespread confusion
+The names *Andrena scotica*, *Andrena carantonica*, and *Andrena trimmerana* have been embroiled in dispute for well over a hundred years. The genus *Andrena* is one of the largest genera of bees and covers a wide range globally. The genus is also known to have radiated quite substantially, suggesting a high degree of change is somehow inherent in the group. This combination of factors has led to a number of significant confusions in the taxonomic group
+
+With the grouping of *A. scotica*, *A. trimmerana*, and *A. carantonica*, there are known to be multiple uses of these names, with different countries maintaining their own interpretations over decades. As these examples are examining problems from the view of the United Kingdom, the first task is to trace the history of nomenclature from within this region - especially as the history differers from the current publications.
+
+
 
 
 - Messy split with taxon that is everywhere and no-one knows where the problems are

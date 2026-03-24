@@ -1,8 +1,8 @@
 # Interpretation Regions
-Previously, we demonstrated the division of the Linnaean taxonomic system into three components, as well how these components enable the use of regional variation. In this section we will examine a simplified real world scenario which utilises the three component system across two regions to provide precise, modernised, to-type precision of nomenclature.
+Previously we demonstrated the division of the Linnaean taxonomic system into three components: the type, type version, and interpretation. We ended by noting that the example given specifically stated '*within the area of Great Britain*'. This section will examine why such a qualifier was needed, what the implications are, and how people working across multiple regions can finally achieve to-type nomenclature without involving any guesswork.
 
 ## Concept vs reality in the face of cryptic taxa
-Whilst taxonomy may be global, that global nature is only in concept. In practice, various regions may have differing applications of taxonomy to match their own practical needs. The most obvious example of this regionality is when a region discovers that they harbour a cryptic complex of well-established taxa. To examine *why* regionality exists, as well as the need to accurately handle regionality in order to maximise precision, the next section will walk through a real life example of the discovery of a cryptic taxon. 
+Whilst taxonomy may be global, that global nature is only in theory. In practice, various regions may have differing applications of taxonomy to match their own practical needs. The most obvious example of this regionality is when a region discovers that they harbour a cryptic complex of well-established taxa. To examine *why* regionality exists, as well as the need to accurately handle regionality in order to maximise precision, the next section will walk through a real life example of the discovery of a cryptic taxon. 
 
 ## Refresher on definitions
 |Term|Definition|
@@ -27,11 +27,7 @@ The participating type names in this exercise are:
 |Bombus cryptarum|Fabricius|1775|
 |Bombus magnus|Vogt|1911|
 
-Expanding this table allows us to reference the type concept version for each taxon.
-
-> Note that the types and their versions used here are approximated, as precise type concept versioning requires the attention of an experienced taxonomist. These approximations will only be detectable by expert taxonomists who cover *Bombus*, and there is no practical impact of using approximations in these examples. Taxonomically precise versioning required far longer to explain and comprehend, whilst not adding any measurable value to a foundational explanation.
-
-> The type version used in this demonstration starts at the point of declaration of the genus *Bombus* by Latreille in 1802.  
+Expanding this table allows us to reference the type concept version for each taxon. The type version used in this demonstration starts at the point of declaration of the genus *Bombus* by Latreille in 1802, with *B. magnus* following after in 1911.
 
 |Name|Author|Year|Concept Author|Concept Year|
 |:-:|:-:|:-:|:-:|:-:|
@@ -39,8 +35,7 @@ Expanding this table allows us to reference the type concept version for each ta
 |Bombus cryptarum|Fabricius|1775|Latreille|1802|
 |Bombus magnus|Vogt|1911|Vogt|1911|
 
-### A quick note on perfection (and the lack of it)
-When establishing a history of the interpretations of any taxon, it is likely that complex situations will emerge. It is also possible that the pertinent information will simply have been lost to time and no-one living remembers what was done and when. For the purpose of this explanation, interpretations given in examples will be simplified versions of reality, so as to not require multiple taxonomic papers to be written (and then read) for each example given.
+> The types, their versions, and their interpretations used here are approximated, as precise type concept versioning requires the attention of an experienced taxonomist. These approximations will only be detectable by expert taxonomists who specifically cover the history of *Bombus*, and there is no detriment in using approximations for these examples. Taxonomically-precise versioning requires far longer-winded text to explain and comprehend, whilst not adding any measurable value to a foundational explanation.
 
 ## The history of interpretation in Great Britain (and Ireland)
 Our example starts with the known presence of *Bombus lucorum* (Linnaeus 1761), concept version Latreille 1802.
@@ -189,10 +184,10 @@ Using the established interpretations, we can examine how using interpretations 
 Now that interpretations have been stated, we can look down a name's column to see how that single type name is used in different ways, across time and across regions.
 
 ## Identifying the right interpretation
-From the tables above, we can see that Great Britain has two distinct interpretations of the name *Bombus lucorum*. One by Latreille in 1802, and one by Murray et al in 2008. Both of these interpretations exist, and have data stored under them - even though the interpretations may not always be recognised. The Global Biodiversity Information Foundation (GBIF) is characteristic of this problem, displaying data from Great Britain as '*Bombus lucorum*' across the nomenclatural divergence between Latreille, 1802 and Murray et al, 2008. Following the nomenclatural codes, only *one* interpretation of a concept version may be considered currently correct. Accordingly, the next step is to design the synonymy of interpretations so that we can always reach the currently correct interpretation.
+From the tables above, we can see that Great Britain has two distinct interpretations of the name *Bombus lucorum*. One by Latreille in 1802, and one by Murray et al in 2008. Both of these interpretations exist, and have data stored under them - even though the interpretations may not always be recognised. The Global Biodiversity Information Foundation (GBIF) is characteristic of this problem, displaying data from Great Britain as '*Bombus lucorum*' across the nomenclatural divergence between Latreille, 1802 and Murray et al, 2008. Following the nomenclatural codes, only *one* interpretation of a concept version may be considered currently correct. Accordingly, the next step is to design the system that will enable us to always be able reach the currently correct interpretation.
 
 ## Conclusion
-Regional variation in interpretations have been demonstrated, as well as their regionally bounded solution. Using regionally bounded interpretations allows nomenclatural divergence in different areas to be identified and accounted for in ways the the current Linnaean system can not enable. Whilst multiple interpretations are now identifiable, there is still confusion when accessing data using non-current interpretations.
+Regional variation in interpretations have been demonstrated, as well as the regionally bounded solution. Using regionally bounded interpretations allows nomenclatural divergence in different areas to be identified and accounted for in ways the the current Linnaean system can not enable. Whilst multiple interpretations are now identifiable, there is no defined way to reach the current best-known interpretation from any given interpretation.
 
 [Next](./resolving-interpretations.md)
 

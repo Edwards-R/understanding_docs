@@ -2,6 +2,8 @@
 In each interpretation region, each concept version has a singular interpretation which is considered to be currently correct. As a result, there are potentially multiple interpretations within any given region which are in nomenclatural divergence. Interpretations so far have only allowed the identification of different interpretations. Now they will be improved to allow for solving of nomenclatural divergence.
 
 ## Working examples
+> This example is based on reality, but has been simplified to remove extraneous information and improve the quality of the example. The alterations do not impact the outcome.
+
 To illustrate the first stages of this example, we will use a situation of two confused types: *Hylaeus annularis* and *Hylaeus dilatatus*:
 
 |Attribute|Value|
@@ -40,17 +42,17 @@ The zoological codes recognise, in general, two different methods of resolving s
 |Concept author|Notton & Dathe|
 |Concept year|2008|
 
-Summarising the interpretations, in this case one per concept change, we therefore have:
+Summarising the concepts, one per concept change, we therefore have:
 
-|Name|Interpretation author|Interpretation year|
+|Name|Concept author|Concept year|
 |---|:-:|:-:|
 |*Hylaeus annularis*|Kirby|1802|
 |*Hylaeus dilatatus*|Kirby|1802|
 |*Hylaeus annularis*|Notton & Dathe|2008|
 |*Hylaeus dilatatus*|Notton & Dathe|2008|
 
-## Interpretation synonymy
-Interpretations can use a system very similar to Linnaean synonymy to identify where it should go. Each and every interpretation has an associated 'currently correct' interpretation associated with it.
+## Concept synonymy
+Concept can use a system very similar to Linnaean synonymy to identify where it should go. Each and every concept has an associated 'currently correct' concept associated with it.
 
 |Attribute|Subject|Associated|
 |:--|:-:|:-:|
@@ -60,7 +62,7 @@ Interpretations can use a system very similar to Linnaean synonymy to identify w
 |Concept author|Kirby|Notton & Dathe|
 |Concept year|1802|2008|
 
-In the case that the subject interpretation *is* the currently correct interpretation, this associated interpretation is itself:
+In the case that the subject concept *is* the currently correct concept, this associated concept is itself:
 
 |Attribute|Subject|Associated|
 |:--|:-:|:-:|
@@ -70,16 +72,43 @@ In the case that the subject interpretation *is* the currently correct interpret
 |Concept author|Notton & Dathe|Notton & Dathe|
 |Concept year|2008|2008|
 
-By navigating to this associated interpretation, a process known as 'resolving', we arrive at the currently correct end point for this interpretation. The associated interpretation may be safely changed at any point, but should always point to an end point - a taxon whose interpretation is itself (e.g. A -> B -> B). If any interpretation ever does not point to an end point (e.g. A -> B -> C) then the interpretation should have the associated interpretation updated so that it does (e.g. A -> C -> C).
+By navigating to this associated concept, a process known as 'resolving', we arrive at the currently correct end point for this concept. The associated concept may be safely changed at any point, but should always point to an end point - a taxon whose concept is itself (e.g. A -> B -> B). If any concept ever does not point to an end point (e.g. A -> B -> C) then the concept should have the associated concept updated so that it does (e.g. A -> C -> C).
 
 > Managing associated end points manually is quite a challenging task, especially as the scope of the system grows. It is recommended to automate the management of associated end points to improve ease of use and precision.
 
-## Implications for storing data
-Resolving an interpretation cannot be done in advance of using that interpretation, as doing so prevents modernisation. Without the ability to modernise, nomenclatural divergence once again is able to take place. Instead, nomenclature should be stored and operate on the level of interpretations, with taxonomy used at point-of-consumption. One particular use for resolving back to taxonomy is when compiling data across multiple interpretation regions.
+## Extending to cover Interpretations
+Interpretations use the exact same system as concepts. Each interpretation is connected to the 'current' interpretation, which may again be itself.
 
-## A practical example
+### Hylaeus example
+|Attribute|Subject|Associated|
+|:--|:-:|:-:|
+|Name|*Hylaeus dilatatus*|*Hylaeus annularis*|
+|Name author|Kirby|Notton & Dathe|
+|Name year|1802|2008|
+|Concept author|Kirby|Notton & Dathe|
+|Concept year|1802|2008|
+|Interpretation author|Kirby|Notton & Dathe|
+|Interpretation year|1802|2008|
+
+In the case that the subject concept *is* the currently correct concept, this associated concept is itself:
+
+|Attribute|Subject|Associated|
+|:--|:-:|:-:|
+|Name|*Hylaeus dilatatus*|*Hylaeus dilatatus*|
+|Name author|Notton & Dathe|Notton & Dathe|
+|Name year|2008|2008|
+|Concept author|Notton & Dathe|Notton & Dathe|
+|Concept year|2008|2008|
+|Interpretation author|Notton & Dathe|Notton & Dathe|
+|Interpretation year|2008|2008|
+
+## Pre-resolving stored data
+Resolving an interpretation cannot be done in advance of using that interpretation, as doing so prevents modernisation of the interpretation. Without the ability to modernise, nomenclatural divergence is once again able to take place. Instead, nomenclature should be stored and operated on the level of interpretations, with taxonomy used at point-of-consumption, should it be required to do so. If a project is examining data from entirely within on region of interpretations, it is not necessary to convert the interpretations to types. If the project wishes to cross multiple regions, such as for a pan-European study, then each region will need converting back to types.
+
+> N.B. Should different regions disagree on what types are valid, this will still need to be handled manually. *Theoretically* this should not happen, but in practice it is fairly common for different schools of taxonomy to argue with each other. The end goal of the system presented here is that it creates a way for such disagreements to be performed at the level of nomenclature rather than types, but that is too complex for an already complicated general explanation document.
+
+## A practical example of everything combined together
 For this example we will use *Bombus lucorum*, with interpretations taken from the regions of Great Britain and Austria. Using the interpretations from Great Britain, this example will demonstrate the differences between resolving at point of storage vs resolving at point of consumption. The example will then move on to demonstrate how resolving at point of consumption allows the merging of regional datasets with absolute taxonomic clarity.
-
 
 ### Point of storage *vs* point of consumption 
 In Great Britain there are two interpretations of *Bombus lucorum*:
@@ -175,12 +204,12 @@ Concluding the example set, we step forward to 2020. Here, both regions of Great
 |---|---|---|
 |Austria|*Bombus lucorum* Bossert et al, 2015|*Bombus lucorum* Linnaeus, 1761|
 
-## Resolving concept versions and type names
-The same logic of resolving may be applied to concept versions and type names. Indeed, type names already possess a level of resolving in the current Linnaean system - synonyms. Any design specification, however, falls firmly within the realm of the *implementation* of design as opposed to the *specification* of design. As such, no further details on *how* such a system may be managed will be outlined herein.
+## Passive updating
+A considerable benefit of using interpretations in this manner is that stored data is passively updated through the maintenance of a central list. Because modernisation of nomenclature is performed through resolving the interpretation there is no requirement to change specimen labels unless the specimen itself is re-determined. When dealing with museum collections that are in active use, this passive updating can easily save hours of curator and user hassle.
 
 ## Conclusion
-Interpretations may be used to store nomenclature in a time-safe, regional manner. Resolving an interpretation at the point of consumption means that the end user is always able to incorporate the maximum amount of taxonomic and nomenclatural knowledge, vastly increasing the taxonomic precision of end-user products.
+Interpretations may be used to store nomenclature in a time-safe, regional manner. Resolving an interpretation at the point of consumption means that the end user is always able to incorporate the maximum amount of taxonomic and nomenclatural knowledge, vastly increasing the taxonomic precision of end-user products. Also of note is that data stored using interpretations is able to be passively updated by updating where any given interpretation resolves to.
 
 There are multiple problems still to be addressed. Interpretations and taxonomic names are written identically whilst referring to very distinct ideas, which is a highly undesirable situation. Keeping track of interpretations, type concepts, and type names in a strict manner requires automation, which in turn requires a strict set of rules to be laid out (and for people to follow them). The absence of a suitable scheme managing taxonomy for zoology is also a significant impediment to establishing the proposed system, albeit one which can be overcome safely.
 
-The next stage of this work is to design an implementation of the protocols set out within this document.
+The next stage of this work is to design an implementation of the protocols set out within this document so that everything mentioned here can be put into practice - at least where it can reasonably be. Revamping the type system is far too large of an undertaking to be performed  Details of the implementation that was used for the testing of the system can be found [here](understandings/intro.md).

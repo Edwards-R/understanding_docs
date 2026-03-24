@@ -88,10 +88,10 @@ Who maintains the unique list of regional variations in that case, to prevent re
 What about when a taxonomic change needs to happen? What version does that change stem from if all the options are regional variations? Clearly there is a little more work to do yet.
 
 ## Sensu lato and sensu stricto
-Traditional taxonomy would solve the issue here very quickly, by the use of *sensu stricto* and *sensu lato*. The pre-change version of *Pipistrelle pipistrellus* would become *Pipistrelle pipistrellus sensu lato*, and the post-change version *Pipistrelle pipistrellus sensu stricto*. However, there are two critical flaws in this approach that render the system unusable.
+Traditional taxonomy would solve the issue here very quickly, by the use of *sensu stricto* and *sensu lato*. The pre-change version gains the epithet *sensu lato*, and the post-change version gains the epithet*sensu stricto*.However, there are two critical flaws in this approach that render the '*sensu*' system unusable.
 
-### Multiple times
-It is not guaranteed to only want to adjust a taxon once - indeed, adjusting once is likely an abnormality rather than regularity. For example, the name *Andrena trimmerana* has been used in three specific ways in a period of 10 years. The first change can be managed with *sensu*, giving the following
+### Adjusting multiple times
+It is not guaranteed to only want to adjust a taxon once - indeed, adjusting once is likely an abnormality rather than normality. For example, the name *Andrena trimmerana* has been used in three specific ways in a period of 10 years. The first change can be managed with *sensu*, giving the following
 
 |Name|
 |---|
@@ -120,11 +120,13 @@ Such a 'forgetful' system is all very well if the only users of such a system ar
 |---|---|---|
 |Stable|Unstable|Stable
 
-However, there are two critical flaws in this approach. The first is that the switch-over period has been observed to last decades at the very least, with the likely limiting factor being human lifespan. Such a long time period means that instability operates for far longer than is considered acceptable, especially given the ease of solutions.
+However, there are two critical flaws in this approach. The first is that the switch-over period has been observed to last decades at the very least, with the likely limiting factor being human lifespan. In the more extreme cases, particularly where identification material is infrequently published, nomenclatural divergence can persist for multiple lifetimes. Such a long time period means that nomenclatural instability operates for far longer than is acceptable, especially given the ease of solutions.
 
-Secondly, *a good, long-term, system should never forget*. Forgetting is antithetical to the very purpose of a safe, long-term, storage system for data. Accordingly, using 'forgetting' as a method to manage a functional limitation simply will not suffice for the purpose of long term data storage. There is much more to be said about the downstream negative results of 'forgetting' about something, but for the purpose of this document it is enough to say that implementing 'forgetting' as a management system is an unacceptably poor solution.
+Secondly, *a good, long-term, system should never forget*. Forgetting is antithetical to the very purpose of a safe, long-term, storage system for data. Using 'forgetting' as a method to manage a functional limitation simply will not suffice for the purpose of long term data storage. There is much more to be said about the downstream negative results of 'forgetting' about something, but for the purpose of this document it is enough to say that implementing 'forgetting' as a management system is an unacceptably poor solution.
 
 ## Conclusion
-Nomenclatural disjunctions within the Linnaean taxonomic system are situations where a taxonomic name and concept diverge from each other. The current Linnaean taxonomic system does not have the means to safely handle nomenclatural disjunction and instead pretends to ignore the problem. As a result of nomenclatural disjunction, users of the Linnaean taxonomic system (including users of taxonomic data) must always be aware of nomenclatural changes in all taxa and regions that their data relate to, so that they might manually resolve the disjunction. Existing design patterns in data handling, specifically versioning, can solve nomenclatural disjunction. However, the specific placement of where and how this versioning should be implemented is not year clear.
+Nomenclatural disjunctions within the Linnaean taxonomic system are situations where a name and taxonomic concept diverge from each other. The current Linnaean taxonomic system does not have the means to safely handle nomenclatural disjunction and instead pretends to solve the issue by ignoring the problem. As a result of nomenclatural disjunction, users of the Linnaean taxonomic system (including users of taxonomic data) must always be aware of nomenclatural changes in all taxa and regions that their data relate to, so that they might manually resolve the disjunction. This burden of knowledge is *extremely* extensive and, in the real world, utterly impractical in the vast majority of use cases.
+
+The use of versioning can solve nomenclatural disjunction. However, the specific placement of where and how this versioning should be implemented is not year clear.
 
 [Next page](./layers-in-taxonomy.md)

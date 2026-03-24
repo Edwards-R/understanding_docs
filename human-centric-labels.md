@@ -9,9 +9,10 @@ Luckily for us, there already exists a precedent for human-centric versioning wi
 |Ransonia|Kramp|1947|
 |Ransonia|Blandin|1979|
 
-This 'author & year' system is familiar to taxonomists, human-readable, and reasonably unique. As such, it provides an excellent basis for adaptation to use when versioning type concepts and interpretations.
+This 'author & year' system is familiar to taxonomists, human-readable, and reasonably unique. As such, it provides an excellent basis for adaptation to use when versioning type concepts and interpretations. All that remains is to translate this idea to our respecting concerns.
 
-## Stacking up the versions
+## Applying to the taxonomic and interpretation concerns
+### Taxonomic
 Under the redesign of the taxonomic system, the 'root' component of a type is its name. The author and year stored against a type under the current system become the author and year stored specifically against the name in the redesign. We can use this to build up a complete, documented, statement as to the status of *Bombus lucorum* in Great Britain. We start with the type name *Bombus lucorum*:
 
 |Attribute|Value|
@@ -22,21 +23,23 @@ Under the redesign of the taxonomic system, the 'root' component of a type is it
 
 Attached to this is a version of the taxon concept. Latreille, in 1802, moved *lucorum* to the genus *Bombus*. As such, Latreille is the author of the current concept.
 
-> A note for entomologists who are wondering about *Apis lucorum*: The handling of splits and merges of parent taxon groupings are far too complex to be discussed at this point. This example picks up after Latreille's change to the organisation of Linnaeus's type.
+> A note for entomologists who are wondering about *Apis lucorum*: The handling of splits and merges of parent taxon groupings is unnecessarily complex to be discussed at this point. This example picks up after Latreille's change to the organisation of Linnaeus's type.
 
 |Attribute|Value|
 |:--|--:|
 |Concept author|Latreille|
 |Concept year|1802|
 
-The latest interpretation of this concept within the area of Great Britain is by Murray et al in 2008.
+### Interpretation
+The latest interpretation of this concept of *Bombus lucorum*, within the area of Great Britain, is by Murray et al in 2008.
 
 |Attribute|Value|
 |:--|--:|
 |Interpretation author|Murray et al|
 |Interpretation year|2008|
 
-These three components can be stacked together to provide a complete statement for the current interpretation of *Bombus lucorum* in Great Britain:
+### Putting it all together
+These three components, the type, the type version, and the interpretation, can be stacked together to provide a complete statement for the current interpretation of *Bombus lucorum* in Great Britain:
 
 |Attribute|Value|
 |:--|--:|

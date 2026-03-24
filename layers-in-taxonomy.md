@@ -2,17 +2,42 @@
 Previously, we identified and started the process of solving the issue of nomenclatural divergence. However, the envisioned solution encountered a series of design problems which need to be overcome. Specifically, the solution identified two distinct varieties of nomenclatural divergence, and it was not at all clear how to implement a version control system that the solution demands. Thankfully, we can once again use well-established system design patterns to solve the issue almost instantly.
 
 ## Separation of Concerns
-In software parlance, a 'concern' refers to a specific area of responsibility for a given part of a design. For example, a sending a letter via post can be considered to have four concerns:
+### Defining a concern
+In software parlance, a 'concern' refers to a specific area of responsibility for a given part of a design. For example, a sending a letter via post can be considered to have five concerns:
 
 - A postbox to hold mail for pickup
 - A person to collect the mail from the postbox
 - A place to sort the mail and decide where to send it
 - A person to deliver the mail
+- A postbox to hold delivered mail
 
-Using the idea of concerns, we can solve our problem of versioning in a very neat manner: changes to the *type concept* belong in the *taxonomic* realm of concern, where as changes to regional nomenclature to better match the taxonomic concept exist in a (relatively) novel realm of concern. This more novel concern will henceforth be referred to as the *interpretation* layer, as it is concerned with managing the various regional interpretations of the type concept.
+Concerns may also be grouped to form meta-concerns. For example we can group the above concerns up into:
+
+- Places to hold mail
+    - Postbox for pickup
+    - Mail sorting facility
+    - Postbox for delivery
+
+- People to move mail between holding areas
+    - Collect mail from postbox
+    - Deliver mail to postbox
+
+If desired, we can also break down any item into concerns of its own. A mail sorting center itself is a complex operation that involves the interaction of many different concerns, some of which may again be broken down.
+
+### Application to taxonomic and nomenclatural versioning
+Using the idea of concerns, we can solve our problem of versioning in a very neat manner:
+
+- Changes to the *type concept* belong in the *taxonomic* realm of concern
+- Changes to regional nomenclature belong in the *nomenclatural* realm of concern
+
+### Previous use of the term 'nomenclatural'
+The term 'nomenclatural' poses a problem here, as the term is in common usage for a different aspect of nomenclature (mainly defining names, what's an acceptable name etc). In order to prevent confusion and misinformation on what our 'nomenclatural' concern handles, it is necessary to provide an alternative name. Our 'nomenclature' concern is centred on the idea of managing various different interpretations of a name. The concern will therefore be titled the *interpretational* realm of concern, giving us the two concerns of:
+
+- Taxonomy
+- Interpretation
 
 ## How does this fix our problem?
-Now that the two areas of taxonomy and interpretation have separated, the versioning follows the same procedure. First, apply the version to the type, e.g.
+Now that the two areas of taxonomy and interpretation have separated, the versioning can follow the same procedure. First, apply the version to the type, e.g.
 
 > *Bombus lucorum t4*
 
@@ -31,7 +56,7 @@ As this is a new version of the type, this also spawns the first interpretation 
 The taxonomists may now operate safely and securely on the type, and the interpreters of the type may now create as many versions of their interpretation as they desire, without interfering with taxonomy.
 
 ### Version numbers are very hard to follow
-Whilst the versioning system *works*, version numbers are very hard to follow along with for many people. Easy comprehension is especially critical for systems designed for human consumption, as this redesign of the Linnaean taxonomic system is. What is needed is a clear, familiar, system of identification that is easily human comprehensible.
+Whilst the versioning system *works*, version numbers are very hard to follow along with for the vast majority of people. Easy comprehension is especially critical for systems designed for human consumption, such as this redesign of the Linnaean taxonomic system. What is needed is a clear, familiar, system of identification that is easily human comprehensible.
 
 ## Conclusion
 We have used the principle of the separation of concerns to divide the proposed system into the taxonomic and interpretation areas. Using these areas, we applied taxonomic versioning and interpretation versioning independently, solving the issue of managing different versions across different interpretations. However, the end result uses an abstract number as the version identifier, with very little to aid in human comprehension.
