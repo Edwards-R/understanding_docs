@@ -1,45 +1,25 @@
-# Understandings
-Understandings are a system for the quick and easy use of Regional Interpretations. Understandings have two parts:
+# The Understandings System
+The Understandings System is a practical implementation of interpretation layer. It is designed to be widely deployable, and does not require the full taxonomic layer to be developed before it can be used. The current, as of 2026, Linnaean taxonomic system will work as the backbone, though some functionality will inevitably be lost. This loss in functionality is entirely related to the lack of taxonomic versioning. Should a versioned taxonomic system be developed later, any implementation of the Understandings System will be able to upgrade to it with very minor effort.
 
-- The Understandings Framework that determines how Interpretations are written
-- The Understandings System that manages the Understandings
+## Something about what an Understanding is
+The Understandings System is built out of components, known as Understandings, and the rules on how to manage these components. Each Understanding is a direct implementation of an interpretation, as defined by the system design documentation. Understandings are modified by the Understandings System by using procedures known as Operations. However, before we can talk and demonstrate Operations, we need to discuss how Understandings are written.
 
 ## Writing an Understanding
-Understandings do not have one singular format for being written and instead rely on a formatting guide that is implemented in various ways. The reason for this approach is that Understandings, and Interpretations, are still new and undergoing testing. Picking a singular format right at the start, where the use cases for Interpretations are still vague, is unlikely to provide the correct answer for the future. Designing a framework by which others can use and adapt provides room to grow and change as the needs of the users change.
+The Understandings System does not specify any single way in which an Understanding must be written. Instead, the Understandings System specifies the minimum information that any method of writing an Understanding must contain. This minimum information is:
 
-### The Understanding framework
-An Understanding requires the following information to be written:
+- Taxon name
+- Interpretation author
+- Interpretation year of declaration
 
-> Name Separator1 Format Author Separator2 Year
+This approach has been taken in order to separate the concerns of *managing* Understandings from *writing* Understandings. Both concerns are, to some degree, novel and experimental. By separating these concerns, changes to one aspect will have minimal impact on the other.
 
-This sequence of attributes is designed to strike a compromise between human and machine-readable formats. It is recommended to use punctuation-based separators e.g. `:` to minimise disruption to human reading whilst still providing a unique character for machine reading. Any character or phrase prohibited by the nomenclatural codes is reasonable candidate. Care should be taken to not use common phrases that may appear in names, especially in other languages. Simplicity is likely the correct approach.
-
-> Note that `separator1` and `separator2` may be the same character.
-
-### Default format
-The 'default' format that Understandings use is called the 'iso format'. This format was developed alongside Interpretations and Understandings, coming into existence very early on as a means to write a full Interpretation in (relative) shorthand.
-
-`iso` stands for 'In the Sense Of', taking inspiration from the Latin 'sensu'. An iso-format Understanding looks as follows:
-
-> *Bombus lucorum*: iso. Murray et al: 2008
-
-Broken down, we can see the distinct parts mandated by the Understanding framework:
-
-|Attribute|Value|
-|---|--|
-|Name|*Bombus lucorum*|
-|Separator1|:|
-|Format|iso.|
-|Author|Murray et al|
-|Separator2|:|
-|Year|2008|
-
-When spoken aloud, this is
-
-> *Bombus lucorum* in the sense of Murray et al, 2008
+### The Default option
+The Understandings System has been developed alongside a writing system, known as the [**iso System**](iso-system.md).
 
 ---
 ---
+
+
 
 > End it here, that's enough in one page
 >
