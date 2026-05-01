@@ -55,4 +55,4 @@ Alternatively, placing the entire Understanding in italics can help - though it 
 > Our work found that there were 24 nests of <i>Bombus lucorum: iso. Murray et al: 2008</i> in the survey area
 
 ## Conclusion
-Now that there is a way to write Understandings, we can move on to how to the Understandings System manages Understandings.
+Now that there is a way to write Understandings, we can move on to [how to the Understandings System manages Understandings](managing-understandings.md).
