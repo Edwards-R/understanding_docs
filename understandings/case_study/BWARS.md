@@ -70,7 +70,20 @@ Some of the best available keys were not UK based, or even written in English. A
 All current nomenclature must have a fully scope source with author and year of declaration. However, there exist a great number of non-current names where the origin is entirely lost to time. Since all Interpretations *must* have an author and year of declaration, one must be found. The solution is to use the capstone details as the Interpretation - in this case giving '*X* iso. BWARS: 2024'
 
 ### Vanity taxonomy
-One of the great destroyers of data is vanity taxonomy. There are *constantly* projects that attempt to 'standardise' nomenclature by applying 'Latin' grammar to it. These projects are, and this will make me rather unpopular in some circles, complete and total vanity. They serve no purpose other than self-congratulation and 'academic' frippery. All that comes out of such projects is confusion and destruction of data. BWARS has allowed me to put a complete and total stop to such projects influencing the Understandings implementation, for which I am extremely grateful.
+One of the great destroyers of data is vanity taxonomy. There are *constantly* projects that attempt to 'standardise' nomenclature by applying 'Latin' grammar to it. These projects are, and this will make me rather unpopular in some circles, complete and total vanity. They serve no purpose other than self-congratulation and 'academic' frippery. All that comes out of such projects is confusion and destruction of data. BWARS has allowed me to put a complete and total stop to such projects influencing the Understandings implementation, for which I am extremely grateful. I understand the idea behind them, it's just that the idea is fatally flawed from a design perspective.
 
 ### Applying Understandings to Keys
-Most people use keys to determine and keys do not, at least as of 2026, come with Understandings. Members of BWARS have solved this problem by creating lists of the Understandings used in various publications. These lists are then published by BWARS, though they are far from a complete set. Future keys will have the Understandings either written in, or provide space for readers to write them in should there be sufficient applicability outside of BWARS's remit.
+Most people use keys to determine and keys do not, at least as of 2026, come with Understandings. Members of BWARS have solved this problem by creating lists of the Understandings used in various publications. These lists are then published by BWARS, though they are far from a complete set of keys. Future keys will have the Understandings either written in, or provide space for readers to write them in should there be sufficient applicability outside of BWARS's remit.
+
+## Some wider issues
+
+### Education & Awareness
+The largest barrier to uptake remains awareness of the problems that the current 'pure' system causes. Without understanding the presence of a substantial flaw, people are very reluctant to change from something that is so widely established. Ironically, 'pure' taxonomists can struggle the most with understanding the flaw. As far as I can work out, this difficulty is because the taxonomists tend to work on individual specimens in draws where they have both the physical ability to move specimens and the taxonomic ability to separate taxa. What the taxonomist typically doesn't deal with are the down-stream implementations of the work that they do, which is where the flaws exist.
+
+Other common questions/concerns typically revolve around a lack of understanding of the system. It is hoped that, by writing this entire documentation, people will finally be able to see how and why the system works.
+
+### Long-term viability and support
+With all such custom-built projects, there is always the problem of 'is this project going to last long enough to be worth me picking up?'. With only one current user the answer is very unclear, and the attraction of the package is entirely its capabilities rather than long-term support. In order to reach long-term supported status there need to be enough users who see the value in maintaining the project. This includes developing new features, such as a user interface.
+
+### Lack of end-user ready solution
+The entire system is currently command-line from the inside of a database. This means potentially untrained users have to execute commands on a live database, which is **never** a good idea. Having a proper, user-friendly, graphical user interface would help speed up the spread of the Understandings System to more people.
