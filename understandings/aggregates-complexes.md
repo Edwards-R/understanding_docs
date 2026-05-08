@@ -42,3 +42,6 @@ When naming a complex, a simplified subset of nomenclatural rulings apply. The o
 
 ## Aggregate or complex?
 There are scenarios where there may exist the option to use an aggregate rather than a complex. In such situations, use the aggregate rather than declare a new complex. It is always simpler to have fewer custom parts.
+
+## Next topic
+The next topic is [how to efficiently start a new Understandings System](./efficient-start.md)

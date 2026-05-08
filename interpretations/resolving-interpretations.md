@@ -212,4 +212,8 @@ Interpretations may be used to store nomenclature in a time-safe, regional manne
 
 There are multiple problems still to be addressed. Interpretations and taxonomic names are written identically whilst referring to very distinct ideas, which is a highly undesirable situation. Keeping track of interpretations, type concepts, and type names in a strict manner requires automation, which in turn requires a strict set of rules to be laid out (and for people to follow them). The absence of a suitable scheme managing taxonomy for zoology is also a significant impediment to establishing the proposed system, albeit one which can be overcome safely.
 
-The next stage of this work is to design an implementation of the protocols set out within this document so that everything mentioned here can be put into practice - at least where it can reasonably be. Details of the implementation that was used for the testing of the system can be found [here](understandings/intro.md), which focuses on the implementation of interpretations.
+
+## Next steps
+The next stage of this work is to design an implementation of the protocols set out within this document so that everything mentioned here can be put into practice - at least where it can reasonably be. Details of the implementation that was used for the testing of the system can be found [here](../understandings/intro.md), which focuses on the implementation of interpretations.
+
+Alternatively, take a look at the [guidelines for declaring a new interpretation](./publishing-a-new-interpretation.md) or [how to add interpretations to existing keys](./adding-interpretations-to-existing-keys.md)

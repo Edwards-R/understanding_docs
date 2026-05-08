@@ -16,3 +16,6 @@ It is permitted to 'subset' ranks within the Understandings System. Rather than 
 |Family  |Capstone   |
 |Genus   |Family     |
 |Species |Genus      |
+
+## Next reading
+If reading through this documentation in order, it is recommended to next read [how the Understandings System handles aggregates and complexes](./aggregates-complexes.md).

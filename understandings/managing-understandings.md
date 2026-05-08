@@ -1,29 +1,6 @@
 # Managing Understandings
 The Understandings System has very strict rules for how Understandings are to be managed. These rules are designed to create an easy to manage, easy to understand, dictionary of regional nomenclature. In order to maintain any semblance of order, as well as improve usability, certain areas of the Understandings System have been separated out into other documents. Where relevant, the document has been directly linked. If required information is present in another document entirely, that has also been noted in the requiring document.
 
-- Should an operation take place?
-    - Systematic, widespread, confusion
-        - Systematic
-        - Widespread
-        - Confusion
-- Operations
-    - Creation
-        - Create
-            - As current
-            - As synonym
-    - Modification
-        - Split
-        - Merge
-            - Name change is a single-input merge
-- Change to parent = change to children
-    - Tree before & after
-        - Solid line = current
-        - Dashed line = synonym
-    - Why?
-        - Maintain all existing names
-        - Once a name exists, it may never stop existing
-        - Prevent synonyms from transferring 'forward'
-
 ## Operations
 There are three dominant operations within the Understandings System: [*Create*](operations/create.md), [*Split*](operations/split.md) and [*Merge*](operations/merge.md). Knowing when to use each of these - especially *Create* - is key to running an Understandings System. All operations may only take place within one singular rank. No operation may span multiple ranks.
 

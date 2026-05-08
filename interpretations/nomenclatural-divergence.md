@@ -3,7 +3,7 @@ Nomenclatural divergence is a term for what happens when the type concept and ty
 
 In one example situation, the names *Hylaeus annularis* and *Hylaeus dilatatus* were swapped during the period of study. The two species are very distinct in the number of records in the study dataset. What was originally called *Hylaeus dilatatus* had 36 records, whilst what was originally called *Hylaeus annularis* had 1,579.  Accordingly, the swap led to the researchers 'uncovering' a vast and sudden increase in *H. dilatatus* (36 -> 1,579), with an accompanying catastrophic crash in *H. annularis* (1,579 -> 36).
 
-![](image/hylaeus.drawio.svg)
+![](../image/hylaeus.drawio.svg)
 
 The result was, of course, false. The change in records was being driven entirely by the *nomenclatural divergence* in the data, as opposed to any true change in the number of records. The fault was explained when the researchers reached out to taxon experts for their assistance in interpretation. Having been made aware of this change during publication - and having dissented the validity of a 'straight swap' of nomenclature - the taxon expert was able to explain what had happened. Without the specialist knowledge provided by the taxon experts, there was no indicator to the researchers that any change had taken place. Even if the researchers *somehow* knew that a change had taken place, they would then have to piece together the (typically disconnected) trail of evidence that led to the nomenclatural divergence.
 
