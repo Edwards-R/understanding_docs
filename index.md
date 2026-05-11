@@ -33,3 +33,9 @@ The Understandings System is a complete implementation of Interpretations, provi
 Interpretations and the Understandings System were developed on the UK Bees Wasps and Ants Recording Society (BWARS) dataset. The relevant parts of that process (i.e. the ones that actually worked) have been extracted and placed in a case study that covers the creation of the BWARS Understandings System implementation.
 
 [Read the case study here](/understandings/case_study/BWARS.md)
+
+### NoNomS
+
+The code used by the BWARS Understandings System is called NoNomS - **No**rmalised **Nom**enclature **S**torage. It is a PostgreSQL plugin that handles the vast majority of the setup and maintenance of an Understandings System. The NoNomS project is open source and [can be found here](https://github.com/Edwards-R/nonoms).
+
+If you like NoNomS and want to use PostgreSQL for your biological recording (which you should, it's perfect) then [Bio Rec](https://github.com/Edwards-R/bio_rec) may also be of interest to you. Bio Rec handles biological occurrence data and is designed to rely on NoNomS for taxonomic management.
