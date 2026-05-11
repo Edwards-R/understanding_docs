@@ -1,0 +1,4 @@
+# Config for GitHub Pages
+
+markdown: GFM
+remote_theme: just-the-docs/just-the-docs
