@@ -1,3 +1,7 @@
+---
+parent: Interpretations
+title: 1. Introduction
+---
 # Introduction
 The Linnaean taxonomic system is a means of classifying life using a fixed number of categories, known as ranks. It was first published in Carl Linnaeus's 'Systema Naturae' in 1735. The taxonomic system has been refined multiple times since its inception, though this refinement has been predominantly in the realm of deciding where the boundaries should be placed amongst groups. Far less refinement has gone into the architecture of the final system, which exists much in the same way that Carl Linnaeus first created it.
 

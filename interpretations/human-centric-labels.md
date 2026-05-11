@@ -1,3 +1,8 @@
+---
+parent: Interpretations
+title: 4. Human-centric labels
+---
+
 # Human-centric labels
 Previously, we arrived at a way to version types and interpretations in order to solve nomenclatural divergence. However, the labelling of these versions was very rudimentary. Using pure numbers (t1, t2, t3 etc) may be logically complete, but it is typically more difficult for humans to remember the exact meaning of what a given number refers to. In order to significantly improve the usability of our proposed modification, a different solution to version identification must be found.
 

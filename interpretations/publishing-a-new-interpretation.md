@@ -1,3 +1,7 @@
+---
+parent: Interpretations
+title: 7. Guidelines for publishing a new Interpretation
+---
 # Guidelines for publishing a new Interpretation
 In order to declare a change in Interpretation, it is necessary to publish a work to base that change upon. A good declaration of a change in Interpretation contains the following:
 

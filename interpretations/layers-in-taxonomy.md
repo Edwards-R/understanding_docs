@@ -1,3 +1,8 @@
+---
+parent: Interpretations
+title: 3. Layers in taxonomy
+---
+
 # Layers in taxonomy
 Previously, we identified and started the process of solving the issue of nomenclatural divergence. However, the envisioned solution encountered a series of design problems which need to be overcome. Specifically, the solution identified two distinct varieties of nomenclatural divergence, and it was not at all clear how to implement a version control system that the solution demands. Thankfully, we can once again use well-established system design patterns to solve the issue almost instantly.
 

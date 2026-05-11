@@ -1,3 +1,8 @@
+---
+parent: Interpretations
+title: 3. Interpretation Regions
+---
+
 # Interpretation Regions
 Previously we demonstrated the division of the Linnaean taxonomic system into three components: the type, type version, and interpretation. We ended by noting that the example given specifically stated '*within the area of Great Britain*'. This section will examine why such a qualifier was needed, what the implications are, and how people working across multiple regions can finally achieve to-type nomenclature without involving any guesswork.
 

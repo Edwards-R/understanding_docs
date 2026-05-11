@@ -1,3 +1,7 @@
+---
+parent: Interpretations
+title: 2. Nomenclatural Divergence
+---
 # Nomenclatural Divergence
 Nomenclatural divergence is a term for what happens when the type concept and type name diverge in use from one another. In a nomenclatural divergence, there exists data under a type's name which no longer obeys the type concept. This mismatch leads to many varieties of problems in any downstream applications of that name, such as Red Lists, genetic libraries, scientific papers etc. Nomenclatural divergence is the source of one of the largest wastes of a user's time when dealing with scientific nomenclature: checking that all the nomenclature in a given sample/study are modern and trustworthy.
 

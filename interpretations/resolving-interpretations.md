@@ -1,3 +1,7 @@
+---
+parent: Interpretations
+title: 6. Resolving Interpretations
+---
 # Resolving Interpretations
 In each interpretation region, each concept version has a singular interpretation which is considered to be currently correct. As a result, there are potentially multiple interpretations within any given region which are in nomenclatural divergence. Interpretations so far have only allowed the identification of different interpretations. Now they will be improved to allow for solving of nomenclatural divergence.
 
