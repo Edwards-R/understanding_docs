@@ -1,10 +1,9 @@
-# Starting an Understandings System efficiently
+---
+parent: Understandings
+title: 6. How to efficiently start up a new Understandings System
+---
 
-- Introduce the idea of a false temporal origin
-- Why
-- How
-
-
+# How to efficiently start up a new Understandings System
 When creating a new instance of the Understandings System, the majority of the work involved is in sourcing the various nomenclatural and taxonomic changes across history. Changes in Interpretations have historically been performed in a rather roundabout manner, which frequently leaves little or no accountability for that change. When attempting to document such changes for use in the Understandings System, a frequent result is that no-one knows where or when a change came from. To handle such situations, there are a couple of helpful methods that can be used.
 
 ## Using a key as a point of reference

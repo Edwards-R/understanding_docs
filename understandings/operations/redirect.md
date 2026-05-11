@@ -1,3 +1,8 @@
+---
+parent: Operations
+title: Redirect
+nav_order: 4
+---
 # Redirect Operation
 A redirect is a corrective measure taken to rescue data. A redirect involves changing the resolved Understanding of a non-current Understanding.
 

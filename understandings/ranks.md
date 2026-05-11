@@ -1,3 +1,7 @@
+---
+parent: Understandings
+title: 4. Ranks in the Understandings System
+---
 # Ranks in the Understandings System
 The Understanding System does not prescribe a set of ranks to use, as doing so would be needlessly constrictive. The ruling with regards to ranks within the Understandings System is that every entity must have an entry at every given rank. No ranks, of those present in the system, may be skipped or omitted. If 'subspecies' is a rank, every single Understanding must reach the rank of subspecies.
 

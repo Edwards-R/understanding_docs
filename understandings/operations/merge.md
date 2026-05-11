@@ -1,3 +1,8 @@
+---
+parent: Operations
+title: Merge
+nav_order: 3
+---
 # Merge
 A merge takes one or more Understandings and returns one Understanding. The input Understandings are redirected to the output Understanding.
 

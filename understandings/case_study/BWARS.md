@@ -1,3 +1,8 @@
+---
+parent: Case studies using the Understandings System
+title: BWARS
+nav_order: 1
+---
 # A Case Study in Understandings - BWARS
 This section covers the non-software creation and implementation of the Understandings System using the UK's Bees Wasps and Ants Recording Society (BWARS). It is hoped that having an example will provide a reasonable reference point for other people making their own Understandings System implementations.
 

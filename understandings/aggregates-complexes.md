@@ -1,3 +1,7 @@
+---
+parent: Understandings
+title: 5. Aggregates and Complexes
+---
 # Aggregates and Complexes
 Occasionally it is required to be able to represent multiple Understandings by one Understanding. The two situations supported by the Understandings System are called *aggregate* and *complex*.
 

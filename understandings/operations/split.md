@@ -1,3 +1,8 @@
+---
+parent: Operations
+title: Split
+nav_order: 2
+---
 # Split
 A split takes a single Understanding and returns multiple Understandings, plus an aggregate Understanding.
 

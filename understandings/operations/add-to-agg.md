@@ -1,3 +1,9 @@
+---
+parent: Operations
+title: Add to Aggregate (WIP)
+nav_order: 5
+---
+
 # Add to Aggregate
 
 **WIP**

@@ -1,3 +1,8 @@
+---
+parent: Understandings
+title: 3. Managing Understandings
+---
+
 # Managing Understandings
 The Understandings System has very strict rules for how Understandings are to be managed. These rules are designed to create an easy to manage, easy to understand, dictionary of regional nomenclature. In order to maintain any semblance of order, as well as improve usability, certain areas of the Understandings System have been separated out into other documents. Where relevant, the document has been directly linked. If required information is present in another document entirely, that has also been noted in the requiring document.
 

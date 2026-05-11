@@ -1,3 +1,8 @@
+---
+parent: Understandings
+title: 7. The Understandings System
+---
+
 # Examples
 ## Normal use
 Examples of the Understandings System during normal use.

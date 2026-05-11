@@ -1,5 +1,6 @@
 ---
 title: Interpretations, Understandings, and the Understandings System
+nav_order: 1
 ---
 
 # Interpretations, Understandings, and the Understandings System

@@ -1,4 +1,9 @@
-# The iso System
+---
+parent: Understandings
+title: 1. Writing an Understanding
+---
+
+# Writing an Understanding in the `iso` format
 Short for 'In the Sense Of', the iso system is a method of writing Understandings. The method has been specifically designed to be both human and machine readable, regardless of language. An iso format Understanding is written as follows:
 
     Taxon: iso. Author: Year
