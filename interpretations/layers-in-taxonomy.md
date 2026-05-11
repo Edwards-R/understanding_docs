@@ -1,5 +1,5 @@
 ---
-parent: Interpretations
+parent: Interpretations, Understandings, and the Understandings System
 title: 3. Layers in taxonomy
 ---
 

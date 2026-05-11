@@ -1,5 +1,5 @@
 ---
-parent: Interpretations
+parent: Interpretations, Understandings, and the Understandings System
 title: 8. Adding Interpretations to existing keys
 ---
 # Adding Interpretations to existing keys

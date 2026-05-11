@@ -1,5 +1,5 @@
 ---
-parent: Interpretations
+parent: Interpretations, Understandings, and the Understandings System
 title: 7. Guidelines for publishing a new Interpretation
 ---
 # Guidelines for publishing a new Interpretation
