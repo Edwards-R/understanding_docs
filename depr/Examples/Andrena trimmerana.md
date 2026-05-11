@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 ## Andrena trimmerana worked example
 The start of the relevant section in the source paper is found on the 5th page (pg 396 of the journal), titled '*History of the names applied to the* Andrena trimmerana *complex*'. The paper opens with *Andrena trimmerana* (Kirby, 1802) and *Andrena spinigera* (Kirby, 1802). In order to not overload the reader with additional complexity and maintain parity with the text in the article, these will be known as:
 

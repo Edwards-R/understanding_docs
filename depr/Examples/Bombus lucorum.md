@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # Example: *Bombus lucorum*
 
 ## Brief history

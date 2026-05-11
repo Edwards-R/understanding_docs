@@ -1,8 +1,8 @@
-
 ---
-title: Interpretations
 parent: Interpretations, Understandings, and the Understandings System
+title: Interpretations
 ---
+
 # Interpretations
 
 - [1. Introduction](/introduction.md)
