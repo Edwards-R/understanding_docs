@@ -1,5 +1,5 @@
 ---
-parent: Interpretations, Understandings, and the Understandings System
+parent: Interpretations
 title: 3. Interpretation Regions
 ---
 

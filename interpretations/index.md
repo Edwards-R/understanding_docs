@@ -1,5 +1,5 @@
 ---
-title: Interpretations, Understandings, and the Understandings System
+title: Interpretations
 ---
 
 ## Interpretations

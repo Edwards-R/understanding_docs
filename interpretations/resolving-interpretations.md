@@ -1,5 +1,5 @@
 ---
-parent: Interpretations, Understandings, and the Understandings System
+parent: Interpretations
 title: 6. Resolving Interpretations
 ---
 # Resolving Interpretations
