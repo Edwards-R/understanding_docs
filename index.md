@@ -1,3 +1,7 @@
+---
+title: Interpretations, Understandings, and the Understandings System
+---
+
 # Interpretations, Understandings, and the Understandings System
 This site is the documentation for Interpretations, and the Understandings system. This combination of projects is a full rework of how Linnaean taxonomy is handled, designed to remove a set of flaws which are currently passively destroying biological data viability.
 
